@@ -26,7 +26,7 @@ app.use(expressLayouts);
 app.set('view engine', 'ejs');
 
 app.use(express.static('https://calculesuaobra.herokuapp.com/views/'));
-app.use(express.static('https://calculesuaobra.herokuapp.com/p/'));
+app.use(express.static('https://calculesuaobra.herokuapp.com/'));
 
 // Express body parser
 app.use(express.urlencoded({ extended: true }));
