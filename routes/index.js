@@ -2,6 +2,7 @@ const express = require('express');
 const router = express.Router();
 const { ensureAuthenticated, forwardAuthenticated } = require('../config/auth');
 const http = require('http');
+const path = require('path')
 const { fstat } = require('fs');
 
 http.createServer((req, res) => {
