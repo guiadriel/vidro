@@ -6,6 +6,7 @@ const flash = require('connect-flash');
 const session = require('express-session');
 
 const app = express();
+app.use(express.static(__dirname + '/'));
 
 // Passport Config
 require('./config/passport')(passport);
@@ -25,8 +26,7 @@ mongoose
 app.use(expressLayouts);
 app.set('view engine', 'ejs');
 
-app.use(express.static('https://calculesuaobra.herokuapp.com/views/'));
-app.use(express.static('https://calculesuaobra.herokuapp.com/'));
+
 
 // Express body parser
 app.use(express.urlencoded({ extended: true }));
