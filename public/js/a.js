@@ -302,7 +302,7 @@ function xAtualiza(x) {
             document.getElementById("xDiversos").value = 7;
             document.getElementById("xFerro").value = 0;
             document.getElementById("xKit").value = 0;
-            document.getElementById("bt").src = "https://calculesuaobra.com.br/img/i08.png";
+            document.getElementById("bt").src = "./public/img/i08.png";
             break;
         case "i09":
             document.getElementById("xFator").value = 5;
@@ -664,7 +664,7 @@ function inserirLinhaTabela() {
                 newCell.style.display = "inline";
                 var img3 = document.createElement("IMG");
                 img3.setAttribute("style", "width:20px");
-                img3.src = "https://calculesuaobra.com.br/img/x.png";
+                img3.src = "./public/img/x.png";
                 //tá imprimindo 45, mas está certo  pois realmente tem um monte de linhas em branco na tabela
                 img3.setAttribute("onclick", "delRow(this.parentNode.parentNode.rowIndex, this.parentNode.parentNode.getElementsByTagName('td'))");
                 newCell.appendChild(img3);
