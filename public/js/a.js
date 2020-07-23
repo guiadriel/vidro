@@ -179,12 +179,12 @@ function exibe_tab(el) {
     }
 }
 
-function chamaaltura() {
-    var precoVidro = document.getElementById("precoVidro").value;
-    document.getElementById("SubTotal").value = parseFloat(document.getElementById("precoVidro").value) + parseFloat(document.getElementById("precoDiversos").value) + parseFloat(document.getElementById("precoFerro").value) + parseFloat(document.getElementById("precoKit").value);
-    document.getElementById("Total").value = parseFloat(document.getElementById("quantidade").value) * document.getElementById("SubTotal").value;
-    calcula();
-}
+//function chamaaltura() {
+//var precoVidro = document.getElementById("precoVidro").value;
+//document.getElementById("SubTotal").value = parseFloat(document.getElementById("precoVidro").value) + parseFloat(document.getElementById("precoDiversos").value) + parseFloat(document.getElementById("precoFerro").value) + parseFloat(document.getElementById("precoKit").value);
+//document.getElementById("Total").value = parseFloat(document.getElementById("quantidade").value) * document.getElementById("SubTotal").value;
+//calcula();
+//}
 
 function calcula() {
     var precoVidro = document.getElementById("precoVidro").value;
