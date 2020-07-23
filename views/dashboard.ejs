@@ -461,7 +461,15 @@ TAUBATÉ, __ DE ___________ DE ____.
             <label id="lab_subtotal">SubTotal:</label>
             <input type="number" id="SubTotal" value="1">
             <input type="number" id="Total" value="1">
-            <input type="button" style="font-family: Arial, Helvetica, sans-serif;
+
+            <div id="indice">
+                <input type="number" id="precoVidro" value="1">
+                <input type="number" id="precoDiversos" value="1">
+                <input type="number" id="precoFerro" value="1">
+                <input type="number" id="precoKit" value="1">
+            </div>
+        </div>
+        <input type="button" style="font-family: Arial, Helvetica, sans-serif;
 					font-size: 11px;
 					color: #ffffff;
 					cursor:pointer;
@@ -472,13 +480,6 @@ TAUBATÉ, __ DE ___________ DE ____.
 					border-radius: 5px;
 					margin-top:8px;
 					border: 0px solid #6c86a1;" id="ok" value="+" onclick="inserir()">
-            <div id="indice">
-                <input type="number" id="precoVidro" value="1">
-                <input type="number" id="precoDiversos" value="1">
-                <input type="number" id="precoFerro" value="1">
-                <input type="number" id="precoKit" value="1">
-            </div>
-        </div>
     </div>
     <div id="fundo2">
         <img src="./public/img/v01.png" id="v01" onclick="yAtualiza('v01')">
