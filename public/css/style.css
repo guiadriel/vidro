@@ -239,10 +239,10 @@ table td {
 .btn_print {
     border: 1px solid #dddddd;
     background: #262928;
-    margin-left: -25%;
+    margin-left: -10%;
     /*	position:relative;*/
     /*margin: 500px auto;*/
-    height: 25%;
+    height: 200px;
     text-align: center;
     cursor: pointer;
     position: fixed;
