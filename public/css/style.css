@@ -22,7 +22,7 @@ body {
     position: absolute;
     top: 0px;
     left: 50%;
-    margin-left: -360px;
+    margin-left: -37%;
     z-index: 1;
 }
 
@@ -187,7 +187,7 @@ body {
 }
 
 #cor {
-    background-image: url("./img/v01.png");
+    background-image: url("../img/v01.png");
     background-repeat: no-repeat;
 }
 
@@ -240,7 +240,7 @@ table td {
     border: 1px solid #dddddd;
     background: #262928;
     /*	position:relative;*/
-    margin: 500px auto;
+    /*margin: 500px auto;*/
     height: 200px;
     text-align: center;
     cursor: pointer;
