@@ -188,8 +188,8 @@ function exibe_tab(el) {
 
 function calcula() {
     var precoVidro = document.getElementById("precoVidro").value;
-    var altura = document.getElementById("altura").value;
-    var largura = document.getElementById("largura").value;
+    var altura = parseFloat(document.getElementById("altura").value) / 1000;
+    var largura = parseFloat(document.getElementById("largura").value) / 1000;
     var yCor = document.getElementById("yCor").value;
     var precoDiversos = document.getElementById("precoDiversos").value;
     var xFator = document.getElementById("xFator").value;
@@ -208,11 +208,11 @@ function calcula() {
     //	SubTotal      = parseFloat(precoVidro) + parseFloat(precoDiversos) + parseFloat(precoFerro) + parseFloat(precoKit);
     //	Total 		  = parseFloat(quantidade) + SubTotal;
     document.getElementById("SubTotal").value = SubTotal;
-    document.getElementById("precoVidro").value = parseFloat((document.getElementById("altura").value * document.getElementById("largura").value * parseFloat(document.getElementById("yCor").value)) / (1000000));
+    document.getElementById("precoVidro").value = parseFloat((altura * largura * parseFloat(document.getElementById("yCor").value)));
     console.log(document.getElementById("precoVidro").value);
-    document.getElementById("precoDiversos").value = document.getElementById("altura").value * document.getElementById("xFator").value * document.getElementById("xDiversos").value;
+    document.getElementById("precoDiversos").value = altura * document.getElementById("xFator").value * document.getElementById("xDiversos").value;
     document.getElementById("precoFerro").value = document.getElementById("xFerro").value;
-    document.getElementById("precoKit").value = document.getElementById("largura").value * document.getElementById("xKit").value;
+    document.getElementById("precoKit").value = largura * document.getElementById("xKit").value;
     document.getElementById("SubTotal").value = parseFloat(document.getElementById("precoVidro").value) + parseFloat(document.getElementById("precoDiversos").value) + parseFloat(document.getElementById("precoFerro").value) + parseFloat(document.getElementById("precoKit").value);
     document.getElementById("Total").value = parseFloat(document.getElementById("quantidade").value) * document.getElementById("SubTotal").value;
 }
