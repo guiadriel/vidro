@@ -21,3 +21,45 @@ $ npm run dev
 ### MongoDB
 
 Open "config/keys.js" and add your MongoDB URI, local or Atlas
+
+
+
+
+
+
+
+
+MUDAR DIMENSOES PARA MILIMETRO
+
+TABELA DE PREÇO EDITÁVEL 
+
+SALVAR NA PASTA
+
+WHATSAPP
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
