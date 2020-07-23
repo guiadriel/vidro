@@ -410,7 +410,7 @@ function xAtualiza(x) {
         default:
             alert("clicou numa imagem inexistente");
     }
-    document.getElementById("bt").value = document.getElementById("hidden_" + x).value;
+    document.getElementById("btt1").value = document.getElementById("hidden_" + x).value;
     document.getElementById("cor").src = "./public/img/v03.png";
     Mudarestado("fundo");
     calcula();
