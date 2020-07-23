@@ -515,7 +515,7 @@ TAUBATÉ, __ DE ___________ DE ____.
 <input type="hidden" id="hidden_i19" value="Box Canto">
 <input type="hidden" id="hidden_i20" value="Box Frontal">
 <script type="text/javascript">
-    $(function() {
+    $(document).ready(function($) {
         $("#idData").mask("00/00/0000");
         var SPMaskBehavior = function(val) {
                 return val.replace(/\D/g, '').length === 11 ? '(00) 00000-0000' : '(00) 0000-00009';
