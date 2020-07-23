@@ -208,7 +208,7 @@ function calcula() {
     //	SubTotal      = parseFloat(precoVidro) + parseFloat(precoDiversos) + parseFloat(precoFerro) + parseFloat(precoKit);
     //	Total 		  = parseFloat(quantidade) + SubTotal;
     document.getElementById("SubTotal").value = SubTotal;
-    document.getElementById("precoVidro").value = document.getElementById("altura").value * document.getElementById("largura").value * document.getElementById("yCor").value / (1000 * 1000);
+    document.getElementById("precoVidro").value = (document.getElementById("altura").value * document.getElementById("largura").value * document.getElementById("yCor").value) / (1000000);
     document.getElementById("precoDiversos").value = document.getElementById("altura").value * document.getElementById("xFator").value * document.getElementById("xDiversos").value;
     document.getElementById("precoFerro").value = document.getElementById("xFerro").value;
     document.getElementById("precoKit").value = document.getElementById("largura").value * document.getElementById("xKit").value;
