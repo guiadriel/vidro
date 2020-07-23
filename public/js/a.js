@@ -209,7 +209,7 @@ function calcula() {
     //	Total 		  = parseFloat(quantidade) + SubTotal;
     document.getElementById("SubTotal").value = SubTotal;
     document.getElementById("precoVidro").value = parseFloat((document.getElementById("altura").value * document.getElementById("largura").value * parseFloat(document.getElementById("yCor").value)) / (1000000));
-    alert(document.getElementById("precoVidro").value);
+    console.log(document.getElementById("precoVidro").value);
     document.getElementById("precoDiversos").value = document.getElementById("altura").value * document.getElementById("xFator").value * document.getElementById("xDiversos").value;
     document.getElementById("precoFerro").value = document.getElementById("xFerro").value;
     document.getElementById("precoKit").value = document.getElementById("largura").value * document.getElementById("xKit").value;
