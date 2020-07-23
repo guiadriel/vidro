@@ -6,8 +6,8 @@ onload = function() {
     Mudarestado("fundo2");
     document.getElementById("bt").src = "./public/img/i01.png";
     document.getElementById("cor").src = "./public/img/v01.png";
-    xAtualiza('i01');
-    yAtualiza('v01');
+    //xAtualiza('i01');
+    //yAtualiza('v01');
     Mudarestado('fundo');
     Mudarestado('fundo2');
     calcula();
