@@ -90,6 +90,7 @@ body {
     width: 30px;
     height: 30px;
     text-align: center;
+    background-color: lightslategrey;
 }
 
 #lab_cor {
@@ -208,7 +209,7 @@ body {
     width: 500px;
     height: 100px;
     left: 50%;
-    margin-left: -450px;
+    margin-left: -42%;
     top: 270px;
 }
 
