@@ -1,25 +1,43 @@
 <input type="button" style="font-family: Arial, Helvetica, sans-serif;
-					font-size: 11px;
+					font-size: 35px;
 					color: #ffffff;
 					cursor:pointer;
 					padding: 10px 20px;
 					background-color:#1b6718;
 					-moz-border-radius: 5px;
 					-webkit-border-radius: 5px;
-					border-radius: 5px;
+					border-radius: 92px;
 					margin-top:8px;
                     border: 0px solid #6c86a1;
                     position: fixed;
                     bottom: 15px;
                     right: 15px;
-                    z-index: 100;" id="ok" value="+" onclick="inserir()">
-<input type="button" class="btn btn-primary pull-right">
-
+                    z-index: 100;
+                    width: 75px;
+                    height: 75px;" id="ok" value="+" onclick="inserir()">
+<input type="button" style="font-family: Arial, Helvetica, sans-serif;
+font-size: 35px;
+color: #ffffff;
+cursor:pointer;
+padding: 10px 20px;
+background-color:#1b6718;
+background-image: url('./public/img/fim.png');
+-moz-border-radius: 5px;
+-webkit-border-radius: 5px;
+border-radius: 92px;
+margin-top:8px;
+border: 0px solid #6c86a1;
+position: fixed;
+bottom: 15px;
+right: 25px;
+z-index: 100;
+width: 75px;
+height: 75px;" id="ok" value="+" onclick="inserir()">
 <div id="cabecario">
-    <p class="lead mb-3">Bem-vindo
+    <p class="lead mb-3" style="position: absolute; right: 90px; z-index: 100;">Bem-vindo
         <%= user.name %>
     </p>
-    <a href="/users/logout" class="btn btn-secondary">Sair</a>
+    <a href="/users/logout" class="btn btn-secondary" style="position:absolute; right: 0px; z-index: 100;">Sair</a>
     <table width="1000px">
         <tr width="1000px">
             <td colspan="3" width="800px" style="text-align:center">
