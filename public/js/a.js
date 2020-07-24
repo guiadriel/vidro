@@ -596,8 +596,7 @@ function inserirLinhaTabela() {
                 break;
             case 1:
                 var divx = document.createElement('p');
-                divx.setAttribute("style", "padding-left:60px");
-                divx.setAttribute("style", "padding-top:15px");
+                divx.setAttribute("style", "padding-left:60px; padding-top:15px");
                 var texto = document.getElementById('altura').value;
                 var txt_aux = texto.split();
                 divx.appendChild(document.createTextNode(txt_aux[0]));
@@ -605,8 +604,7 @@ function inserirLinhaTabela() {
                 break;
             case 2:
                 var divx = document.createElement('p');
-                divx.setAttribute("style", "padding-left:60px");
-                divx.setAttribute("style", "padding-top:15px");
+                divx.setAttribute("style", "padding-left:60px; padding-top:15px");
                 var texto = document.getElementById('largura').value;
                 var txt_aux = texto.split();
                 divx.appendChild(document.createTextNode(txt_aux[0]));
@@ -614,8 +612,7 @@ function inserirLinhaTabela() {
                 break;
             case 3:
                 var divx = document.createElement('p');
-                divx.setAttribute("style", "padding-left:60px");
-                divx.setAttribute("style", "padding-top:15px");
+                divx.setAttribute("style", "padding-left:60px; padding-top:15px");
                 var texto = document.getElementById('espessura').value;
                 var txt_aux = texto.split();
                 divx.appendChild(document.createTextNode(txt_aux[0]));
@@ -630,8 +627,7 @@ function inserirLinhaTabela() {
                 break;
             case 5:
                 var divx = document.createElement('p');
-                divx.setAttribute("style", "padding-left:0px");
-                divx.setAttribute("style", "padding-top:15px");
+                divx.setAttribute("style", "padding-left:0px; padding-top:15px");
                 var texto = document.getElementById('aluminio').value;
                 var txt_aux = texto.split();
                 divx.appendChild(document.createTextNode(txt_aux[0]));
@@ -639,8 +635,7 @@ function inserirLinhaTabela() {
                 break;
             case 6:
                 var divx = document.createElement('p');
-                divx.setAttribute("style", "padding-left:30px");
-                divx.setAttribute("style", "padding-top:15px");
+                divx.setAttribute("style", "padding-left:30px; padding-top:15px");
                 var texto = document.getElementById('quantidade').value;
                 var txt_aux = texto.split();
                 divx.appendChild(document.createTextNode(txt_aux[0]));
@@ -648,8 +643,7 @@ function inserirLinhaTabela() {
                 break;
             case 7:
                 var divx = document.createElement('p');
-                divx.setAttribute("style", "padding-left:50px");
-                divx.setAttribute("style", "padding-top:15px");
+                divx.setAttribute("style", "padding-left:50px; padding-top:15px");
                 var texto = number_format(document.getElementById('SubTotal').value, 2, ",", ".");
                 var txt_aux = texto.split();
                 divx.appendChild(document.createTextNode(txt_aux[0]));
@@ -657,8 +651,7 @@ function inserirLinhaTabela() {
                 break;
             case 8:
                 var divx = document.createElement('p');
-                divx.setAttribute("style", "padding-left:25px");
-                divx.setAttribute("style", "padding-top:15px");
+                divx.setAttribute("style", "padding-left:25px; padding-top:15px");
                 var texto = number_format(document.getElementById('Total').value, 2, ",", ".");
                 var txt_aux = texto.split();
                 divx.appendChild(document.createTextNode(txt_aux[0]));
