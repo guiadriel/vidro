@@ -494,11 +494,11 @@ TAUBATÉ, __ DE ___________ DE ____.
         <input type="number" id="yCor" value="84">
     </div>
     <div id="CONTROLES">
-        <div style="float: left">
-            <label id="lab_quant">Qtde:</label>
+        <div style="padding-left: 28px; float: left;">
+            <label id="lab_quant">Qtde:</label> <br>
             <input type="number" id="quantidade" value="1" onblur="calcula()" onchange="calcula()" style="margin-right:20px">
         </div>
-        <div style="float: left">
+        <div style="padding-left: 28px; float: left;">
             <input type="number" id="altura" value="2000" onblur="calcula()" onchange="calcula()">
             <img src="./public/img/i03.png" id="btt1" onclick="Mudarestado('fundo')" style="cursor:pointer; padding-right:15px; z-index: 99">
             <div style="padding-left:20px">
@@ -506,19 +506,20 @@ TAUBATÉ, __ DE ___________ DE ____.
             </div>
         </div>
         <div>
-            <div style="padding-left: 20px; float: left;">
+            <div style="padding-left: 28px; float: left;">
+                <label id="lab_cores">Cor:</label> <br>
                 <img src="./public/img/v03.png" id="cor" onclick="Mudarestado('fundo2')" style="margin-right:20px">
             </div>
-            <div style="padding-left: 20px; float: left;">
+            <div style="padding-left: 28px; float: left;">
                 <label id="lab_espess">Espessura:</label> <br>
                 <input type="text" id="espessura" onblur="yAtualiza2()" onchange="yAtualiza2()" value="8mm" style="margin-right:20px">
             </div>
-            <div style="padding-left: 20px; float: left;">
+            <div style="padding-left: 28px; float: left;">
                 <label id="lab_alum">Alum&iacute;nio:</label> <br>
                 <input type="text" id="aluminio" value="Natural-Fosco" style="margin-right:20px">
             </div>
-            <div style="padding-left: 20px; float: left;">
-                <label id="lab_subtotal">SubTotal:</label>
+            <div style="padding-left: 28px; float: left;">
+                <label id="lab_subtotal">SubTotal:</label> <br>
                 <input type="number" id="SubTotal" value="1">
                 <input type="number" id="Total" value="1">
             </div>
