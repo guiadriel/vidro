@@ -33,6 +33,24 @@
     " id="fimfim" onclick="inserir()">
 </div>
 
+<div id="divBtConfig">
+    <input type="button" style="
+    position: fixed;
+    bottom: 140px;
+    right: 15px;
+    z-index: 100;
+    background-image: url(./public/img/config.png);
+    background-size: contain;
+    width: 75px;
+    height: 75px;
+    background-repeat: no-repeat;
+    font-size: 2rem;
+    border-radius: 97px;
+    border-bottom-style: outset;
+    " id="fimfim" onclick="inserir()">
+</div>
+
+
 <table id="configuracaoSistema">
     <tr>
         <td> ítem </td>
@@ -500,14 +518,14 @@ TAUBATÉ, __ DE ___________ DE ____.
         </div>
         <div style="padding-left: 28px; float: left;">
             <input type="number" id="altura" value="2000" onblur="calcula()" onchange="calcula()">
-            <img src="./public/img/i03.png" id="btt1" onclick="Mudarestado('fundo')" style="cursor:pointer; padding-right:15px; z-index: 99">
+            <img src="./public/img/i03.png" id="btt1" onclick="Mudarestado('fundo')" style="cursor:pointer; z-index: 99">
             <div style="padding-left:20px">
                 <input type="number" id="largura" value="3000" onblur="calcula()" onchange="calcula()" style="margin-right:20px">
             </div>
         </div>
         <div>
             <div style="padding-left: 28px; float: left;">
-                <label id="lab_cores">Cor:</label> <br>
+                <label id="lab_cor">Cor:</label> <br>
                 <img src="./public/img/v03.png" id="cor" onclick="Mudarestado('fundo2')" style="margin-right:20px">
             </div>
             <div style="padding-left: 28px; float: left;">
