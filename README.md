@@ -29,11 +29,6 @@ Open "config/keys.js" and add your MongoDB URI, local or Atlas
 
 
 
-AUMENTAR CAMPO DIGITAVEIS 
-
-MUDAR DIMENSOES PARA MILIMETRO
-
-botão do tu saiu pra fora da tela
 
 CRIAR TABELA DE PREÇO EDITÁVEL 
 
