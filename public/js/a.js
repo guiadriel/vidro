@@ -247,7 +247,7 @@ function xAtualiza(x) {
         case "i01":
             //  Valor do Basculante   Imagem i01.
             document.getElementById("xFator").value = 5;
-            document.getElementById("xDiversos").value = 7; // Metro da cantoneira
+            document.getElementById("xDiversos").value = document.getElementById("pvMETRO_QUADRADO_DA_CANTONEIRA");
             // 35  + 80 %     --> alterei em 17 de julho de 2020 para :  45 + 40% nesse e nos outros
             document.getElementById("xFerro").value = 63.00; // Valor da Ferragem Basculante   + 80%
             document.getElementById("xKit").value = 0;
@@ -256,7 +256,7 @@ function xAtualiza(x) {
         case "i02":
             // Fechadura
             document.getElementById("xFator").value = 3;
-            document.getElementById("xDiversos").value = 7; // Metro da Cantoneira
+            document.getElementById("xDiversos").value = document.getElementById("pvMETRO_QUADRADO_DA_CANTONEIRA");
             // 55 + 80%      = 99    --> alterei em 17 de julho de 2020 para :  45 + 40% nesse e nos outros
             document.getElementById("xFerro").value = 63.00; // Valor da Ferragem + 80%
             document.getElementById("xKit").value = 90.00;
@@ -264,7 +264,7 @@ function xAtualiza(x) {
             break;
         case "i03":
             document.getElementById("xFator").value = 5;
-            document.getElementById("xDiversos").value = 7;
+            document.getElementById("xDiversos").value = document.getElementById("pvMETRO_QUADRADO_DA_CANTONEIRA");
             // 55 + 80%      = 99 
             document.getElementById("xFerro").value = 98.00;
             document.getElementById("xKit").value = 90.00;
@@ -272,42 +272,42 @@ function xAtualiza(x) {
             break;
         case "i04":
             document.getElementById("xFator").value = 3;
-            document.getElementById("xDiversos").value = 7;
+            document.getElementById("xDiversos").value = document.getElementById("pvMETRO_QUADRADO_DA_CANTONEIRA");
             document.getElementById("xFerro").value = 28.00;
             document.getElementById("xKit").value = 90.00;
             document.getElementById("btt1").src = "./public/img/i04.png";
             break;
         case "i05":
             document.getElementById("xFator").value = 5;
-            document.getElementById("xDiversos").value = 7;
+            document.getElementById("xDiversos").value = document.getElementById("pvMETRO_QUADRADO_DA_CANTONEIRA");
             document.getElementById("xFerro").value = 56.00; //alterado
             document.getElementById("xKit").value = 90.00;
             document.getElementById("btt1").src = "./public/img/i05.png";
             break;
         case "i06":
             document.getElementById("xFator").value = 3;
-            document.getElementById("xDiversos").value = 7;
+            document.getElementById("xDiversos").value = document.getElementById("pvMETRO_QUADRADO_DA_CANTONEIRA");
             document.getElementById("xFerro").value = 161.00; //alterado
             document.getElementById("xKit").value = 0;
             document.getElementById("btt1").src = "./public/img/i06.png";
             break;
         case "i07":
             document.getElementById("xFator").value = 3;
-            document.getElementById("xDiversos").value = 7;
+            document.getElementById("xDiversos").value = document.getElementById("pvMETRO_QUADRADO_DA_CANTONEIRA");
             document.getElementById("xFerro").value = 140.00; //alterado
             document.getElementById("xKit").value = 0;
             document.getElementById("btt1").src = "./public/img/i07.png";
             break;
         case "i08":
             document.getElementById("xFator").value = 2;
-            document.getElementById("xDiversos").value = 7;
+            document.getElementById("xDiversos").value = document.getElementById("pvMETRO_QUADRADO_DA_CANTONEIRA");
             document.getElementById("xFerro").value = 0;
             document.getElementById("xKit").value = 0;
             document.getElementById("btt1").src = "./public/img/i08.png";
             break;
         case "i09":
             document.getElementById("xFator").value = 5;
-            document.getElementById("xDiversos").value = 7;
+            document.getElementById("xDiversos").value = document.getElementById("pvMETRO_QUADRADO_DA_CANTONEIRA");
             document.getElementById("xFerro").value = 238;
             document.getElementById("xKit").value = 85.00;
             document.getElementById("btt1").src = "./public/img/i09.png";
@@ -315,7 +315,7 @@ function xAtualiza(x) {
         case "i10":
 
             document.getElementById("xFator").value = 2;
-            document.getElementById("xDiversos").value = 7;
+            document.getElementById("xDiversos").value = document.getElementById("pvMETRO_QUADRADO_DA_CANTONEIRA");
             document.getElementById("xFerro").value = 0;
             document.getElementById("xKit").value = 0;
             document.getElementById("btt1").src = "./public/img/i10.png";
@@ -325,7 +325,7 @@ function xAtualiza(x) {
             break;
         case "i11":
             document.getElementById("xFator").value = 2;
-            document.getElementById("xDiversos").value = 7;
+            document.getElementById("xDiversos").value = document.getElementById("pvMETRO_QUADRADO_DA_CANTONEIRA");
             document.getElementById("xFerro").value = 0;
             document.getElementById("xKit").value = 0;
             document.getElementById("espessura").value = "4mm";
@@ -335,7 +335,7 @@ function xAtualiza(x) {
             break;
         case "i12":
             document.getElementById("xFator").value = 2;
-            document.getElementById("xDiversos").value = 7;
+            document.getElementById("xDiversos").value = document.getElementById("pvMETRO_QUADRADO_DA_CANTONEIRA");
             document.getElementById("xFerro").value = 0;
             document.getElementById("xKit").value = 0;
             document.getElementById("btt1").src = "./public/img/i12.png";
@@ -344,7 +344,7 @@ function xAtualiza(x) {
             break;
         case "i13":
             document.getElementById("xFator").value = 2;
-            document.getElementById("xDiversos").value = 7;
+            document.getElementById("xDiversos").value = document.getElementById("pvMETRO_QUADRADO_DA_CANTONEIRA");
             document.getElementById("xFerro").value = 0;
             document.getElementById("xKit").value = 0;
             document.getElementById("btt1").src = "./public/img/i13.png";
@@ -353,7 +353,7 @@ function xAtualiza(x) {
             break;
         case "i14":
             document.getElementById("xFator").value = 2;
-            document.getElementById("xDiversos").value = 7;
+            document.getElementById("xDiversos").value = document.getElementById("pvMETRO_QUADRADO_DA_CANTONEIRA");
             document.getElementById("xFerro").value = 0;
             document.getElementById("xKit").value = 0;
             document.getElementById("btt1").src = "./public/img/i14.png";
@@ -362,7 +362,7 @@ function xAtualiza(x) {
             break;
         case "i15":
             document.getElementById("xFator").value = 2;
-            document.getElementById("xDiversos").value = 7;
+            document.getElementById("xDiversos").value = document.getElementById("pvMETRO_QUADRADO_DA_CANTONEIRA");
             document.getElementById("xFerro").value = 0;
             document.getElementById("xKit").value = 0;
             document.getElementById("btt1").src = "./public/img/i15.png";
@@ -371,7 +371,7 @@ function xAtualiza(x) {
             break;
         case "i16":
             document.getElementById("xFator").value = 2;
-            document.getElementById("xDiversos").value = 7;
+            document.getElementById("xDiversos").value = document.getElementById("pvMETRO_QUADRADO_DA_CANTONEIRA");
             document.getElementById("xFerro").value = 0;
             document.getElementById("xKit").value = 0;
             document.getElementById("btt1").src = "./public/img/i16.png";
@@ -380,7 +380,7 @@ function xAtualiza(x) {
             break;
         case "i17":
             document.getElementById("xFator").value = 2;
-            document.getElementById("xDiversos").value = 7;
+            document.getElementById("xDiversos").value = document.getElementById("pvMETRO_QUADRADO_DA_CANTONEIRA");
             document.getElementById("xFerro").value = 0;
             document.getElementById("xKit").value = 0;
             document.getElementById("btt1").src = "./public/img/i17.png";
@@ -389,7 +389,7 @@ function xAtualiza(x) {
             break;
         case "i18":
             document.getElementById("xFator").value = 2;
-            document.getElementById("xDiversos").value = 7;
+            document.getElementById("xDiversos").value = document.getElementById("pvMETRO_QUADRADO_DA_CANTONEIRA");
             document.getElementById("xFerro").value = 0;
             document.getElementById("xKit").value = 0;
             document.getElementById("btt1").src = "./public/img/i18.png";
@@ -398,13 +398,13 @@ function xAtualiza(x) {
             break;
         case "i19": //box de canto
             document.getElementById("xFator").value = 5;
-            document.getElementById("xDiversos").value = 7;
+            document.getElementById("xDiversos").value = document.getElementById("pvMETRO_QUADRADO_DA_CANTONEIRA");
             document.getElementById("xKit").value = 0.00;
             document.getElementById("btt1").src = "./public/img/i19.png";
             break;
         case "i20": //box de Frontal
             document.getElementById("xFator").value = 5;
-            document.getElementById("xDiversos").value = 7;
+            document.getElementById("xDiversos").value = document.getElementById("pvMETRO_QUADRADO_DA_CANTONEIRA");
             document.getElementById("xKit").value = 0.00;
             document.getElementById("btt1").src = "./public/img/i20.png";
             break;
@@ -490,10 +490,10 @@ function yAtualiza2() {
                     document.getElementById("yCor").value = document.getElementById("pvVIDROVERD6").value;
                     break;
                 case "8mm": // vidro + 12%   =  114,80 + 80%
-                    document.getElementById("yCor").value = 182.00;
+                    document.getElementById("yCor").value = document.getElementById("pvVIDROVERD8").value;
                     break;
                 case "10mm": // vidro + 12%   =  158,93 + 80%
-                    document.getElementById("yCor").value = 238.00;
+                    document.getElementById("yCor").value = document.getElementById("pvVIDROVERD10").value;
                     break;
                 default:
                     alert("espessura inesistente");
@@ -505,10 +505,10 @@ function yAtualiza2() {
                     document.getElementById("yCor").value = document.getElementById("pvVIDROBRON6").value;
                     break;
                 case "8mm": // vidro + 12%   =  140,00 + 80%
-                    document.getElementById("yCor").value = 238.00;
+                    document.getElementById("yCor").value = document.getElementById("pvVIDROBRON8").value;
                     break;
                 case "10mm": // vidro + 12%   =  181 + 80%
-                    document.getElementById("yCor").value = 294.00;
+                    document.getElementById("yCor").value = document.getElementById("pvVIDROBRON10").value;
                     break;
                 default:
                     alert("espessura inesistente");
@@ -517,10 +517,10 @@ function yAtualiza2() {
         case 5: //Pontilhado - fantasia
             switch (document.getElementById("espessura").value) {
                 case "8mm": // vidro + 12%   =  143 + 80%
-                    document.getElementById("yCor").value = 273.00;
+                    document.getElementById("yCor").value = document.getElementById("pvVIDROPONT8").value;
                     break;
                 case "10mm": // vidro + 12%   =  187,48 + 80%
-                    document.getElementById("yCor").value = 362.00;
+                    document.getElementById("yCor").value = document.getElementById("pvVIDROPONT10").value;
                     break;
                 default:
                     alert("espessura inesistente");
