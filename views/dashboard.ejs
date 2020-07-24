@@ -15,12 +15,16 @@
                     z-index: 100;
                     width: 75px;
                     height: 75px;" id="ok" value="+" onclick="inserir()">
-<input type="button" style="font-family: Arial, Helvetica, sans-serif;
-font-size: 35px;
-color: #ffffff;
-cursor:pointer;
-padding: 10px 20px;
-background-color:#1b6718;
+
+<div id="divBtImprime">
+    <input type="button" style="font-family: Arial, Helvetica, sans-serif;
+background: url('./public/img/fim.png') no-repeat scroll 0 0 transparent;
+  color: #000000;
+  cursor: pointer;
+  font-weight: bold;
+  height: 20px;
+  padding-bottom: 2px;
+  width: 75px;
 background-image: url('./public/img/fim.png');
 -moz-border-radius: 5px;
 -webkit-border-radius: 5px;
@@ -33,6 +37,10 @@ right: 25px;
 z-index: 100;
 width: 75px;
 height: 75px;" id="ok" value="+" onclick="inserir()">
+</div>
+
+
+
 <div id="cabecario">
     <p class="lead mb-3" style="position: absolute; right: 90px; z-index: 100;">Bem-vindo
         <%= user.name %>
