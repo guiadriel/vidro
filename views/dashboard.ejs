@@ -19,7 +19,7 @@
 <div id="divBtImprime">
     <input type="button" style="
     position: fixed;
-    bottom: 95px;
+    bottom: 175px;
     right: 15px;
     z-index: 100;
     background-image: url(./public/img/fim.png);
@@ -50,106 +50,108 @@
     " id="fimfim" onclick="inserir()">
 </div>
 
-
-<table id="configuracaoSistema" style="font-family: Arial, Helvetica, sans-serif;
+<div style="font-family: Arial, Helvetica, sans-serif;
 font-size: 12px;
 -moz-border-radius: 5px;
 -webkit-border-radius: 5px;
 border-radius: 10px;
 margin-top:8px;
 border: 0px solid #6c86a1;
+background-color: darkslateblue;
 position: fixed;
 bottom: 15px;
 right: 15px;
 z-index: 100;
-width: 500px;
-height: 250px;">
-    <tr>
-        <td> ítem </td>
-        <td> Preço de Custo </td>
-        <td>Preço que você venda</td>
-    </tr>
-    <tr>
-        <td>Metro ² da cantoneira:</td>
-        <td><input type="text" id="pcMETRO_QUADRADO_DA_CANTONEIRA" class="form-control" value="5" aria-describedby="sizing-addon2" size="5"></td>
-        <td><input type="text" id="pvMETRO_QUADRADO_DA_CANTONEIRA" class="form-control" value="7" aria-describedby="sizing-addon2" size="5"></td>
-    </tr>
-    <tr>
-        <td>Preço da Ferragem:</td>
-        <td><input type="text" id="pcFERRAGEM" class="form-control" value="5" aria-describedby="sizing-addon2" size="5"></td>
-        <td><input type="text" id="pvFERRAGEM" class="form-control" value="7" aria-describedby="sizing-addon2" size="5"></td>
-    </tr>
+width: 100%;
+height: 400px;">
+    <table id="configuracaoSistema">
+        <tr>
+            <td> ítem </td>
+            <td> Preço de Custo </td>
+            <td>Preço que você venda</td>
+        </tr>
+        <tr>
+            <td>Metro ² da cantoneira:</td>
+            <td><input type="text" id="pcMETRO_QUADRADO_DA_CANTONEIRA" class="form-control" value="5" aria-describedby="sizing-addon2" size="5"></td>
+            <td><input type="text" id="pvMETRO_QUADRADO_DA_CANTONEIRA" class="form-control" value="7" aria-describedby="sizing-addon2" size="5"></td>
+        </tr>
+        <tr>
+            <td>Preço da Ferragem:</td>
+            <td><input type="text" id="pcFERRAGEM" class="form-control" value="5" aria-describedby="sizing-addon2" size="5"></td>
+            <td><input type="text" id="pvFERRAGEM" class="form-control" value="7" aria-describedby="sizing-addon2" size="5"></td>
+        </tr>
 
-    <tr>PREÇODE COMPRA DO VIDRO</tr>
-    <tr>
-        <td> </td>
-        <td> incolor </td>
-        <td>fumê</td>
-        <td>verde</td>
-        <td>bronze</td>
-        <td>pontilhado</td>
-    </tr>
-    <tr>
-        <td>6mm:</td>
-        <td><input type="text" id="pvVIDROINCO6" class="form-control" value="110" aria-describedby="sizing-addon2" size="5"></td>
-        <td><input type="text" id="pvVIDROFUME6" class="form-control" value="140" aria-describedby="sizing-addon2" size="5"></td>
-        <td><input type="text" id="pvVIDROVERD6" class="form-control" value="140" aria-describedby="sizing-addon2" size="5"></td>
-        <td><input type="text" id="pvVIDROBRON6" class="form-control" value="182" aria-describedby="sizing-addon2" size="5"></td>
-        <td><input type="text" id="pvVIDROPONT6" class="form-control" value="---" aria-describedby="sizing-addon2" size="5"></td>
-    </tr>
-    <tr>
-        <td>8mm:</td>
-        <td><input type="text" id="pvVIDROINCO8" class="form-control" value="110" aria-describedby="sizing-addon2" size="5"></td>
-        <td><input type="text" id="pvVIDROFUME8" class="form-control" value="182" aria-describedby="sizing-addon2" size="5"></td>
-        <td><input type="text" id="pvVIDROVERD8" class="form-control" value="182" aria-describedby="sizing-addon2" size="5"></td>
-        <td><input type="text" id="pvVIDROBRON8" class="form-control" value="238" aria-describedby="sizing-addon2" size="5"></td>
-        <td><input type="text" id="pvVIDROPONT8" class="form-control" value="273" aria-describedby="sizing-addon2" size="5"></td>
-    </tr>
-    <tr>
-        <td>10mm:</td>
-        <td><input type="text" id="pvVIDROINCO10" class="form-control" value="189" aria-describedby="sizing-addon2" size="5"></td>
-        <td><input type="text" id="pvVIDROFUME10" class="form-control" value="238" aria-describedby="sizing-addon2" size="5"></td>
-        <td><input type="text" id="pvVIDROVERD10" class="form-control" value="238" aria-describedby="sizing-addon2" size="5"></td>
-        <td><input type="text" id="pvVIDROBRON10" class="form-control" value="294" aria-describedby="sizing-addon2" size="5"></td>
-        <td><input type="text" id="pvVIDROPONT10" class="form-control" value="362" aria-describedby="sizing-addon2" size="5"></td>
-    </tr>
-    <tr>PREÇO DE VENDA DOS VIDROS</tr>
-    <tr>
-        <td> </td>
-        <td> incolor </td>
-        <td>fumê</td>
-        <td>verde</td>
-        <td>bronze</td>
-        <td>pontilhado</td>
-    </tr>
-    <tr>
-        <td>6mm:</td>
-        <td><input type="text" id="pvVIDROINCO6" class="form-control" value="110" aria-describedby="sizing-addon2" size="5"></td>
-        <td><input type="text" id="pvVIDROFUME6" class="form-control" value="140" aria-describedby="sizing-addon2" size="5"></td>
-        <td><input type="text" id="pvVIDROVERD6" class="form-control" value="140" aria-describedby="sizing-addon2" size="5"></td>
-        <td><input type="text" id="pvVIDROBRON6" class="form-control" value="182" aria-describedby="sizing-addon2" size="5"></td>
-        <td><input type="text" id="pvVIDROPONT6" class="form-control" value="---" aria-describedby="sizing-addon2" size="5"></td>
-    </tr>
-    <tr>
-        <td>8mm:</td>
-        <td><input type="text" id="pvVIDROINCO8" class="form-control" value="110" aria-describedby="sizing-addon2" size="5"></td>
-        <td><input type="text" id="pvVIDROFUME8" class="form-control" value="182" aria-describedby="sizing-addon2" size="5"></td>
-        <td><input type="text" id="pvVIDROVERD8" class="form-control" value="182" aria-describedby="sizing-addon2" size="5"></td>
-        <td><input type="text" id="pvVIDROBRON8" class="form-control" value="238" aria-describedby="sizing-addon2" size="5"></td>
-        <td><input type="text" id="pvVIDROPONT8" class="form-control" value="273" aria-describedby="sizing-addon2" size="5"></td>
-    </tr>
-    <tr>
-        <td>10mm:</td>
-        <td><input type="text" id="pvVIDROINCO10" class="form-control" value="189" aria-describedby="sizing-addon2" size="5"></td>
-        <td><input type="text" id="pvVIDROFUME10" class="form-control" value="238" aria-describedby="sizing-addon2" size="5"></td>
-        <td><input type="text" id="pvVIDROVERD10" class="form-control" value="238" aria-describedby="sizing-addon2" size="5"></td>
-        <td><input type="text" id="pvVIDROBRON10" class="form-control" value="294" aria-describedby="sizing-addon2" size="5"></td>
-        <td><input type="text" id="pvVIDROPONT10" class="form-control" value="362" aria-describedby="sizing-addon2" size="5"></td>
-    </tr>
+        <tr>PREÇODE COMPRA DO VIDRO</tr>
+        <tr>
+            <td> </td>
+            <td> incolor </td>
+            <td>fumê</td>
+            <td>verde</td>
+            <td>bronze</td>
+            <td>pontilhado</td>
+        </tr>
+        <tr>
+            <td>6mm:</td>
+            <td><input type="text" id="pvVIDROINCO6" class="form-control" value="110" aria-describedby="sizing-addon2" size="5"></td>
+            <td><input type="text" id="pvVIDROFUME6" class="form-control" value="140" aria-describedby="sizing-addon2" size="5"></td>
+            <td><input type="text" id="pvVIDROVERD6" class="form-control" value="140" aria-describedby="sizing-addon2" size="5"></td>
+            <td><input type="text" id="pvVIDROBRON6" class="form-control" value="182" aria-describedby="sizing-addon2" size="5"></td>
+            <td><input type="text" id="pvVIDROPONT6" class="form-control" value="---" aria-describedby="sizing-addon2" size="5"></td>
+        </tr>
+        <tr>
+            <td>8mm:</td>
+            <td><input type="text" id="pvVIDROINCO8" class="form-control" value="110" aria-describedby="sizing-addon2" size="5"></td>
+            <td><input type="text" id="pvVIDROFUME8" class="form-control" value="182" aria-describedby="sizing-addon2" size="5"></td>
+            <td><input type="text" id="pvVIDROVERD8" class="form-control" value="182" aria-describedby="sizing-addon2" size="5"></td>
+            <td><input type="text" id="pvVIDROBRON8" class="form-control" value="238" aria-describedby="sizing-addon2" size="5"></td>
+            <td><input type="text" id="pvVIDROPONT8" class="form-control" value="273" aria-describedby="sizing-addon2" size="5"></td>
+        </tr>
+        <tr>
+            <td>10mm:</td>
+            <td><input type="text" id="pvVIDROINCO10" class="form-control" value="189" aria-describedby="sizing-addon2" size="5"></td>
+            <td><input type="text" id="pvVIDROFUME10" class="form-control" value="238" aria-describedby="sizing-addon2" size="5"></td>
+            <td><input type="text" id="pvVIDROVERD10" class="form-control" value="238" aria-describedby="sizing-addon2" size="5"></td>
+            <td><input type="text" id="pvVIDROBRON10" class="form-control" value="294" aria-describedby="sizing-addon2" size="5"></td>
+            <td><input type="text" id="pvVIDROPONT10" class="form-control" value="362" aria-describedby="sizing-addon2" size="5"></td>
+        </tr>
+        <tr>PREÇO DE VENDA DOS VIDROS</tr>
+        <tr>
+            <td> </td>
+            <td> incolor </td>
+            <td>fumê</td>
+            <td>verde</td>
+            <td>bronze</td>
+            <td>pontilhado</td>
+        </tr>
+        <tr>
+            <td>6mm:</td>
+            <td><input type="text" id="pvVIDROINCO6" class="form-control" value="110" aria-describedby="sizing-addon2" size="5"></td>
+            <td><input type="text" id="pvVIDROFUME6" class="form-control" value="140" aria-describedby="sizing-addon2" size="5"></td>
+            <td><input type="text" id="pvVIDROVERD6" class="form-control" value="140" aria-describedby="sizing-addon2" size="5"></td>
+            <td><input type="text" id="pvVIDROBRON6" class="form-control" value="182" aria-describedby="sizing-addon2" size="5"></td>
+            <td><input type="text" id="pvVIDROPONT6" class="form-control" value="---" aria-describedby="sizing-addon2" size="5"></td>
+        </tr>
+        <tr>
+            <td>8mm:</td>
+            <td><input type="text" id="pvVIDROINCO8" class="form-control" value="110" aria-describedby="sizing-addon2" size="5"></td>
+            <td><input type="text" id="pvVIDROFUME8" class="form-control" value="182" aria-describedby="sizing-addon2" size="5"></td>
+            <td><input type="text" id="pvVIDROVERD8" class="form-control" value="182" aria-describedby="sizing-addon2" size="5"></td>
+            <td><input type="text" id="pvVIDROBRON8" class="form-control" value="238" aria-describedby="sizing-addon2" size="5"></td>
+            <td><input type="text" id="pvVIDROPONT8" class="form-control" value="273" aria-describedby="sizing-addon2" size="5"></td>
+        </tr>
+        <tr>
+            <td>10mm:</td>
+            <td><input type="text" id="pvVIDROINCO10" class="form-control" value="189" aria-describedby="sizing-addon2" size="5"></td>
+            <td><input type="text" id="pvVIDROFUME10" class="form-control" value="238" aria-describedby="sizing-addon2" size="5"></td>
+            <td><input type="text" id="pvVIDROVERD10" class="form-control" value="238" aria-describedby="sizing-addon2" size="5"></td>
+            <td><input type="text" id="pvVIDROBRON10" class="form-control" value="294" aria-describedby="sizing-addon2" size="5"></td>
+            <td><input type="text" id="pvVIDROPONT10" class="form-control" value="362" aria-describedby="sizing-addon2" size="5"></td>
+        </tr>
 
 
 
-</table>
+    </table>
+</div>
 
 <div id="cabecario">
     <p class="lead mb-3" style="position: absolute; right: 90px; z-index: 100;">Bem-vindo
