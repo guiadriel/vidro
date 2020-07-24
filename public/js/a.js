@@ -157,6 +157,7 @@ function number_format(number, decimals, dec_point, thousands_sep) {
 }
 
 function Mudarestado(el) {
+    console(el);
     var display = document.getElementById(el).style.display;
     if (display == "vivible") {
         document.getElementById(el).style.display = 'hidden';
