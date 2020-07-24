@@ -158,7 +158,16 @@ function number_format(number, decimals, dec_point, thousands_sep) {
 
 function Mudarestado(el) {
     var display = document.getElementById(el).style.display;
-    if (display == "none") {
+    if (display == "vivible") {
+        document.getElementById(el).style.display = 'hidden';
+    } else {
+        document.getElementById(el).style.display = 'visible';
+    }
+}
+
+function Mudarestado22(el) {
+    var visibilidade = document.getElementById(el).style.visibility;
+    if (visibilidade == "hidden") {
         document.getElementById(el).style.display = 'block';
     } else {
         document.getElementById(el).style.display = 'none';
