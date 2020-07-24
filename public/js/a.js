@@ -166,11 +166,11 @@ function Mudarestado(el) {
 }
 
 function MudarVisibilidade(el) {
-    var visi = document.getElementById(el).style.display;
+    var visi = document.getElementById(el).style.visibility;
     if (visi == "visilible") {
-        document.getElementById(el).style.display = 'hidden';
+        document.getElementById(el).style.visibility = 'hidden';
     } else {
-        document.getElementById(el).style.display = 'visilible';
+        document.getElementById(el).style.visibility = 'visilible';
     }
 }
 
