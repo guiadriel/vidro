@@ -165,6 +165,15 @@ function Mudarestado(el) {
     }
 }
 
+function MudarVisibilidade(el) {
+    var visi = document.getElementById(el).style.display;
+    if (visi == "visilible") {
+        document.getElementById(el).style.display = 'hidden';
+    } else {
+        document.getElementById(el).style.display = 'visilible';
+    }
+}
+
 function exibe_tab(el) {
     var display = document.getElementById(el).style.display;
     if (display == "none") {
