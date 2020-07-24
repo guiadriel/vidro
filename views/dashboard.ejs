@@ -30,11 +30,11 @@
     font-size: 2rem;
     border-radius: 97px;
     border-bottom-style: outset;
-    " id="fimfim" onclick="inserir()">
+    " id="fimfim">
 </div>
 
 <div id="divBtConfig">
-    <input type="button" style="
+    <input type="button" onclick="Mudarestado('divConfigSistema')" style="
     position: fixed;
     bottom: 140px;
     right: 15px;
@@ -50,18 +50,20 @@
     " id="fimfim" onclick="inserir()">
 </div>
 
-<div style="font-family: Arial, Helvetica, sans-serif;
+<div id="divConfigSistema" style="font-family: Arial, Helvetica, sans-serif;
 font-size: 12px;
 -moz-border-radius: 5px;
 -webkit-border-radius: 5px;
 border-radius: 10px;
 margin-top:8px;
 border: 0px solid #6c86a1;
+background-color: darkslateblue;
 position: fixed;
 bottom: 15px;
 right: 15px;
 z-index: 100;
 width: 100%;
+display: none;
 height: 400px;">
     <table id="configuracaoSistema">
         <tr>
