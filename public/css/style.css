@@ -37,6 +37,7 @@ body {
     background-color: #262928;
     padding-top: 50px;
     z-index: 900;
+    display: none;
 }
 
 #indice {
