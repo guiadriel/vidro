@@ -30,7 +30,7 @@
     font-size: 2rem;
     border-radius: 97px;
     border-bottom-style: outset;
-    " id="fimfim" onclick="inserir()">
+    " id="fimfim" onclick="MudarVisibilidade('divFIMFIM')">
 </div>
 
 <div id="divBtConfig">
@@ -157,6 +157,50 @@ height: 500px;">
 
     </table>
 </div>
+
+
+
+<div id="divFIMFIM" style="font-family: Arial, Helvetica, sans-serif;
+font-size: 12px;
+-moz-border-radius: 5px;
+-webkit-border-radius: 5px;
+border-radius: 10px;
+margin-top:8px;
+border: 0px solid #6c86a1;
+background-color: rgb(212, 144, 252);
+position: fixed;
+bottom: 154px;
+right: 118px;
+z-index: 100;
+width: 50%;
+visibility: hidden;
+height: 500px;">
+
+    <p>FINALIZANDO O PEDIDO ...</p>
+
+    <div>
+        <input type="checkbox" id="checkFimEmailCliente" checked>
+        <label for="checkFimEmailCliente">Enviar no e-mail do cliente</label>
+    </div>
+
+    <div>
+        <input type="checkbox" id="checkFimEmailLoja" checked>
+        <label for="checkFimEmailLoja">Enviar no seu e-mail (vidraceiro) </label>
+    </div>
+
+    <div>
+        <input type="checkbox" id="checkFimWhatsApp" checked>
+        <label for="checkFimWhatsApp">Enviar PDF pelo Whatsapp para o cliente </label>
+    </div>
+
+    <div>
+        <input type="checkbox" id="checkFimDownload">
+        <label for="checkFimDownload"> Salvar na pasta Downloads </label>
+    </div>
+
+
+</div>
+
 
 <div id="cabecario">
     <p class="lead mb-3" style="position: absolute; right: 90px; z-index: 100;">Bem-vindo
