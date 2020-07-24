@@ -165,7 +165,6 @@ function Mudarestado(el) {
     }
 }
 
-
 function exibe_tab(el) {
     var display = document.getElementById(el).style.display;
     if (display == "none") {
