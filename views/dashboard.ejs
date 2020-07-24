@@ -19,8 +19,8 @@
 <div id="divBtImprime">
     <input type="button" style="
     position: fixed;
-    bottom: 158px;
-    right: 25px;
+    bottom: 95px;
+    right: 15px;
     z-index: 100;
     background-image: url(./public/img/fim.png);
     background-size: contain;
@@ -506,17 +506,18 @@ TAUBATÉ, __ DE ___________ DE ____.
             </div>
         </div>
         <div>
-            <img src="./public/img/v03.png" id="cor" onclick="Mudarestado('fundo2')" style="margin-right:20px">
-
-            <div>
+            <div style="padding-left: 20px; float: left;">
+                <img src="./public/img/v03.png" id="cor" onclick="Mudarestado('fundo2')" style="margin-right:20px">
+            </div>
+            <div style="padding-left: 20px; float: left;">
                 <label id="lab_espess">Espessura:</label> <br>
                 <input type="text" id="espessura" onblur="yAtualiza2()" onchange="yAtualiza2()" value="8mm" style="margin-right:20px">
             </div>
-            <div>
+            <div style="padding-left: 20px; float: left;">
                 <label id="lab_alum">Alum&iacute;nio:</label> <br>
                 <input type="text" id="aluminio" value="Natural-Fosco" style="margin-right:20px">
             </div>
-            <div>
+            <div style="padding-left: 20px; float: left;">
                 <label id="lab_subtotal">SubTotal:</label>
                 <input type="number" id="SubTotal" value="1">
                 <input type="number" id="Total" value="1">
