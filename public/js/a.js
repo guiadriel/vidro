@@ -457,13 +457,13 @@ function yAtualiza2() {
         case 1: // Vidro incolor 
             switch (document.getElementById("espessura").value) {
                 case "6mm": //  vidro + 12%    = 75   *  50% (DEPOIS O VALOR FOI mudado de cabeça)
-                    document.getElementById("yCor").value = 110.60;
+                    document.getElementById("yCor").value = document.getElementById("pvVIDROINCO6").value;
                     break;
                 case "8mm": // vidro + 12%     = 84,00   * 80%
-                    document.getElementById("yCor").value = 140.00;
+                    document.getElementById("yCor").value = document.getElementById("pvVIDROINCO8").value;
                     break;
                 case "10mm": // vidro + 12%     = 112,50  * 80%
-                    document.getElementById("yCor").value = 189.00;
+                    document.getElementById("yCor").value = document.getElementById("pvVIDROINCO10").value;
                     break;
                 default:
                     alert("espessura inesistente");
@@ -472,13 +472,13 @@ function yAtualiza2() {
         case 2: // Vidro Fumê
             switch (document.getElementById("espessura").value) {
                 case "6mm": // vidro + 12%  =   93,50    * 80%  
-                    document.getElementById("yCor").value = 140.00;
+                    document.getElementById("yCor").value = document.getElementById("pvVIDROFUME6").value;
                     break;
                 case "8mm": // vidro + 12 %  =  114,80   + 80%
-                    document.getElementById("yCor").value = 182.00;
+                    document.getElementById("yCor").value = document.getElementById("pvVIDROFUME8").value;
                     break;
                 case "10mm": // vidro + 12%   = 158,93   + 80%
-                    document.getElementById("yCor").value = 238.00;
+                    document.getElementById("yCor").value = document.getElementById("pvVIDROFUME10").value;
                     break;
                 default:
                     alert("espessura inesistente");
@@ -487,7 +487,7 @@ function yAtualiza2() {
         case 3: // VIDRO VERDE 
             switch (document.getElementById("espessura").value) {
                 case "6mm": // vidro + 12%   =  96,72 + 80%
-                    document.getElementById("yCor").value = 140.00;
+                    document.getElementById("yCor").value = document.getElementById("pvVIDROVERD6").value;
                     break;
                 case "8mm": // vidro + 12%   =  114,80 + 80%
                     document.getElementById("yCor").value = 182.00;
@@ -502,7 +502,7 @@ function yAtualiza2() {
         case 4: // Vidro Bronze
             switch (document.getElementById("espessura").value) {
                 case "6mm": // vidro + 12%   =  111,80 + 80%
-                    document.getElementById("yCor").value = 182.00;
+                    document.getElementById("yCor").value = document.getElementById("pvVIDROBRON6").value;
                     break;
                 case "8mm": // vidro + 12%   =  140,00 + 80%
                     document.getElementById("yCor").value = 238.00;
