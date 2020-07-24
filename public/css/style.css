@@ -147,10 +147,7 @@ body {
     display: none;
 }
 
-#ok {
-    left: 900px;
-    top: 100px;
-}
+#ok {}
 
 #precoVidro,
 #precoDiversos,
