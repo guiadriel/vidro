@@ -33,7 +33,23 @@
     " id="fimfim" onclick="inserir()">
 </div>
 
+<table id="configuracaoSistema">
+    <tr>
+        <td> ítem </td>
+        <td> Preço de Custo </td>
+        <td>Seu lucro</td>
+        <td>Preço que você vende</td>
+    </tr>
+    <tr>
+        <td>Metro ² da cantoneira:</td>
+        <td><input type="text" id="pcMETRO_QUADRADO_DA_CANTONEIRA" class="form-control" value="5" aria-describedby="sizing-addon2" size="5"></td>
+        <td><input type="text" id="lUMETRO_QUADRADO_DA_CANTONEIRA" class="form-control" value="+40%" aria-describedby="sizing-addon2" size="5"></td>
+        <td><input type="text" id="pvMETRO_QUADRADO_DA_CANTONEIRA" class="form-control" value="7" aria-describedby="sizing-addon2" size="5"></td>
+    </tr>
 
+
+
+</table>
 
 <div id="cabecario">
     <p class="lead mb-3" style="position: absolute; right: 90px; z-index: 100;">Bem-vindo
@@ -489,18 +505,18 @@ TAUBATÉ, __ DE ___________ DE ____.
                 <input type="number" id="largura" value="3000" onblur="calcula()" onchange="calcula()" style="margin-right:20px">
             </div>
         </div>
-        <div style="float: left">
+        <div>
             <img src="./public/img/v03.png" id="cor" onclick="Mudarestado('fundo2')" style="margin-right:20px">
 
-            <div style="float: left">
-                <label id="lab_espess">Espessura:</label>
+            <div>
+                <label id="lab_espess">Espessura:</label> <br>
                 <input type="text" id="espessura" onblur="yAtualiza2()" onchange="yAtualiza2()" value="8mm" style="margin-right:20px">
             </div>
-            <div style="float: left">
-                <label id="lab_alum">Alum&iacute;nio:</label>
+            <div>
+                <label id="lab_alum">Alum&iacute;nio:</label> <br>
                 <input type="text" id="aluminio" value="Natural-Fosco" style="margin-right:20px">
             </div>
-            <div style="float: left">
+            <div>
                 <label id="lab_subtotal">SubTotal:</label>
                 <input type="number" id="SubTotal" value="1">
                 <input type="number" id="Total" value="1">
