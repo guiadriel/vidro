@@ -805,6 +805,7 @@ function inserirLinhaTabela() {
 
 
 function inserirLinhaTabelaFabrica() {
+    calcula();
     var table = document.getElementById("minhaTabelaFabrica"); // Captura a referência da tabela com id “minhaTabela”
     var numOfRows = table.rows.length; // Captura a quantidade de linhas já existentes na tabela
     var numOfCols = table.rows[numOfRows - 1].cells.length; // Captura a quantidade de colunas da última linha da tabela
