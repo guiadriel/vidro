@@ -218,7 +218,7 @@ function calcula() {
     //	SubTotal      = parseFloat(precoVidro) + parseFloat(precoDiversos) + parseFloat(precoFerro) + parseFloat(precoKit);
     //	Total 		  = parseFloat(quantidade) + SubTotal;
     document.getElementById("SubTotal").value = SubTotal;
-    document.getElementById("precoVidro").value = parseFloat((altura * (largura + TRANSPASSE(document.getElementById("btt1").value)) * parseFloat(document.getElementById("yCor").value)));
+    document.getElementById("precoVidro").value = parseFloat((altura * (largura + TRANSPASSE(document.getElementById("btt1").src)) * parseFloat(document.getElementById("yCor").value)));
     console.log(document.getElementById("precoVidro").value);
     document.getElementById("precoDiversos").value = altura * document.getElementById("xFator").value * document.getElementById("xDiversos").value;
     document.getElementById("precoFerro").value = document.getElementById("xFerro").value;
@@ -232,25 +232,25 @@ function TRANSPASSE(x) { //COMO CALCULAR O TRANSPASSE
     console.log("valor:");
     console.log(x);
     switch (x) {
-        case "i02": //JANELA DUAS FOLHAS --> TRANSPASSE É DE 70 MM
+        case "./public/img/i02.png": //JANELA DUAS FOLHAS --> TRANSPASSE É DE 70 MM
             return 70;
             break;
-        case "i03": //JANELA quatro folhas --> TRANSPASSE É DE 140 MM
+        case "./public/img/i03.png": //JANELA quatro folhas --> TRANSPASSE É DE 140 MM
             return 140;
             break;
-        case "i04": //JANELA quatro folhas --> TRANSPASSE É DE 140 MM
+        case "./public/img/i04.png": //JANELA quatro folhas --> TRANSPASSE É DE 140 MM
             return 70;
             break;
-        case "i05": //JANELA quatro folhas --> TRANSPASSE É DE 140 MM
+        case "./public/img/i05.png": //JANELA quatro folhas --> TRANSPASSE É DE 140 MM
             return 140;
             break;
-        case "i09": //JANELA quatro folhas --> TRANSPASSE É DE 140 MM
+        case "./public/img/i09.png": //JANELA quatro folhas --> TRANSPASSE É DE 140 MM
             return 140;
             break;
-        case "i19": //JANELA quatro folhas --> TRANSPASSE É DE 140 MM
+        case "./public/img/i019.png": //JANELA quatro folhas --> TRANSPASSE É DE 140 MM
             return 100;
             break;
-        case "i20": //JANELA quatro folhas --> TRANSPASSE É DE 140 MM
+        case "i2./public/img/i20.png0": //JANELA quatro folhas --> TRANSPASSE É DE 140 MM
             return 50;
             break;
 
