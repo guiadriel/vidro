@@ -832,7 +832,7 @@ function inserirLinhaTabelaFabrica() {
                 divx.setAttribute("style", "padding-left:60px; padding-top:15px");
                 var texto = document.getElementById('altura').value;
                 var txt_aux = texto.split();
-                divx.appendChild(document.createTextNode((parseFloat(txt_aux[0]) - descontoAltura)).toString());
+                divx.appendChild(document.createTextNode(txt_aux[0]));
                 newCell.appendChild(divx);
                 break;
             case 2:
@@ -840,7 +840,8 @@ function inserirLinhaTabelaFabrica() {
                 divx.setAttribute("style", "padding-left:60px; padding-top:15px");
                 var texto = document.getElementById('largura').value;
                 var txt_aux = texto.split();
-                divx.appendChild(document.createTextNode((parseFloat(txt_aux[0]) - descontoLargura)).toString());
+                txt_aux[0] = String(txt_aux[0].parseFloat() - descontoLargura);
+                divx.appendChild(document.createTextNode(txt_aux[0]));
                 newCell.appendChild(divx);
                 break;
             case 3:
@@ -848,6 +849,7 @@ function inserirLinhaTabelaFabrica() {
                 divx.setAttribute("style", "padding-left:60px; padding-top:15px");
                 var texto = document.getElementById('espessura').value;
                 var txt_aux = texto.split();
+                txt_aux[0] = String(txt_aux[0].parseFloat() - descontoAltura);
                 divx.appendChild(document.createTextNode(txt_aux[0]));
                 newCell.appendChild(divx);
                 break;
