@@ -832,7 +832,7 @@ function inserirLinhaTabelaFabrica() {
                 divx.setAttribute("style", "padding-left:60px; padding-top:15px");
                 var texto = document.getElementById('altura').value;
                 var txt_aux = texto.split();
-                divx.appendChild(document.createTextNode(parseFloat(txt_aux[0]) - descontoAltura));
+                divx.appendChild(document.createTextNode(parseFloat(parseFloat(txt_aux[0])) - descontoAltura).toString());
                 newCell.appendChild(divx);
                 break;
             case 2:
