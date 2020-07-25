@@ -1,7 +1,7 @@
 var soma123 = 0;
 var soma123Fabrica = 0;
-var descontoAltura = 0;
-var descontoLargura = 0;
+var descontoAltura = 10;
+var descontoLargura = 10;
 
 var t = 0;
 
@@ -16,8 +16,6 @@ onload = function() {
     Mudarestado('fundo2');
     Mudarestado('fundo2');
     calcula();
-    descontoAltura = 10;
-    descontoLargura = 10;
 }
 
 $("btfabrica").click(function() {
