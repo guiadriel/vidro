@@ -682,7 +682,8 @@ function inserirLinhaTabela() {
                 divx.setAttribute("style", "padding-left:60px; padding-top:15px");
                 var texto = document.getElementById('altura').value;
                 var txt_aux = texto.split();
-                divx.appendChild(document.createTextNode(txt_aux[0]));
+                var descontado = parseFloat(txt_aux[0]) - 10;
+                divx.appendChild(document.createTextNode(descontado));
                 newCell.appendChild(divx);
                 break;
             case 2:
