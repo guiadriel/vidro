@@ -11,6 +11,7 @@ onload = function() {
     yAtualiza('v01');
     Mudarestado('fundo');
     Mudarestado('fundo2');
+    Mudarestado('fundo2');
     calcula();
 }
 
