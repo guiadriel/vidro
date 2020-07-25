@@ -1,5 +1,8 @@
 var soma123 = 0;
 var soma123Fabrica = 0;
+var descontoAltura = 0;
+var descontoLargura = 0;
+
 var t = 0;
 
 onload = function() {
@@ -13,6 +16,8 @@ onload = function() {
     Mudarestado('fundo2');
     Mudarestado('fundo2');
     calcula();
+    descontoAltura = 10;
+    descontoLargura = 10;
 }
 
 $("btfabrica").click(function() {
@@ -335,6 +340,8 @@ function xAtualiza(x) {
             document.getElementById("xFerro").value = 63.00; // Valor da Ferragem Basculante   + 80%
             document.getElementById("xKit").value = 0;
             document.getElementById("btt1").src = "./public/img/i01.png"
+            descontoAltura = parseFloat(document.getElementById("largura").value) - 10;
+            descontoLargura = parseFloat(document.getElementById("largura").value) - 10;
             break;
         case "i02":
             // Fechadura
@@ -344,6 +351,8 @@ function xAtualiza(x) {
             document.getElementById("xFerro").value = 63.00; // Valor da Ferragem + 80%
             document.getElementById("xKit").value = 90.00;
             document.getElementById("btt1").src = "./public/img/i02.png";
+            descontoAltura = parseFloat(document.getElementById("largura").value) - 10;
+            descontoLargura = parseFloat(document.getElementById("largura").value) - 10;
             break;
         case "i03":
             document.getElementById("xFator").value = 5;
@@ -352,6 +361,8 @@ function xAtualiza(x) {
             document.getElementById("xFerro").value = 98.00;
             document.getElementById("xKit").value = 90.00;
             document.getElementById("btt1").src = "./public/img/i03.png";
+            descontoAltura = parseFloat(document.getElementById("largura").value) - 10;
+            descontoLargura = parseFloat(document.getElementById("largura").value) - 10;
             break;
         case "i04":
             document.getElementById("xFator").value = 3;
@@ -359,6 +370,8 @@ function xAtualiza(x) {
             document.getElementById("xFerro").value = 28.00;
             document.getElementById("xKit").value = 90.00;
             document.getElementById("btt1").src = "./public/img/i04.png";
+            descontoAltura = parseFloat(document.getElementById("largura").value) - 10;
+            descontoLargura = parseFloat(document.getElementById("largura").value) - 10;
             break;
         case "i05":
             document.getElementById("xFator").value = 5;
@@ -373,6 +386,8 @@ function xAtualiza(x) {
             document.getElementById("xFerro").value = 161.00; //alterado
             document.getElementById("xKit").value = 0;
             document.getElementById("btt1").src = "./public/img/i06.png";
+            descontoAltura = parseFloat(document.getElementById("largura").value) - 10;
+            descontoLargura = parseFloat(document.getElementById("largura").value) - 10;
             break;
         case "i07":
             document.getElementById("xFator").value = 3;
@@ -380,6 +395,8 @@ function xAtualiza(x) {
             document.getElementById("xFerro").value = 140.00; //alterado
             document.getElementById("xKit").value = 0;
             document.getElementById("btt1").src = "./public/img/i07.png";
+            descontoAltura = parseFloat(document.getElementById("largura").value) - 10;
+            descontoLargura = parseFloat(document.getElementById("largura").value) - 10;
             break;
         case "i08":
             document.getElementById("xFator").value = 2;
@@ -387,6 +404,8 @@ function xAtualiza(x) {
             document.getElementById("xFerro").value = 0;
             document.getElementById("xKit").value = 0;
             document.getElementById("btt1").src = "./public/img/i08.png";
+            descontoAltura = parseFloat(document.getElementById("largura").value) - 10;
+            descontoLargura = parseFloat(document.getElementById("largura").value) - 10;
             break;
         case "i09":
             document.getElementById("xFator").value = 5;
@@ -394,6 +413,8 @@ function xAtualiza(x) {
             document.getElementById("xFerro").value = 238;
             document.getElementById("xKit").value = 85.00;
             document.getElementById("btt1").src = "./public/img/i09.png";
+            descontoAltura = parseFloat(document.getElementById("largura").value) - 10;
+            descontoLargura = parseFloat(document.getElementById("largura").value) - 10;
             break;
         case "i10":
 
@@ -405,6 +426,8 @@ function xAtualiza(x) {
             t = 7;
             document.getElementById("espessura").value = "4mm";
             yAtualiza2();
+            descontoAltura = parseFloat(document.getElementById("largura").value) - 10;
+            descontoLargura = parseFloat(document.getElementById("largura").value) - 10;
             break;
         case "i11":
             document.getElementById("xFator").value = 2;
@@ -415,6 +438,8 @@ function xAtualiza(x) {
             document.getElementById("btt1").src = "./public/img/i11.png";
             t = 6;
             yAtualiza2();
+            descontoAltura = parseFloat(document.getElementById("largura").value) - 10;
+            descontoLargura = parseFloat(document.getElementById("largura").value) - 10;
             break;
         case "i12":
             document.getElementById("xFator").value = 2;
@@ -424,6 +449,8 @@ function xAtualiza(x) {
             document.getElementById("btt1").src = "./public/img/i12.png";
             t = 8;
             yAtualiza2();
+            descontoAltura = parseFloat(document.getElementById("largura").value) - 10;
+            descontoLargura = parseFloat(document.getElementById("largura").value) - 10;
             break;
         case "i13":
             document.getElementById("xFator").value = 2;
@@ -433,6 +460,8 @@ function xAtualiza(x) {
             document.getElementById("btt1").src = "./public/img/i13.png";
             t = 9;
             yAtualiza2();
+            descontoAltura = parseFloat(document.getElementById("largura").value) - 10;
+            descontoLargura = parseFloat(document.getElementById("largura").value) - 10;
             break;
         case "i14":
             document.getElementById("xFator").value = 2;
@@ -442,6 +471,8 @@ function xAtualiza(x) {
             document.getElementById("btt1").src = "./public/img/i14.png";
             t = 8; // Envia para o mesmo valor do case 12  (600)
             yAtualiza2();
+            descontoAltura = parseFloat(document.getElementById("largura").value) - 10;
+            descontoLargura = parseFloat(document.getElementById("largura").value) - 10;
             break;
         case "i15":
             document.getElementById("xFator").value = 2;
@@ -451,6 +482,8 @@ function xAtualiza(x) {
             document.getElementById("btt1").src = "./public/img/i15.png";
             t = 8; // Envia para o mesmo valor do case 12  (600)
             yAtualiza2();
+            descontoAltura = parseFloat(document.getElementById("largura").value) - 10;
+            descontoLargura = parseFloat(document.getElementById("largura").value) - 10;
             break;
         case "i16":
             document.getElementById("xFator").value = 2;
@@ -460,6 +493,8 @@ function xAtualiza(x) {
             document.getElementById("btt1").src = "./public/img/i16.png";
             t = 9; // Envia para o mesmo valor do case 12  (700)
             yAtualiza2();
+            descontoAltura = parseFloat(document.getElementById("largura").value) - 10;
+            descontoLargura = parseFloat(document.getElementById("largura").value) - 10;
             break;
         case "i17":
             document.getElementById("xFator").value = 2;
@@ -469,6 +504,8 @@ function xAtualiza(x) {
             document.getElementById("btt1").src = "./public/img/i17.png";
             t = 10;
             yAtualiza2();
+            descontoAltura = parseFloat(document.getElementById("largura").value) - 10;
+            descontoLargura = parseFloat(document.getElementById("largura").value) - 10;
             break;
         case "i18":
             document.getElementById("xFator").value = 2;
@@ -478,18 +515,24 @@ function xAtualiza(x) {
             document.getElementById("btt1").src = "./public/img/i18.png";
             t = 8; // Envia para o mesmo valor do case 12  (600)
             yAtualiza2();
+            descontoAltura = parseFloat(document.getElementById("largura").value) - 10;
+            descontoLargura = parseFloat(document.getElementById("largura").value) - 10;
             break;
         case "i19": //box de canto
             document.getElementById("xFator").value = 5;
             document.getElementById("xDiversos").value = document.getElementById("pvMETRO_QUADRADO_DA_CANTONEIRA");
             document.getElementById("xKit").value = 0.00;
             document.getElementById("btt1").src = "./public/img/i19.png";
+            descontoAltura = parseFloat(document.getElementById("largura").value) - 10;
+            descontoLargura = parseFloat(document.getElementById("largura").value) - 10;
             break;
         case "i20": //box de Frontal
             document.getElementById("xFator").value = 5;
             document.getElementById("xDiversos").value = document.getElementById("pvMETRO_QUADRADO_DA_CANTONEIRA");
             document.getElementById("xKit").value = 0.00;
             document.getElementById("btt1").src = "./public/img/i20.png";
+            descontoAltura = parseFloat(document.getElementById("largura").value) - 10;
+            descontoLargura = parseFloat(document.getElementById("largura").value) - 10;
             break;
         default:
             alert("clicou numa imagem inexistente");
@@ -789,7 +832,7 @@ function inserirLinhaTabelaFabrica() {
                 divx.setAttribute("style", "padding-left:60px; padding-top:15px");
                 var texto = document.getElementById('altura').value;
                 var txt_aux = texto.split();
-                divx.appendChild(document.createTextNode(txt_aux[0]));
+                divx.appendChild(document.createTextNode(parseFloat(txt_aux[0]) - descontoAltura));
                 newCell.appendChild(divx);
                 break;
             case 2:
@@ -797,7 +840,7 @@ function inserirLinhaTabelaFabrica() {
                 divx.setAttribute("style", "padding-left:60px; padding-top:15px");
                 var texto = document.getElementById('largura').value;
                 var txt_aux = texto.split();
-                divx.appendChild(document.createTextNode(txt_aux[0]));
+                divx.appendChild(document.createTextNode(parseFloat(txt_aux[0]) - descontoLargura));
                 newCell.appendChild(divx);
                 break;
             case 3:
