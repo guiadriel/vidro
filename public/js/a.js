@@ -1,4 +1,5 @@
 var soma123 = 0;
+var soma123Fabrica = 0;
 var t = 0;
 
 onload = function() {
@@ -299,7 +300,9 @@ function TRANSPASSE(x) { //COMO CALCULAR O TRANSPASSE
 function inserir() {
     document.getElementById("SOMA").style.display = 'inline';
     inserirLinhaTabela();
+    inserirLinhaTabelaFabrica();
     soma123 += parseFloat(document.getElementById("Total").value);
+    soma123Fabrica += parseFloat(document.getElementById("Total").value);
     document.getElementById("soma1234").innerHTML = number_format(soma123, 2, ",", ".");
     var vista = parseFloat(soma123) - ((5 * parseFloat(soma123)) / 100);
     document.getElementById("vista").innerHTML = number_format(vista, 2, ",", ".");
@@ -753,6 +756,114 @@ function inserirLinhaTabela() {
         }
     }
 }
+
+
+function inserirLinhaTabelaFabrica() {
+    var table = document.getElementById("minhaTabelaFabrica"); // Captura a referência da tabela com id “minhaTabela”
+    var numOfRows = table.rows.length; // Captura a quantidade de linhas já existentes na tabela
+    var numOfCols = table.rows[numOfRows - 1].cells.length; // Captura a quantidade de colunas da última linha da tabela
+    var newRow = table.insertRow(numOfRows); // Insere uma linha no fim da tabela.
+    for (var j = 0; j < (numOfCols + 1); j++) {
+        newCell = newRow.insertCell(j); // Insere uma coluna na nova linha 
+        switch (j) {
+            case 0:
+                var img = document.createElement("IMG");
+                img.src = document.getElementById('btt1').src;
+                img.setAttribute('width', '100px');
+                var div = document.createElement('p');
+                div.setAttribute("style", "font-size:8px");
+                var texto = document.getElementById('btt1').value;
+                var txt_aux = texto.split("-");
+                newCell.appendChild(img);
+                div.appendChild(document.createTextNode(txt_aux[0]));
+                div.appendChild(document.createElement("br"));
+                div.appendChild(document.createTextNode(txt_aux[1]));
+                newCell.appendChild(div);
+                //newCell.innerHTML = img.value;
+                //document.getElementById('image').appendChild(img);
+                break;
+            case 1:
+                var divx = document.createElement('p');
+                divx.setAttribute("style", "padding-left:60px; padding-top:15px");
+                var texto = document.getElementById('altura').value;
+                var txt_aux = texto.split();
+                divx.appendChild(document.createTextNode(txt_aux[0]));
+                newCell.appendChild(divx);
+                break;
+            case 2:
+                var divx = document.createElement('p');
+                divx.setAttribute("style", "padding-left:60px; padding-top:15px");
+                var texto = document.getElementById('largura').value;
+                var txt_aux = texto.split();
+                divx.appendChild(document.createTextNode(txt_aux[0]));
+                newCell.appendChild(divx);
+                break;
+            case 3:
+                var divx = document.createElement('p');
+                divx.setAttribute("style", "padding-left:60px; padding-top:15px");
+                var texto = document.getElementById('espessura').value;
+                var txt_aux = texto.split();
+                divx.appendChild(document.createTextNode(txt_aux[0]));
+                newCell.appendChild(divx);
+                break;
+            case 4:
+                newCell.style.width = "200px";
+                var img2 = document.createElement("IMG");
+                img2.setAttribute("style", "padding-left:10px");
+                img2.src = document.getElementById('cor').src;
+                newCell.appendChild(img2);
+                break;
+            case 5:
+                var divx = document.createElement('p');
+                divx.setAttribute("style", "padding-left:0px; padding-top:15px");
+                var texto = document.getElementById('aluminio').value;
+                var txt_aux = texto.split();
+                divx.appendChild(document.createTextNode(txt_aux[0]));
+                newCell.appendChild(divx);
+                break;
+            case 6:
+                var divx = document.createElement('p');
+                divx.setAttribute("style", "padding-left:30px; padding-top:15px");
+                var texto = document.getElementById('quantidade').value;
+                var txt_aux = texto.split();
+                divx.appendChild(document.createTextNode(txt_aux[0]));
+                newCell.appendChild(divx);
+                break;
+            case 7:
+                var divx = document.createElement('p');
+                divx.setAttribute("style", "padding-left:50px; padding-top:15px");
+                var texto = number_format(document.getElementById('SubTotal').value, 2, ",", ".");
+                var txt_aux = texto.split();
+                divx.appendChild(document.createTextNode(txt_aux[0]));
+                newCell.appendChild(divx);
+                break;
+            case 8:
+                var divx = document.createElement('p');
+                divx.setAttribute("style", "padding-left:25px; padding-top:15px");
+                var texto = number_format(document.getElementById('Total').value, 2, ",", ".");
+                var txt_aux = texto.split();
+                divx.appendChild(document.createTextNode(txt_aux[0]));
+                newCell.appendChild(divx);
+                //var div = ( document.all ) ? document.all['myDiv'] : document.getElementById('myDiv');
+                //div.innerHTML = '<button id="btn" name="btn">Button</button>';
+                break;
+            case 9:
+                newCell.style.width = "100px";
+                newCell.className = "deletando";
+                newCell.style.display = "inline";
+                var img3 = document.createElement("IMG");
+                img3.setAttribute("style", "width:20px");
+                img3.src = "./public/img/x.png";
+                //tá imprimindo 45, mas está certo  pois realmente tem um monte de linhas em branco na tabela
+                img3.setAttribute("onclick", "delRow(this.parentNode.parentNode.rowIndex, this.parentNode.parentNode.getElementsByTagName('td'))");
+                newCell.appendChild(img3);
+                break;
+            default:
+        }
+    }
+}
+
+
 
 
 function delRow(i, j) {
