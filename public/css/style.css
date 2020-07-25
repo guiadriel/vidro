@@ -217,6 +217,15 @@ body {
     top: 400px;
 }
 
+#itensFabrica {
+    position: relative;
+    width: 500px;
+    height: 100px;
+    left: 50%;
+    margin-left: -42%;
+    top: 400px;
+}
+
 .datas {
     /*	position: relative;*/
     width: 70px;
