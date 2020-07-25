@@ -218,7 +218,7 @@ function calcula() {
     //	SubTotal      = parseFloat(precoVidro) + parseFloat(precoDiversos) + parseFloat(precoFerro) + parseFloat(precoKit);
     //	Total 		  = parseFloat(quantidade) + SubTotal;
     document.getElementById("SubTotal").value = SubTotal;
-    document.getElementById("precoVidro").value = parseFloat((altura * (largura + TRANSPASSE(document.getElementById("xFator").value)) * parseFloat(document.getElementById("yCor").value)));
+    document.getElementById("precoVidro").value = parseFloat((altura * (largura + TRANSPASSE(document.getElementById("btt1").value)) * parseFloat(document.getElementById("yCor").value)));
     console.log(document.getElementById("precoVidro").value);
     document.getElementById("precoDiversos").value = altura * document.getElementById("xFator").value * document.getElementById("xDiversos").value;
     document.getElementById("precoFerro").value = document.getElementById("xFerro").value;
@@ -229,6 +229,8 @@ function calcula() {
 
 
 function TRANSPASSE(x) { //COMO CALCULAR O TRANSPASSE
+    console.log("valor:");
+    console.log(x);
     switch (x) {
         case "i02": //JANELA DUAS FOLHAS --> TRANSPASSE É DE 70 MM
             return 70;
