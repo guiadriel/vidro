@@ -193,24 +193,17 @@ padding-top: 20px;
         <img src="./public/img/whats.png" height="30px">
         <label for="checkFimWhatsAppCliente">Enviar PDF pelo Whatsapp para o cliente e para seu grupo privado de pedidos </label>
     </div>
-
-    <div>
-        <input type="checkbox" id="checkFimWhatsAppFabrica">
-        <img src="./public/img/whats.png" height="30px">
-        <label for="checkFimWhatsAppFabrica"> Enviar PDF pelo Whatsapp para a Fábrica (pedindo um orçamento)</label>
-    </div>
     <div>
         <input type="checkbox" id="checkFimDownload">
         <img src="./public/img/salvar.png" height="30px">
         <label for="checkFimDownload"> Salvar na pasta Downloads </label>
     </div>
     <div>
-        <input type="checkbox" id="checkFimImprime">
         <img src="./public/img/imprimir.png" height="30px">
-        <label for="checkFimImprime"> Imprimir </label>
+        <button class="btn btn-secondary" id="print" name="print" onClick="imprimir()">Imprimir</button>
     </div>
 
-    <button class="css3button" id="print" name="print" onClick="imprimir()">Imprimir</button>
+
     <button class="css3button" id="btfabrica" value="Pedido da Fábrica" onclick="location.href='fabrica.html?'
 		
 		+'&pedido='+document.getElementById('idPedido').value
