@@ -859,25 +859,27 @@ function inserirLinhaTabelaFabrica() {
             newCell = newRow.insertCell(j); // Insere uma coluna na nova linha 
             switch (j) {
                 case 0:
-                    if (i < 1) {
-                        var img = document.createElement("IMG");
-                        img.src = document.getElementById('btt1').src;
-                        img.setAttribute('width', '100px');
-                        var div = document.createElement('p');
-                        div.setAttribute("style", "font-size:8px");
-                        var texto = document.getElementById('btt1').value;
-                        var txt_aux = texto.split("-");
-                        newCell.appendChild(img);
-                        div.appendChild(document.createTextNode(txt_aux[0]));
-                        div.appendChild(document.createElement("br"));
-                        div.appendChild(document.createTextNode(txt_aux[1]));
-                        newCell.appendChild(div);
-                        //newCell.innerHTML = img.value;
-                        //document.getElementById('image').appendChild(img);
-                    }
+                    //if (i < 1) {
+                    console.log("j=0");
+                    var img = document.createElement("IMG");
+                    img.src = document.getElementById('btt1').src;
+                    img.setAttribute('width', '100px');
+                    var div = document.createElement('p');
+                    div.setAttribute("style", "font-size:8px");
+                    var texto = document.getElementById('btt1').value;
+                    var txt_aux = texto.split("-");
+                    newCell.appendChild(img);
+                    div.appendChild(document.createTextNode(txt_aux[0]));
+                    div.appendChild(document.createElement("br"));
+                    div.appendChild(document.createTextNode(txt_aux[1]));
+                    newCell.appendChild(div);
+                    //newCell.innerHTML = img.value;
+                    //document.getElementById('image').appendChild(img);
+                    //}
 
                     break;
                 case 1:
+                    console.log('j=1');
                     var divx = document.createElement('p');
                     divx.setAttribute("style", "padding-left:60px; padding-top:15px");
                     var texto = document.getElementById('altura').value;
