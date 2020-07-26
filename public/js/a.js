@@ -835,7 +835,9 @@ function inserirLinhaTabelaFabrica() {
     var newRowExterna = tableExterna.insertRow(numOfRowsExterna);
 
 
-    for (var i = 0; i < 2; i++) {
+    for (var i = 0; i < 1; i++) {
+        console.log("EXTERNO");
+
         newCellExterna = newRowExterna.insertCell(j);
         var img = document.createElement("IMG");
         img.src = document.getElementById('btt1').src;
@@ -851,6 +853,7 @@ function inserirLinhaTabelaFabrica() {
         newCellExterna.appendChild(div);
 
         for (var j = 0; j < (numOfCols + 1); j++) {
+            console.log("INTERNO");
             newCell = newRow.insertCell(j); // Insere uma coluna na nova linha 
             switch (j) {
                 case 0:
