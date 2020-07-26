@@ -42,7 +42,7 @@ function escondedisplay() {
     }
     console.log("passei-fiz1");
     document.getElementById("itens").style.visibility = 'visible';
-    document.getElementById("itensFabrica").style.display = 'hidden';
+    document.getElementById("itensFabrica").style.visibility = 'hidden';
 }
 
 function escondedisplayFabrica() {
@@ -52,8 +52,8 @@ function escondedisplayFabrica() {
     }
     console.log("passei-fiz2");
 
-    document.getElementById("itens").style.display = 'hidden';
-    document.getElementById("itensFabrica").style.display = 'visible';
+    document.getElementById("itens").style.visibility = 'hidden';
+    document.getElementById("itensFabrica").style.visibility = 'visible';
 }
 
 
