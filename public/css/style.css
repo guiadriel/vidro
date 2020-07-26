@@ -243,7 +243,7 @@ table td {
 }
 
 #minhaTabela {
-    border="1px";
+    border: "1px";
 }
 
 #ander {
@@ -319,5 +319,3 @@ button.css3button {
     position: relative;
     z-index: 9000;
 }
-
-*/

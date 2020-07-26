@@ -31,7 +31,7 @@ function imprimir() {
 
 
 function imprimirFabrica() {
-    escondedisplay();
+    escondedisplayFabrica();
     window.print();
 }
 
