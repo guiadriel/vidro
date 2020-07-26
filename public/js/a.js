@@ -26,13 +26,13 @@ $("btfabrica").click(function() {
 
 function imprimir() {
     escondedisplay();
-    window.print();
+    //window.print();
 }
 
 
 function imprimirFabrica() {
     escondedisplayFabrica();
-    window.print();
+    //window.print();
 }
 
 function escondedisplay() {
