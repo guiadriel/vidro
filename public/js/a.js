@@ -836,7 +836,8 @@ function inserirLinhaTabelaFabrica() {
                 console.log(txt_aux[0]);
                 console.log(descontoLargura);
                 console.log(txt_aux[0] - descontoLargura);
-                divx.appendChild(document.createTextNode(descontoAltura));
+                var diferenca1 = txt_aux[0] - descontoLargura;
+                divx.appendChild(document.createTextNode(diferenca1));
                 newCell.appendChild(divx);
                 break;
             case 2:
