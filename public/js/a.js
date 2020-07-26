@@ -2,6 +2,7 @@ var soma123 = 0;
 var soma123Fabrica = 0;
 var descontoAltura = 10;
 var descontoLargura = 10;
+var numeroDePartes = 1; // por qexmplo numa janela 4 folhas esse número é 4. usado no romaneio
 
 var t = 0;
 
@@ -360,6 +361,7 @@ function xAtualiza(x) {
             document.getElementById("btt1").src = "./public/img/i01.png"
             descontoAltura = 10;
             descontoLargura = 10;
+            numeroDePartes = 1;
             break;
         case "i02":
             // Fechadura
@@ -371,6 +373,7 @@ function xAtualiza(x) {
             document.getElementById("btt1").src = "./public/img/i02.png";
             descontoAltura = 10;
             descontoLargura = 10;
+            numeroDePartes = 2;
             break;
         case "i03":
             document.getElementById("xFator").value = 5;
@@ -381,6 +384,7 @@ function xAtualiza(x) {
             document.getElementById("btt1").src = "./public/img/i03.png";
             descontoAltura = 10;
             descontoLargura = 10;
+            numeroDePartes = 4;
             break;
         case "i04":
             document.getElementById("xFator").value = 3;
@@ -390,6 +394,7 @@ function xAtualiza(x) {
             document.getElementById("btt1").src = "./public/img/i04.png";
             descontoAltura = 10;
             descontoLargura = 10;
+            numeroDePartes = 2;
             break;
         case "i05":
             document.getElementById("xFator").value = 5;
@@ -399,6 +404,7 @@ function xAtualiza(x) {
             document.getElementById("btt1").src = "./public/img/i05.png";
             descontoAltura = 10;
             descontoLargura = 10;
+            numeroDePartes = 4;
             break;
         case "i06":
             document.getElementById("xFator").value = 3;
@@ -408,6 +414,7 @@ function xAtualiza(x) {
             document.getElementById("btt1").src = "./public/img/i06.png";
             descontoAltura = 10;
             descontoLargura = 10;
+            numeroDePartes = 2;
             break;
         case "i07":
             document.getElementById("xFator").value = 3;
@@ -417,6 +424,7 @@ function xAtualiza(x) {
             document.getElementById("btt1").src = "./public/img/i07.png";
             descontoAltura = 10;
             descontoLargura = 10;
+            numeroDePartes = 1;
             break;
         case "i08":
             document.getElementById("xFator").value = 2;
@@ -426,6 +434,7 @@ function xAtualiza(x) {
             document.getElementById("btt1").src = "./public/img/i08.png";
             descontoAltura = 10;
             descontoLargura = 10;
+            numeroDePartes = 1;
             break;
         case "i09":
             document.getElementById("xFator").value = 5;
@@ -435,6 +444,7 @@ function xAtualiza(x) {
             document.getElementById("btt1").src = "./public/img/i09.png";
             descontoAltura = 10;
             descontoLargura = 10;
+            numeroDePartes = 5; //verificar se pode virar 6
             break;
         case "i10":
 
@@ -448,6 +458,7 @@ function xAtualiza(x) {
             yAtualiza2();
             descontoAltura = 10;
             descontoLargura = 10;
+            numeroDePartes = 1;
             break;
         case "i11":
             document.getElementById("xFator").value = 2;
@@ -460,6 +471,7 @@ function xAtualiza(x) {
             yAtualiza2();
             descontoAltura = 10;
             descontoLargura = 10;
+            numeroDePartes = 1;
             break;
         case "i12":
             document.getElementById("xFator").value = 2;
@@ -471,6 +483,7 @@ function xAtualiza(x) {
             yAtualiza2();
             descontoAltura = 10;
             descontoLargura = 10;
+            numeroDePartes = 1;
             break;
         case "i13":
             document.getElementById("xFator").value = 2;
@@ -482,6 +495,7 @@ function xAtualiza(x) {
             yAtualiza2();
             descontoAltura = 10;
             descontoLargura = 10;
+            numeroDePartes = 1;
             break;
         case "i14":
             document.getElementById("xFator").value = 2;
@@ -493,6 +507,7 @@ function xAtualiza(x) {
             yAtualiza2();
             descontoAltura = 10;
             descontoLargura = 10;
+            numeroDePartes = 2;
             break;
         case "i15":
             document.getElementById("xFator").value = 2;
@@ -504,6 +519,7 @@ function xAtualiza(x) {
             yAtualiza2();
             descontoAltura = 10;
             descontoLargura = 10;
+            numeroDePartes = 4; //confirmar se é 4
             break;
         case "i16":
             document.getElementById("xFator").value = 2;
@@ -515,6 +531,7 @@ function xAtualiza(x) {
             yAtualiza2();
             descontoAltura = 10;
             descontoLargura = 10;
+            numeroDePartes = 2;
             break;
         case "i17":
             document.getElementById("xFator").value = 2;
@@ -526,6 +543,7 @@ function xAtualiza(x) {
             yAtualiza2();
             descontoAltura = 10;
             descontoLargura = 10;
+            numeroDePartes = 2;
             break;
         case "i18":
             document.getElementById("xFator").value = 2;
@@ -537,6 +555,7 @@ function xAtualiza(x) {
             yAtualiza2();
             descontoAltura = 10;
             descontoLargura = 10;
+            numeroDePartes = 3; //confirmar se pode ser mais no futuro
             break;
         case "i19": //box de canto
             document.getElementById("xFator").value = 5;
@@ -545,6 +564,7 @@ function xAtualiza(x) {
             document.getElementById("btt1").src = "./public/img/i19.png";
             descontoAltura = 10;
             descontoLargura = 10;
+            numeroDePartes = 4; //confirmar se é 4
             break;
         case "i20": //box de Frontal
             document.getElementById("xFator").value = 5;
@@ -553,6 +573,7 @@ function xAtualiza(x) {
             document.getElementById("btt1").src = "./public/img/i20.png";
             descontoAltura = 10;
             descontoLargura = 10;
+            numeroDePartes = 2;
             break;
         default:
             alert("clicou numa imagem inexistente");
@@ -829,114 +850,116 @@ function inserirLinhaTabelaFabrica() {
     var numOfCols = table.rows[numOfRows - 1].cells.length; // Captura a quantidade de colunas da última linha da tabela
     var newRow = table.insertRow(numOfRows); // Insere uma linha no fim da tabela.
 
-    for (var j = 0; j < (numOfCols + 1); j++) {
-        newCell = newRow.insertCell(j); // Insere uma coluna na nova linha 
+    for (var i = 0; i < (numeroDePartes); i++) {
+        for (var j = 0; j < (numOfCols + 1); j++) {
+            newCell = newRow.insertCell(j); // Insere uma coluna na nova linha 
 
-        switch (j) {
-            case 0:
-                //if (i < 1) {
-                console.log("j=0");
-                var img = document.createElement("IMG");
-                img.src = document.getElementById('btt1').src;
-                img.setAttribute('width', '100px');
-                var div = document.createElement('p');
-                div.setAttribute("style", "font-size:8px");
-                var texto = document.getElementById('btt1').value;
-                var txt_aux = texto.split("-");
-                newCell.appendChild(img);
-                div.appendChild(document.createTextNode(txt_aux[0]));
-                div.appendChild(document.createElement("br"));
-                div.appendChild(document.createTextNode(txt_aux[1]));
-                newCell.appendChild(div);
-                //newCell.innerHTML = img.value;
-                //document.getElementById('image').appendChild(img);
-                //}
+            switch (j) {
+                case 0:
+                    //if (i < 1) {
+                    console.log("j=0");
+                    var img = document.createElement("IMG");
+                    img.src = document.getElementById('btt1').src;
+                    img.setAttribute('width', '100px');
+                    var div = document.createElement('p');
+                    div.setAttribute("style", "font-size:8px");
+                    var texto = document.getElementById('btt1').value;
+                    var txt_aux = texto.split("-");
+                    newCell.appendChild(img);
+                    div.appendChild(document.createTextNode(txt_aux[0]));
+                    div.appendChild(document.createElement("br"));
+                    div.appendChild(document.createTextNode(txt_aux[1]));
+                    newCell.appendChild(div);
+                    //newCell.innerHTML = img.value;
+                    //document.getElementById('image').appendChild(img);
+                    //}
 
-                break;
-            case 1:
-                console.log('j=1');
-                var divx = document.createElement('p');
-                divx.setAttribute("style", "padding-left:60px; padding-top:15px");
-                var texto = document.getElementById('altura').value;
-                var txt_aux = texto.split();
-                var diferenca1 = txt_aux[0] - descontoLargura;
-                divx.appendChild(document.createTextNode(diferenca1));
-                newCell.appendChild(divx);
-                break;
-            case 2:
-                console.log('j=2');
-                var divx = document.createElement('p');
-                divx.setAttribute("style", "padding-left:60px; padding-top:15px");
-                var texto = document.getElementById('largura').value;
-                var txt_aux = texto.split();
-                var diferenca2 = txt_aux[0] - descontoLargura;
-                divx.appendChild(document.createTextNode(diferenca2));
-                newCell.appendChild(divx);
-                break;
-            case 3:
-                var divx = document.createElement('p');
-                divx.setAttribute("style", "padding-left:60px; padding-top:15px");
-                var texto = document.getElementById('espessura').value;
-                var txt_aux = texto.split();
-                divx.appendChild(document.createTextNode(txt_aux[0]));
-                newCell.appendChild(divx);
-                break;
-            case 4:
-                newCell.style.width = "200px";
-                var img2 = document.createElement("IMG");
-                img2.setAttribute("style", "padding-left:10px");
-                img2.src = document.getElementById('cor').src;
-                newCell.appendChild(img2);
-                break;
-            case 5:
-                var divx = document.createElement('p');
-                divx.setAttribute("style", "padding-left:0px; padding-top:15px");
-                var texto = document.getElementById('aluminio').value;
-                var txt_aux = texto.split();
-                divx.appendChild(document.createTextNode(txt_aux[0]));
-                newCell.appendChild(divx);
-                break;
-            case 6:
-                var divx = document.createElement('p');
-                divx.setAttribute("style", "padding-left:30px; padding-top:15px");
-                var texto = document.getElementById('quantidade').value;
-                var txt_aux = texto.split();
-                divx.appendChild(document.createTextNode(txt_aux[0]));
-                newCell.appendChild(divx);
-                break;
-            case 7:
-                var divx = document.createElement('p');
-                divx.setAttribute("style", "padding-left:50px; padding-top:15px");
-                var texto = number_format(document.getElementById('SubTotal').value, 2, ",", ".");
-                var txt_aux = texto.split();
-                divx.appendChild(document.createTextNode(txt_aux[0]));
-                newCell.appendChild(divx);
-                break;
-            case 8:
-                var divx = document.createElement('p');
-                divx.setAttribute("style", "padding-left:25px; padding-top:15px");
-                var texto = number_format(document.getElementById('Total').value, 2, ",", ".");
-                var txt_aux = texto.split();
-                divx.appendChild(document.createTextNode(txt_aux[0]));
-                newCell.appendChild(divx);
-                //var div = ( document.all ) ? document.all['myDiv'] : document.getElementById('myDiv');
-                //div.innerHTML = '<button id="btn" name="btn">Button</button>';
-                break;
-            case 9:
-                newCell.style.width = "100px";
-                newCell.className = "deletando";
-                newCell.style.display = "inline";
-                var img3 = document.createElement("IMG");
-                img3.setAttribute("style", "width:20px");
-                img3.src = "./public/img/x.png";
-                //tá imprimindo 45, mas está certo  pois realmente tem um monte de linhas em branco na tabela
-                img3.setAttribute("onclick", "delRow(this.parentNode.parentNode.rowIndex, this.parentNode.parentNode.getElementsByTagName('td'))");
-                newCell.appendChild(img3);
-                break;
-            default:
+                    break;
+                case 1:
+                    console.log('j=1');
+                    var divx = document.createElement('p');
+                    divx.setAttribute("style", "padding-left:60px; padding-top:15px");
+                    var texto = document.getElementById('altura').value;
+                    var txt_aux = texto.split();
+                    var diferenca1 = txt_aux[0] - descontoLargura;
+                    divx.appendChild(document.createTextNode(diferenca1));
+                    newCell.appendChild(divx);
+                    break;
+                case 2:
+                    console.log('j=2');
+                    var divx = document.createElement('p');
+                    divx.setAttribute("style", "padding-left:60px; padding-top:15px");
+                    var texto = document.getElementById('largura').value;
+                    var txt_aux = texto.split();
+                    var diferenca2 = txt_aux[0] - descontoLargura;
+                    divx.appendChild(document.createTextNode(diferenca2));
+                    newCell.appendChild(divx);
+                    break;
+                case 3:
+                    var divx = document.createElement('p');
+                    divx.setAttribute("style", "padding-left:60px; padding-top:15px");
+                    var texto = document.getElementById('espessura').value;
+                    var txt_aux = texto.split();
+                    divx.appendChild(document.createTextNode(txt_aux[0]));
+                    newCell.appendChild(divx);
+                    break;
+                case 4:
+                    newCell.style.width = "200px";
+                    var img2 = document.createElement("IMG");
+                    img2.setAttribute("style", "padding-left:10px");
+                    img2.src = document.getElementById('cor').src;
+                    newCell.appendChild(img2);
+                    break;
+                case 5:
+                    var divx = document.createElement('p');
+                    divx.setAttribute("style", "padding-left:0px; padding-top:15px");
+                    var texto = document.getElementById('aluminio').value;
+                    var txt_aux = texto.split();
+                    divx.appendChild(document.createTextNode(txt_aux[0]));
+                    newCell.appendChild(divx);
+                    break;
+                case 6:
+                    var divx = document.createElement('p');
+                    divx.setAttribute("style", "padding-left:30px; padding-top:15px");
+                    var texto = document.getElementById('quantidade').value;
+                    var txt_aux = texto.split();
+                    divx.appendChild(document.createTextNode(txt_aux[0]));
+                    newCell.appendChild(divx);
+                    break;
+                case 7:
+                    var divx = document.createElement('p');
+                    divx.setAttribute("style", "padding-left:50px; padding-top:15px");
+                    var texto = number_format(document.getElementById('SubTotal').value, 2, ",", ".");
+                    var txt_aux = texto.split();
+                    divx.appendChild(document.createTextNode(txt_aux[0]));
+                    newCell.appendChild(divx);
+                    break;
+                case 8:
+                    var divx = document.createElement('p');
+                    divx.setAttribute("style", "padding-left:25px; padding-top:15px");
+                    var texto = number_format(document.getElementById('Total').value, 2, ",", ".");
+                    var txt_aux = texto.split();
+                    divx.appendChild(document.createTextNode(txt_aux[0]));
+                    newCell.appendChild(divx);
+                    //var div = ( document.all ) ? document.all['myDiv'] : document.getElementById('myDiv');
+                    //div.innerHTML = '<button id="btn" name="btn">Button</button>';
+                    break;
+                case 9:
+                    newCell.style.width = "100px";
+                    newCell.className = "deletando";
+                    newCell.style.display = "inline";
+                    var img3 = document.createElement("IMG");
+                    img3.setAttribute("style", "width:20px");
+                    img3.src = "./public/img/x.png";
+                    //tá imprimindo 45, mas está certo  pois realmente tem um monte de linhas em branco na tabela
+                    img3.setAttribute("onclick", "delRow(this.parentNode.parentNode.rowIndex, this.parentNode.parentNode.getElementsByTagName('td'))");
+                    newCell.appendChild(img3);
+                    break;
+                default:
+            }
+            console.log("Sai do swtch");
+
         }
-        console.log("Sai do swtch");
-
     }
 }
 
