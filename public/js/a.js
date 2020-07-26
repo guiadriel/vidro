@@ -858,29 +858,23 @@ function inserirLinhaTabelaFabrica() {
             console.log("j=" + qq);
             switch (qq) {
                 case 0:
-                    if (i < 1) {
-                        console.log("PRIMEIRA VEZ J=0 : IMAGEM");
-                        var img = document.createElement("IMG");
-                        img.src = document.getElementById('btt1').src;
-                        img.setAttribute('width', '100px');
-                        var div = document.createElement('p');
-                        div.setAttribute("style", "font-size:8px");
-                        var texto = document.getElementById('btt1').value;
-                        var txt_aux = texto.split("-");
-                        newCell.appendChild(img);
-                        div.appendChild(document.createTextNode(txt_aux[0]));
-                        div.appendChild(document.createElement("br"));
-                        div.appendChild(document.createTextNode(txt_aux[1]));
-                        newCell.appendChild(div);
-                        //newCell.innerHTML = img.value;
-                        //document.getElementById('image').appendChild(img);
-                    } else {
-                        console.log("OUTRAS VEZES J>0 :OUTROS");
-                        var divx = document.createElement('p');
-                        divx.setAttribute("style", "padding-left:60px; padding-top:15px");
-                        divx.appendChild(document.createTextNode(""));
-                        newCell.appendChild(divx);
-                    }
+
+                    console.log("PRIMEIRA VEZ J=0 : IMAGEM");
+                    var img = document.createElement("IMG");
+                    img.src = document.getElementById('btt1').src;
+                    img.setAttribute('width', '100px');
+                    var div = document.createElement('p');
+                    div.setAttribute("style", "font-size:8px");
+                    var texto = document.getElementById('btt1').value;
+                    var txt_aux = texto.split("-");
+                    newCell.appendChild(img);
+                    div.appendChild(document.createTextNode(txt_aux[0]));
+                    div.appendChild(document.createElement("br"));
+                    div.appendChild(document.createTextNode(txt_aux[1]));
+                    newCell.appendChild(div);
+                    //newCell.innerHTML = img.value;
+                    //document.getElementById('image').appendChild(img);
+
 
                     break;
                 case 1:
