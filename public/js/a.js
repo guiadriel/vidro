@@ -29,11 +29,28 @@ function imprimir() {
     window.print();
 }
 
+
+function imprimirFabrica() {
+    escondedisplay();
+    window.print();
+}
+
 function escondedisplay() {
     var elems = document.getElementsByClassName('deletando');
     for (var i = 0; i < elems.length; i += 1) {
         elems[i].style.display = 'none';
     }
+    document.getElementById("itens").style.display = 'block';
+    document.getElementById("itensFabrica").style.display = 'none';
+}
+
+function escondedisplayFabrica() {
+    var elems = document.getElementsByClassName('deletando');
+    for (var i = 0; i < elems.length; i += 1) {
+        elems[i].style.display = 'none';
+    }
+    document.getElementById("itens").style.display = 'none';
+    document.getElementById("itensFabrica").style.display = 'block';
 }
 
 
