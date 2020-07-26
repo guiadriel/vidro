@@ -852,7 +852,6 @@ function inserirLinhaTabelaFabrica() {
                 divx.setAttribute("style", "padding-left:60px; padding-top:15px");
                 var texto = document.getElementById('espessura').value;
                 var txt_aux = texto.split();
-                txt_aux[0] = String(txt_aux[0].parseFloat() - descontoAltura);
                 divx.appendChild(document.createTextNode(txt_aux[0]));
                 newCell.appendChild(divx);
                 break;
