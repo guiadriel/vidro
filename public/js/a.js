@@ -40,6 +40,7 @@ function escondedisplay() {
     for (var i = 0; i < elems.length; i += 1) {
         elems[i].style.display = 'none';
     }
+    console.log("passei-fiz1");
     document.getElementById("itens").style.visibility = 'visible';
     document.getElementById("itensFabrica").style.display = 'hidden';
 }
@@ -49,6 +50,8 @@ function escondedisplayFabrica() {
     for (var i = 0; i < elems.length; i += 1) {
         elems[i].style.display = 'none';
     }
+    console.log("passei-fiz2");
+
     document.getElementById("itens").style.display = 'hidden';
     document.getElementById("itensFabrica").style.display = 'visible';
 }
