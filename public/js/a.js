@@ -857,7 +857,7 @@ function inserirLinhaTabelaFabrica() {
             newCell = newRow.insertCell(j); // Insere uma coluna na nova linha 
             switch (j) {
                 case 0:
-                    if (i > 0) {
+                    if (i < 1) {
                         var img = document.createElement("IMG");
                         img.src = document.getElementById('btt1').src;
                         img.setAttribute('width', '100px');
