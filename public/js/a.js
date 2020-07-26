@@ -852,7 +852,7 @@ function inserirLinhaTabelaFabrica() {
         div.appendChild(document.createElement("br"));
         div.appendChild(document.createTextNode(txt_aux[1]));
         newCellExterna.appendChild(div);
-
+        console.log("Adicionou EXTERNO");
         for (var j = 0; j < (numOfCols + 1); j++) {
             var newRow = table.insertRow(numOfRows);
             console.log("INTERNO");
@@ -959,6 +959,7 @@ function inserirLinhaTabelaFabrica() {
                     break;
                 default:
             }
+            console.log("Sai do swtch");
         }
     }
 }
