@@ -850,10 +850,12 @@ function inserirLinhaTabelaFabrica() {
     var numOfCols = table.rows[numOfRows - 1].cells.length; // Captura a quantidade de colunas da última linha da tabela
     var newRow = table.insertRow(numOfRows); // Insere uma linha no fim da tabela.
 
+    var j = -1;;
     for (var i = 0; i < (numeroDePartes); i++) {
         console.log("EXTERNO=" + i);
         var newRow = table.insertRow(numOfRows); // Insere uma linha no fim da tabela.
-        for (var j = 0; j < numOfCols; j++) {
+        while (j < numOfCols) {
+            j = j + 1;
             newCell = newRow.insertCell(j); // Insere uma coluna na nova linha 
             console.log("j=" + j);
             switch (j) {
