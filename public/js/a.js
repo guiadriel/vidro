@@ -26,13 +26,13 @@ $("btfabrica").click(function() {
 
 function imprimir() {
     escondedisplay();
-    window.print();
+    //window.print();
 }
 
 
 function imprimirFabrica() {
     escondedisplayFabrica();
-    window.print();
+    //window.print();
 }
 
 function escondedisplay() {
@@ -835,9 +835,19 @@ function inserirLinhaTabelaFabrica() {
     var newRowExterna = tableExterna.insertRow(numOfRowsExterna);
 
 
-    for (var i = 0; i < (numOfColsExterna + 1); i++) {
-        newCellExterna = newRowExterna.insertCell(i); // Insere uma coluna na nova linha 
-
+    for (var i = 0; i < 2; i++) {
+        var img = document.createElement("IMG");
+        img.src = document.getElementById('btt1').src;
+        img.setAttribute('width', '100px');
+        var div = document.createElement('p');
+        div.setAttribute("style", "font-size:8px");
+        var texto = document.getElementById('btt1').value;
+        var txt_aux = texto.split("-");
+        newCellExterna.appendChild(img);
+        div.appendChild(document.createTextNode(txt_aux[0]));
+        div.appendChild(document.createElement("br"));
+        div.appendChild(document.createTextNode(txt_aux[1]));
+        newCellExterna.appendChild(div);
 
         for (var j = 0; j < (numOfCols + 1); j++) {
             newCell = newRow.insertCell(j); // Insere uma coluna na nova linha 
