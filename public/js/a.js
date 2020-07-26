@@ -377,8 +377,8 @@ function xAtualiza(x) {
             document.getElementById("xFerro").value = 56.00; //alterado
             document.getElementById("xKit").value = 90.00;
             document.getElementById("btt1").src = "./public/img/i05.png";
-            descontoAltura = parseFloat(document.getElementById("altura").value) - 10;
-            descontoLargura = parseFloat(document.getElementById("largura").value) - 10;
+            descontoAltura = 10;
+            descontoLargura = 10;
             break;
         case "i06":
             document.getElementById("xFator").value = 3;
@@ -404,8 +404,8 @@ function xAtualiza(x) {
             document.getElementById("xFerro").value = 0;
             document.getElementById("xKit").value = 0;
             document.getElementById("btt1").src = "./public/img/i08.png";
-            descontoAltura = parseFloat(document.getElementById("altura").value) - 10;
-            descontoLargura = parseFloat(document.getElementById("largura").value) - 10;
+            descontoAltura = 10;
+            descontoLargura = 10;
             break;
         case "i09":
             document.getElementById("xFator").value = 5;
@@ -832,10 +832,6 @@ function inserirLinhaTabelaFabrica() {
                 divx.setAttribute("style", "padding-left:60px; padding-top:15px");
                 var texto = document.getElementById('altura').value;
                 var txt_aux = texto.split();
-                console.log("testendo");
-                console.log(txt_aux[0]);
-                console.log(descontoLargura);
-                console.log(txt_aux[0] - descontoLargura);
                 var diferenca1 = txt_aux[0] - descontoLargura;
                 divx.appendChild(document.createTextNode(diferenca1));
                 newCell.appendChild(divx);
@@ -845,7 +841,8 @@ function inserirLinhaTabelaFabrica() {
                 divx.setAttribute("style", "padding-left:60px; padding-top:15px");
                 var texto = document.getElementById('largura').value;
                 var txt_aux = texto.split();
-                divx.appendChild(document.createTextNode(descontoLargura));
+                var diferenca2 = txt_aux[0] - descontoLargura;
+                divx.appendChild(document.createTextNode(diferenca2));
                 newCell.appendChild(divx);
                 break;
             case 3:
