@@ -829,7 +829,7 @@ function inserirLinhaTabelaFabrica() {
     var numOfCols = table.rows[numOfRows - 1].cells.length; // Captura a quantidade de colunas da última linha da tabela
     var newRow = table.insertRow(numOfRows); // Insere uma linha no fim da tabela.
 
-    var tableExterna = document. / getElementById("minhaTabelaFabricaExterna");
+    var tableExterna = document.getElementById("minhaTabelaFabricaExterna");
     var numOfRowsExterna = tableExterna.rows.length; // Captura a quantidade de linhas já existentes na tabela
     var numOfColsExterna = tableExterna.rows[numOfRowsExterna - 1].cells.length;
     var newRowExterna = tableExterna.insertRow(numOfRowsExterna);
