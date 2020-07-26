@@ -854,7 +854,7 @@ function inserirLinhaTabelaFabrica() {
         newCellExterna.appendChild(div);
 
         for (var j = 0; j < (numOfCols + 1); j++) {
-            var newRowExterna = tableExterna.insertRow(numOfRowsExterna);
+            var newRow = table.insertRow(numOfRows);
             console.log("INTERNO");
             newCell = newRow.insertCell(j); // Insere uma coluna na nova linha 
             switch (j) {
