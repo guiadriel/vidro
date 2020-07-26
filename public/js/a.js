@@ -859,7 +859,7 @@ function inserirLinhaTabelaFabrica() {
             switch (j) {
                 case 0:
                     if (i < 1) {
-                        console.log("j=0");
+                        console.log("PRIMEIRA VEZ J=0 : IMAGEM");
                         var img = document.createElement("IMG");
                         img.src = document.getElementById('btt1').src;
                         img.setAttribute('width', '100px');
@@ -875,6 +875,7 @@ function inserirLinhaTabelaFabrica() {
                         //newCell.innerHTML = img.value;
                         //document.getElementById('image').appendChild(img);
                     } else {
+                        console.log("OUTRAS VEZES J>0 :OUTROS");
                         var divx = document.createElement('p');
                         divx.setAttribute("style", "padding-left:60px; padding-top:15px");
                         divx.appendChild(document.createTextNode(""));
