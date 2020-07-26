@@ -832,6 +832,10 @@ function inserirLinhaTabelaFabrica() {
                 divx.setAttribute("style", "padding-left:60px; padding-top:15px");
                 var texto = document.getElementById('altura').value;
                 var txt_aux = texto.split();
+                console.log("testendo");
+                console.log(txt_aux[0]);
+                console.log(descontoLargura);
+                console.log(txt_aux[0] - descontoLargura);
                 divx.appendChild(document.createTextNode(txt_aux[0]));
                 newCell.appendChild(divx);
                 break;
@@ -840,7 +844,6 @@ function inserirLinhaTabelaFabrica() {
                 divx.setAttribute("style", "padding-left:60px; padding-top:15px");
                 var texto = document.getElementById('largura').value;
                 var txt_aux = texto.split();
-                txt_aux[0] = String(txt_aux[0].parseFloat() - descontoLargura);
                 divx.appendChild(document.createTextNode(txt_aux[0]));
                 newCell.appendChild(divx);
                 break;
