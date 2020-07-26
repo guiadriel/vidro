@@ -852,11 +852,14 @@ function inserirLinhaTabelaFabrica() {
         div.appendChild(document.createTextNode(txt_aux[1]));
         newCellExterna.appendChild(div);
         console.log("Adicionou EXTERNO");
-        for (var j = 0; j < (numOfCols + 1); j++) {
 
-            newRow = table.insertRow(numOfRows);
-            console.log("INTERNO: J=" + j);
+        var table = document.getElementById("minhaTabela"); // Captura a referência da tabela com id “minhaTabela”
+        var numOfRows = table.rows.length; // Captura a quantidade de linhas já existentes na tabela
+        var numOfCols = table.rows[numOfRows - 1].cells.length; // Captura a quantidade de colunas da última linha da tabela
+        var newRow = table.insertRow(numOfRows); // Insere uma linha no fim da tabela.
+        for (var j = 0; j < (numOfCols + 1); j++) {
             newCell = newRow.insertCell(j); // Insere uma coluna na nova linha 
+
             switch (j) {
                 case 0:
                     //if (i < 1) {
