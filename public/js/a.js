@@ -835,7 +835,7 @@ function inserirLinhaTabelaFabrica() {
     var newRowExterna = tableExterna.insertRow(numOfRowsExterna);
 
 
-    for (var i = 0; i < 1; i++) {
+    for (var i = 0; i < 2; i++) {
         console.log("EXTERNO");
 
         newCellExterna = newRowExterna.insertCell(j);
@@ -857,20 +857,23 @@ function inserirLinhaTabelaFabrica() {
             newCell = newRow.insertCell(j); // Insere uma coluna na nova linha 
             switch (j) {
                 case 0:
-                    var img = document.createElement("IMG");
-                    img.src = document.getElementById('btt1').src;
-                    img.setAttribute('width', '100px');
-                    var div = document.createElement('p');
-                    div.setAttribute("style", "font-size:8px");
-                    var texto = document.getElementById('btt1').value;
-                    var txt_aux = texto.split("-");
-                    newCell.appendChild(img);
-                    div.appendChild(document.createTextNode(txt_aux[0]));
-                    div.appendChild(document.createElement("br"));
-                    div.appendChild(document.createTextNode(txt_aux[1]));
-                    newCell.appendChild(div);
-                    //newCell.innerHTML = img.value;
-                    //document.getElementById('image').appendChild(img);
+                    if (i > 0) {
+                        var img = document.createElement("IMG");
+                        img.src = document.getElementById('btt1').src;
+                        img.setAttribute('width', '100px');
+                        var div = document.createElement('p');
+                        div.setAttribute("style", "font-size:8px");
+                        var texto = document.getElementById('btt1').value;
+                        var txt_aux = texto.split("-");
+                        newCell.appendChild(img);
+                        div.appendChild(document.createTextNode(txt_aux[0]));
+                        div.appendChild(document.createElement("br"));
+                        div.appendChild(document.createTextNode(txt_aux[1]));
+                        newCell.appendChild(div);
+                        //newCell.innerHTML = img.value;
+                        //document.getElementById('image').appendChild(img);
+                    }
+
                     break;
                 case 1:
                     var divx = document.createElement('p');
