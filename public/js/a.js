@@ -40,8 +40,8 @@ function escondedisplay() {
     for (var i = 0; i < elems.length; i += 1) {
         elems[i].style.display = 'none';
     }
-    document.getElementById("itens").style.display = 'block';
-    document.getElementById("itensFabrica").style.display = 'none';
+    document.getElementById("itens").style.visibility = 'visible';
+    document.getElementById("itensFabrica").style.display = 'hidden';
 }
 
 function escondedisplayFabrica() {
@@ -49,8 +49,8 @@ function escondedisplayFabrica() {
     for (var i = 0; i < elems.length; i += 1) {
         elems[i].style.display = 'none';
     }
-    document.getElementById("itens").style.display = 'none';
-    document.getElementById("itensFabrica").style.display = 'block';
+    document.getElementById("itens").style.display = 'hidden';
+    document.getElementById("itensFabrica").style.display = 'visible';
 }
 
 
