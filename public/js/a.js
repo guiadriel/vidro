@@ -834,7 +834,7 @@ function inserirLinhaTabelaFabrica() {
     var numOfColsExterna = tableExterna.rows[numOfRowsExterna - 1].cells.length;
 
 
-    for (var i = 0; i < 3; i++) {
+    for (var i = 0; i < 2; i++) {
 
         console.log("EXTERNO");
         var newRowExterna = tableExterna.insertRow(numOfRowsExterna);
@@ -892,6 +892,7 @@ function inserirLinhaTabelaFabrica() {
                     newCell.appendChild(divx);
                     break;
                 case 2:
+                    console.log('j=2');
                     var divx = document.createElement('p');
                     divx.setAttribute("style", "padding-left:60px; padding-top:15px");
                     var texto = document.getElementById('largura').value;
