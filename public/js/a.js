@@ -853,29 +853,34 @@ function inserirLinhaTabelaFabrica() {
     for (var i = 0; i < (numeroDePartes); i++) {
         console.log("EXTERNO=" + i);
         var newRow = table.insertRow(numOfRows); // Insere uma linha no fim da tabela.
-        for (var qq = 0; qq < numOfCols; qq++) {
-            newCell = newRow.insertCell(qq); // Insere uma coluna na nova linha 
-            console.log("j=" + qq);
-            switch (qq) {
+        for (var j = 0; j < numOfCols; j++) {
+            newCell = newRow.insertCell(j); // Insere uma coluna na nova linha 
+            console.log("j=" + j);
+            switch (j) {
                 case 0:
-
-                    console.log("PRIMEIRA VEZ J=0 : IMAGEM");
-                    var img = document.createElement("IMG");
-                    img.src = document.getElementById('btt1').src;
-                    img.setAttribute('width', '100px');
-                    var div = document.createElement('p');
-                    div.setAttribute("style", "font-size:8px");
-                    var texto = document.getElementById('btt1').value;
-                    var txt_aux = texto.split("-");
-                    newCell.appendChild(img);
-                    div.appendChild(document.createTextNode(txt_aux[0]));
-                    div.appendChild(document.createElement("br"));
-                    div.appendChild(document.createTextNode(txt_aux[1]));
-                    newCell.appendChild(div);
-                    //newCell.innerHTML = img.value;
-                    //document.getElementById('image').appendChild(img);
-
-
+                    if (i < 1) {
+                        console.log("PRIMEIRA VEZ J=0 : IMAGEM");
+                        var img = document.createElement("IMG");
+                        img.src = document.getElementById('btt1').src;
+                        img.setAttribute('width', '100px');
+                        var div = document.createElement('p');
+                        div.setAttribute("style", "font-size:8px");
+                        var texto = document.getElementById('btt1').value;
+                        var txt_aux = texto.split("-");
+                        newCell.appendChild(img);
+                        div.appendChild(document.createTextNode(txt_aux[0]));
+                        div.appendChild(document.createElement("br"));
+                        div.appendChild(document.createTextNode(txt_aux[1]));
+                        newCell.appendChild(div);
+                        //newCell.innerHTML = img.value;
+                        //document.getElementById('image').appendChild(img);
+                    } else {
+                        console.log("OUTRAS VEZES J>0 :OUTROS");
+                        var divx = document.createElement('p');
+                        divx.setAttribute("style", "padding-left:60px; padding-top:15px");
+                        divx.appendChild(document.createTextNode(""));
+                        newCell.appendChild(divx);
+                    }
                     break;
                 case 1:
                     console.log('j=1');
