@@ -748,7 +748,7 @@ function inserirLinhaTabela() {
             case 0:
                 var img = document.createElement("IMG");
                 img.src = document.getElementById('btt1').src;
-                img.setAttribute('width', '100px');
+                img.setAttribute('width', '80px');
                 var div = document.createElement('p');
                 div.setAttribute("style", "font-size:8px");
                 var texto = document.getElementById('btt1').value;
@@ -885,7 +885,7 @@ function inserirLinhaTabelaFabrica() {
                         console.log("PRIMEIRA VEZ i=0 : IMAGEM");
                         var img = document.createElement("IMG");
                         img.src = document.getElementById('btt1').src;
-                        img.setAttribute('width', '100px');
+                        img.setAttribute('width', '80px');
                         var div = document.createElement('p');
                         div.setAttribute("style", "font-size:8px");
                         var texto = document.getElementById('btt1').value;
