@@ -885,7 +885,7 @@ function inserirLinhaTabelaFabrica() {
                         console.log("PRIMEIRA VEZ i=0 : IMAGEM");
                         var img = document.createElement("IMG");
                         img.src = document.getElementById('btt1').src;
-                        img.setAttribute('width', '120px');
+                        img.setAttribute('width', '93px');
                         var div = document.createElement('p');
                         div.setAttribute("style", "font-size:8px");
                         var texto = document.getElementById('btt1').value;
@@ -942,7 +942,7 @@ function inserirLinhaTabelaFabrica() {
                     newCell.appendChild(divx);
                     break;
                 case 4:
-                    newCell.style.width = "200px";
+                    newCell.style.width = "120px";
                     var img2 = document.createElement("IMG");
                     img2.setAttribute("style", "padding-left:10px");
                     img2.src = document.getElementById('cor').src;
