@@ -874,7 +874,7 @@ function inserirLinhaTabelaFabrica() {
 
                         console.log('j=1');
                         var divx = document.createElement('p');
-                        divx.setAttribute("style", "padding-left:60px; padding-top:0px");
+                        divx.setAttribute("style", "padding-left:30px; padding-top:0px");
                         var texto = document.getElementById('altura').value;
                         var txt_aux = texto.split();
                         var diferenca1 = txt_aux[0] - descontoLargura;
@@ -901,7 +901,7 @@ function inserirLinhaTabelaFabrica() {
                     } else {
                         console.log('j=1');
                         var divx = document.createElement('p');
-                        divx.setAttribute("style", "padding-left:60px; padding-top:0px");
+                        divx.setAttribute("style", "padding-left:30px; padding-top:0px");
                         var texto = document.getElementById('altura').value;
                         var txt_aux = texto.split();
                         var diferenca1 = txt_aux[0] - descontoLargura;
@@ -916,7 +916,7 @@ function inserirLinhaTabelaFabrica() {
                 case 1:
                     console.log('j=1');
                     var divx = document.createElement('p');
-                    divx.setAttribute("style", "padding-left:60px; padding-top:0px;");
+                    divx.setAttribute("style", "padding-left:30px; padding-top:0px;");
                     var texto = document.getElementById('altura').value;
                     var txt_aux = texto.split();
                     var diferenca1 = txt_aux[0] - descontoLargura;
@@ -926,7 +926,7 @@ function inserirLinhaTabelaFabrica() {
                 case 2:
                     console.log('j=2');
                     var divx = document.createElement('p');
-                    divx.setAttribute("style", "padding-left:60px; padding-top:0px");
+                    divx.setAttribute("style", "padding-left:30px; padding-top:0px");
                     var texto = document.getElementById('largura').value;
                     var txt_aux = texto.split();
                     var diferenca2 = txt_aux[0] - descontoLargura;
@@ -935,7 +935,7 @@ function inserirLinhaTabelaFabrica() {
                     break;
                 case 3:
                     var divx = document.createElement('p');
-                    divx.setAttribute("style", "padding-left:60px; padding-top:0px");
+                    divx.setAttribute("style", "padding-left:30px; padding-top:0px");
                     var texto = document.getElementById('espessura').value;
                     var txt_aux = texto.split();
                     divx.appendChild(document.createTextNode(txt_aux[0]));
@@ -966,7 +966,7 @@ function inserirLinhaTabelaFabrica() {
                     break;
                 case 7:
                     var divx = document.createElement('p');
-                    divx.setAttribute("style", "padding-left:50px; padding-top:0px");
+                    divx.setAttribute("style", "padding-left:30px; padding-top:0px");
                     var texto = number_format(document.getElementById('SubTotal').value, 2, ",", ".");
                     var txt_aux = texto.split();
                     divx.appendChild(document.createTextNode(txt_aux[0]));
@@ -974,7 +974,7 @@ function inserirLinhaTabelaFabrica() {
                     break;
                 case 8:
                     var divx = document.createElement('p');
-                    divx.setAttribute("style", "padding-left:25px; padding-top:0px");
+                    divx.setAttribute("style", "padding-left:30px; padding-top:0px");
                     var texto = number_format(document.getElementById('Total').value, 2, ",", ".");
                     var txt_aux = texto.split();
                     divx.appendChild(document.createTextNode(txt_aux[0]));
