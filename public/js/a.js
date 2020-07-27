@@ -850,14 +850,23 @@ function inserirLinhaTabelaFabrica() {
     var numOfCols = table.rows[numOfRows - 1].cells.length; // Captura a quantidade de colunas da última linha da tabela
     //var newRow = table.insertRow(numOfRows); // Insere uma linha no fim da tabela.
 
+
+    var tableEsquerda = document.getElementById("minhaTabelaFabricaEsquerda"); // Captura a referência da tabela com id “minhaTabela”
+    var numOfRowsEsquerda = tableEsquerda.rows.length; // Captura a quantidade de linhas já existentes na tabela
+    var numOfColsEsquerda = tableEsquerda.rows[numOfRowsEsquerda - 1].cells.length; // Captura a quantidade de colunas da última linha da tabela
+
+
     var j = -1;
     for (var i = 0; i < (numeroDePartes); i++) {
         console.log("EXTERNO=" + i);
         var newRow = table.insertRow(numOfRows); // Insere uma linha no fim da tabela.
+        var newRowEsquerda = tableEsquerda.insertRow(numOfRowsEsquerda); // Insere uma linha no fim da tabela.
         var j = -1;
         while (j < numOfCols) {
             j = j + 1;
             newCell = newRow.insertCell(j); // Insere uma coluna na nova linha 
+            newCellEsquerda = newRowEsquerda.insertCell(j); // Insere uma coluna na nova linha 
+
             console.log("j=" + j);
             switch (j) {
                 case 0:
@@ -887,6 +896,21 @@ function inserirLinhaTabelaFabrica() {
                         var diferenca1 = txt_aux[0] - descontoLargura;
                         divx.appendChild(document.createTextNode(diferenca1));
                         newCell.appendChild(divx);
+
+                        console.log("PRIMEIRA VEZ i=0 : IMAGEM");
+                        var img = document.createElement("IMG");
+                        img.src = document.getElementById('btt1').src;
+                        img.setAttribute('width', '100px');
+                        var div = document.createElement('p');
+                        div.setAttribute("style", "font-size:8px");
+                        var texto = document.getElementById('btt1').value;
+                        var txt_aux = texto.split("-");
+                        newCellEsquerda.appendChild(img);
+                        div.appendChild(document.createTextNode(txt_aux[0]));
+                        div.appendChild(document.createElement("br"));
+                        div.appendChild(document.createTextNode(txt_aux[1]));
+                        newCellEsquerda.appendChild(div);
+
                     }
 
                     break;
