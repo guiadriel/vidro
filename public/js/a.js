@@ -786,7 +786,7 @@ function inserirLinhaTabela() {
                 newCell.appendChild(divx);
                 break;
             case 4:
-                newCell.style.width = "200px";
+                newCell.style.width = "120px";
                 var img2 = document.createElement("IMG");
                 img2.setAttribute("style", "padding-left:10px");
                 img2.src = document.getElementById('cor').src;
