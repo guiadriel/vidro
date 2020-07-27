@@ -867,7 +867,7 @@ function inserirLinhaTabelaFabrica() {
                         img.src = document.getElementById('btt1').src;
                         img.setAttribute('width', '100px');
                         var div = document.createElement('p');
-                        div.setAttribute("style", "font-size:8px");
+                        div.setAttribute("style", "font-size:8px; rowspan:2");
                         var texto = document.getElementById('btt1').value;
                         var txt_aux = texto.split("-");
                         newCell.appendChild(img);
@@ -881,7 +881,7 @@ function inserirLinhaTabelaFabrica() {
                     } else {
                         console.log('j=1');
                         var divx = document.createElement('p');
-                        divx.setAttribute("style", "padding-left:60px; padding-top:15px");
+                        divx.setAttribute("style", "padding-left:60px; padding-top:0px");
                         var texto = document.getElementById('altura').value;
                         var txt_aux = texto.split();
                         var diferenca1 = txt_aux[0] - descontoLargura;
