@@ -857,7 +857,7 @@ function inserirLinhaTabelaFabrica() {
 
 
     var j = -1;
-    for (var i = 0; i < (numeroDePartes); i++) {
+    for (var i = 0; i < (5); i++) {
         console.log("EXTERNO=" + i);
         var newRow = table.insertRow(numOfRows); // Insere uma linha no fim da tabela.
         var newRowEsquerda = tableEsquerda.insertRow(numOfRowsEsquerda); // Insere uma linha no fim da tabela.
