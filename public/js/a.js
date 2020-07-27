@@ -848,7 +848,7 @@ function inserirLinhaTabelaFabrica() {
     var table = document.getElementById("minhaTabelaFabrica"); // Captura a referência da tabela com id “minhaTabela”
     var numOfRows = table.rows.length; // Captura a quantidade de linhas já existentes na tabela
     var numOfCols = table.rows[numOfRows - 1].cells.length; // Captura a quantidade de colunas da última linha da tabela
-    var newRow = table.insertRow(numOfRows); // Insere uma linha no fim da tabela.
+    //var newRow = table.insertRow(numOfRows); // Insere uma linha no fim da tabela.
 
     var j = -1;
     for (var i = 0; i < (numeroDePartes); i++) {
@@ -876,6 +876,7 @@ function inserirLinhaTabelaFabrica() {
                     newCell.appendChild(div);
                     //newCell.innerHTML = img.value;
                     //document.getElementById('image').appendChild(img);
+                    break;
                 case 1:
                     console.log('j=1');
                     var divx = document.createElement('p');
