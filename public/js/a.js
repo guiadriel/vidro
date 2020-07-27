@@ -871,23 +871,7 @@ function inserirLinhaTabelaFabrica() {
             switch (j) {
                 case 0:
                     if (i < 1) {
-                        console.log("PRIMEIRA VEZ i=0 : IMAGEM");
-                        var img = document.createElement("IMG");
-                        img.src = document.getElementById('btt1').src;
-                        img.setAttribute('width', '100px');
-                        var div = document.createElement('p');
-                        div.setAttribute("style", "font-size:8px");
-                        var texto = document.getElementById('btt1').value;
-                        var txt_aux = texto.split("-");
-                        newCell.appendChild(img);
-                        div.appendChild(document.createTextNode(txt_aux[0]));
-                        div.appendChild(document.createElement("br"));
-                        div.appendChild(document.createTextNode(txt_aux[1]));
-                        newCell.appendChild(div);
 
-                        //newCell.innerHTML = img.value;
-                        //document.getElementById('image').appendChild(img);
-                    } else {
                         console.log('j=1');
                         var divx = document.createElement('p');
                         divx.setAttribute("style", "padding-left:60px; padding-top:0px");
@@ -896,6 +880,7 @@ function inserirLinhaTabelaFabrica() {
                         var diferenca1 = txt_aux[0] - descontoLargura;
                         divx.appendChild(document.createTextNode(diferenca1));
                         newCell.appendChild(divx);
+
 
                         console.log("PRIMEIRA VEZ i=0 : IMAGEM");
                         var img = document.createElement("IMG");
@@ -910,6 +895,20 @@ function inserirLinhaTabelaFabrica() {
                         div.appendChild(document.createElement("br"));
                         div.appendChild(document.createTextNode(txt_aux[1]));
                         newCellEsquerda.appendChild(div);
+
+                        //newCell.innerHTML = img.value;
+                        //document.getElementById('image').appendChild(img);
+                    } else {
+                        console.log('j=1');
+                        var divx = document.createElement('p');
+                        divx.setAttribute("style", "padding-left:60px; padding-top:0px");
+                        var texto = document.getElementById('altura').value;
+                        var txt_aux = texto.split();
+                        var diferenca1 = txt_aux[0] - descontoLargura;
+                        divx.appendChild(document.createTextNode(diferenca1));
+                        newCell.appendChild(divx);
+
+
 
                     }
 
