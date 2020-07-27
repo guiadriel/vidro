@@ -861,7 +861,7 @@ function inserirLinhaTabelaFabrica() {
             console.log("j=" + j);
             switch (j) {
                 case 0:
-                    if (i > 0) {
+                    if (i < 1) {
                         console.log("PRIMEIRA VEZ i=0 : IMAGEM");
                         var img = document.createElement("IMG");
                         img.src = document.getElementById('btt1').src;
