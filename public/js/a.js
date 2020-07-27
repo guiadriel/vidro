@@ -876,7 +876,6 @@ function inserirLinhaTabelaFabrica() {
                     newCell.appendChild(div);
                     //newCell.innerHTML = img.value;
                     //document.getElementById('image').appendChild(img);
-                    break;
                 case 1:
                     console.log('j=1');
                     var divx = document.createElement('p');
