@@ -909,6 +909,7 @@ function inserirLinhaTabelaFabrica() {
                         var txt_aux = texto.split();
                         var diferenca1 = txt_aux[0] - descontoLargura;
                         divx.appendChild(document.createTextNode(diferenca1));
+                        newCell.appendChild(divx);
                         if (i < numeroDePartes) {
                             newCell.appendChild(divx);
                         }
