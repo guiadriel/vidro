@@ -907,7 +907,7 @@ function inserirLinhaTabelaFabrica() {
                     } else {
                         console.log('j=1');
                         var divx = document.createElement('p');
-                        divx.setAttribute("style", "padding-left:30px; padding-top:0px");
+                        divx.setAttribute("style", "padding-top:0px; width: 1px; color: white;");
                         var texto = document.getElementById('altura').value;
                         var txt_aux = texto.split();
                         var diferenca1 = "-----";
