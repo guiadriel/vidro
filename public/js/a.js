@@ -887,7 +887,7 @@ function inserirLinhaTabelaFabrica() {
                         img.src = document.getElementById('btt1').src;
                         img.setAttribute('width', '93px');
                         var div = document.createElement('p');
-                        div.setAttribute("style", "font-size:8px; padding-top:60px");
+                        div.setAttribute("style", "font-size:8px;");
                         var texto = document.getElementById('btt1').value;
                         var txt_aux = texto.split("-");
                         newCellEsquerda.appendChild(img);
