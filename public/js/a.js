@@ -327,9 +327,10 @@ function inserir() {
     inserirLinhaTabela();
     inserirLinhaTabelaFabrica();
     soma123 += parseFloat(document.getElementById("Total").value);
+    soma123 += parseFloat(document.getElementById("maoDeObra").value)
     soma123Fabrica += parseFloat(document.getElementById("Total").value);
     document.getElementById("soma1234").innerHTML = number_format(soma123, 2, ",", ".");
-    var vista = (parseFloat(soma123) - ((5 * parseFloat(soma123)) / 100)) + parseFloat(document.getElementById("maoDeObra").value);
+    var vista = (parseFloat(soma123) - ((5 * parseFloat(soma123)) / 100));
     console.log("Mao de obra adicionada: " + document.getElementById("maoDeObra").value);
     console.log(vista);
     document.getElementById("vista").innerHTML = number_format(vista, 2, ",", ".");
