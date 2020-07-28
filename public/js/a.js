@@ -242,7 +242,7 @@ function calcula() {
     //	precoFerro 	  = xFerro;
     //	precoKit      = largura * xKit;
     //	SubTotal      = parseFloat(precoVidro) + parseFloat(precoDiversos) + parseFloat(precoFerro) + parseFloat(precoKit);
-    //	Total 		  = parseFloat(quantidade) + SubTotal;
+    //	Total 		  = parseFloat(quantidade) * SubTotal ;
     document.getElementById("SubTotal").value = SubTotal;
     document.getElementById("precoVidro").value = parseFloat((altura * (largura + TRANSPASSE(document.getElementById("btt1").src)) * parseFloat(document.getElementById("yCor").value)));
     console.log(document.getElementById("precoVidro").value);
@@ -329,7 +329,8 @@ function inserir() {
     soma123 += parseFloat(document.getElementById("Total").value);
     soma123Fabrica += parseFloat(document.getElementById("Total").value);
     document.getElementById("soma1234").innerHTML = number_format(soma123, 2, ",", ".");
-    var vista = parseFloat(soma123) - ((5 * parseFloat(soma123)) / 100);
+    var vista = (parseFloat(soma123) - ((5 * parseFloat(soma123)) / 100)) + document.getElementById("maoDeObra").value;
+    console.log("Mao de obra adicionada: " + document.getElementById("maoDeObra").value);
     document.getElementById("vista").innerHTML = number_format(vista, 2, ",", ".");
     fParcela();
 }
