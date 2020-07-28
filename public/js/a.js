@@ -880,7 +880,7 @@ function inserirLinhaTabelaFabrica() {
                         divx.setAttribute("style", "padding-left:30px; padding-top:0px");
                         var texto = document.getElementById('altura').value;
                         var txt_aux = texto.split();
-                        var diferenca1 = txt_aux[0] - descontoLargura;
+                        var diferenca1 = "-----";
                         divx.appendChild(document.createTextNode(diferenca1));
                         newCell.appendChild(divx);
 
