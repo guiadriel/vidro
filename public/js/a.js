@@ -894,7 +894,10 @@ function inserirLinhaTabelaFabrica() {
                         div.appendChild(document.createTextNode(txt_aux[0]));
                         div.appendChild(document.createElement("br"));
                         div.appendChild(document.createTextNode(txt_aux[1]));
-                        newCellEsquerda.appendChild(div);
+                        if (i < numeroDePartes) {
+                            newCellEsquerda.appendChild(div);
+                        }
+
 
                         //newCell.innerHTML = img.value;
                         //document.getElementById('image').appendChild(img);
@@ -907,13 +910,16 @@ function inserirLinhaTabelaFabrica() {
                         var diferenca1 = txt_aux[0] - descontoLargura;
                         divx.appendChild(document.createTextNode(diferenca1));
                         newCell.appendChild(divx);
-
+                        if (i < numeroDePartes) {
+                            newCell.appendChild(divx);
+                        }
 
 
                     }
 
                     break;
                 case 1:
+
                     console.log('j=1');
                     var divx = document.createElement('p');
                     divx.setAttribute("style", "padding-left:30px; padding-top:0px;");
@@ -921,7 +927,9 @@ function inserirLinhaTabelaFabrica() {
                     var txt_aux = texto.split();
                     var diferenca1 = txt_aux[0] - descontoLargura;
                     divx.appendChild(document.createTextNode(diferenca1));
-                    newCell.appendChild(divx);
+                    if (i < numeroDePartes) {
+                        newCell.appendChild(divx);
+                    }
                     break;
                 case 2:
                     console.log('j=2');
@@ -931,7 +939,9 @@ function inserirLinhaTabelaFabrica() {
                     var txt_aux = texto.split();
                     var diferenca2 = txt_aux[0] - descontoLargura;
                     divx.appendChild(document.createTextNode(diferenca2));
-                    newCell.appendChild(divx);
+                    if (i < numeroDePartes) {
+                        newCell.appendChild(divx);
+                    }
                     break;
                 case 3:
                     var divx = document.createElement('p');
@@ -939,14 +949,19 @@ function inserirLinhaTabelaFabrica() {
                     var texto = document.getElementById('espessura').value;
                     var txt_aux = texto.split();
                     divx.appendChild(document.createTextNode(txt_aux[0]));
-                    newCell.appendChild(divx);
+                    if (i < numeroDePartes) {
+                        newCell.appendChild(divx);
+                    }
                     break;
                 case 4:
                     newCell.style.width = "120px";
                     var img2 = document.createElement("IMG");
                     img2.setAttribute("style", "padding-left:10px");
                     img2.src = document.getElementById('cor').src;
-                    newCell.appendChild(img2);
+
+                    if (i < numeroDePartes) {
+                        newCell.appendChild(img2);
+                    }
                     break;
                 case 5:
                     var divx = document.createElement('p');
@@ -954,7 +969,9 @@ function inserirLinhaTabelaFabrica() {
                     var texto = document.getElementById('aluminio').value;
                     var txt_aux = texto.split();
                     divx.appendChild(document.createTextNode(txt_aux[0]));
-                    newCell.appendChild(divx);
+                    if (i < numeroDePartes) {
+                        newCell.appendChild(divx);
+                    }
                     break;
                 case 6:
                     var divx = document.createElement('p');
@@ -962,7 +979,9 @@ function inserirLinhaTabelaFabrica() {
                     var texto = document.getElementById('quantidade').value;
                     var txt_aux = texto.split();
                     divx.appendChild(document.createTextNode(txt_aux[0]));
-                    newCell.appendChild(divx);
+                    if (i < numeroDePartes) {
+                        newCell.appendChild(divx);
+                    }
                     break;
                 case 7:
                     var divx = document.createElement('p');
@@ -970,7 +989,9 @@ function inserirLinhaTabelaFabrica() {
                     var texto = number_format(document.getElementById('SubTotal').value, 2, ",", ".");
                     var txt_aux = texto.split();
                     divx.appendChild(document.createTextNode(txt_aux[0]));
-                    newCell.appendChild(divx);
+                    if (i < numeroDePartes) {
+                        newCell.appendChild(divx);
+                    }
                     break;
                 case 8:
                     var divx = document.createElement('p');
@@ -978,7 +999,9 @@ function inserirLinhaTabelaFabrica() {
                     var texto = number_format(document.getElementById('Total').value, 2, ",", ".");
                     var txt_aux = texto.split();
                     divx.appendChild(document.createTextNode(txt_aux[0]));
-                    newCell.appendChild(divx);
+                    if (i < numeroDePartes) {
+                        newCell.appendChild(divx);
+                    }
                     //var div = ( document.all ) ? document.all['myDiv'] : document.getElementById('myDiv');
                     //div.innerHTML = '<button id="btn" name="btn">Button</button>';
                     break;
@@ -991,7 +1014,10 @@ function inserirLinhaTabelaFabrica() {
                     img3.src = "./public/img/x.png";
                     //tá imprimindo 45, mas está certo  pois realmente tem um monte de linhas em branco na tabela
                     img3.setAttribute("onclick", "delRow(this.parentNode.parentNode.rowIndex, this.parentNode.parentNode.getElementsByTagName('td'))");
-                    newCell.appendChild(img3);
+
+                    if (i < numeroDePartes) {
+                        newCell.appendChild(img3);
+                    }
                     break;
                 default:
             }
