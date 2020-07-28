@@ -909,17 +909,15 @@ function inserirLinhaTabelaFabrica() {
                         var txt_aux = texto.split();
                         var diferenca1 = txt_aux[0] - descontoLargura;
                         divx.appendChild(document.createTextNode(diferenca1));
-                        newCell.appendChild(divx);
                         if (i < numeroDePartes) {
                             newCell.appendChild(divx);
+                        } else {
+                            divx.appendChild(document.createTextNode(""));
+                            newCell.appendChild(divx);
                         }
-
-
                     }
-
                     break;
                 case 1:
-
                     console.log('j=1');
                     var divx = document.createElement('p');
                     divx.setAttribute("style", "padding-left:30px; padding-top:0px;");
@@ -928,6 +926,9 @@ function inserirLinhaTabelaFabrica() {
                     var diferenca1 = txt_aux[0] - descontoLargura;
                     divx.appendChild(document.createTextNode(diferenca1));
                     if (i < numeroDePartes) {
+                        newCell.appendChild(divx);
+                    } else {
+                        divx.appendChild(document.createTextNode(""));
                         newCell.appendChild(divx);
                     }
                     break;
@@ -941,6 +942,9 @@ function inserirLinhaTabelaFabrica() {
                     divx.appendChild(document.createTextNode(diferenca2));
                     if (i < numeroDePartes) {
                         newCell.appendChild(divx);
+                    } else {
+                        divx.appendChild(document.createTextNode(""));
+                        newCell.appendChild(divx);
                     }
                     break;
                 case 3:
@@ -950,6 +954,9 @@ function inserirLinhaTabelaFabrica() {
                     var txt_aux = texto.split();
                     divx.appendChild(document.createTextNode(txt_aux[0]));
                     if (i < numeroDePartes) {
+                        newCell.appendChild(divx);
+                    } else {
+                        divx.appendChild(document.createTextNode(""));
                         newCell.appendChild(divx);
                     }
                     break;
@@ -961,6 +968,9 @@ function inserirLinhaTabelaFabrica() {
 
                     if (i < numeroDePartes) {
                         newCell.appendChild(img2);
+                    } else {
+                        divx.appendChild(document.createTextNode(""));
+                        newCell.appendChild(divx);
                     }
                     break;
                 case 5:
@@ -970,6 +980,9 @@ function inserirLinhaTabelaFabrica() {
                     var txt_aux = texto.split();
                     divx.appendChild(document.createTextNode(txt_aux[0]));
                     if (i < numeroDePartes) {
+                        newCell.appendChild(divx);
+                    } else {
+                        divx.appendChild(document.createTextNode(""));
                         newCell.appendChild(divx);
                     }
                     break;
@@ -981,6 +994,9 @@ function inserirLinhaTabelaFabrica() {
                     divx.appendChild(document.createTextNode(txt_aux[0]));
                     if (i < numeroDePartes) {
                         newCell.appendChild(divx);
+                    } else {
+                        divx.appendChild(document.createTextNode(""));
+                        newCell.appendChild(divx);
                     }
                     break;
                 case 7:
@@ -991,6 +1007,9 @@ function inserirLinhaTabelaFabrica() {
                     divx.appendChild(document.createTextNode(txt_aux[0]));
                     if (i < numeroDePartes) {
                         newCell.appendChild(divx);
+                    } else {
+                        divx.appendChild(document.createTextNode(""));
+                        newCell.appendChild(divx);
                     }
                     break;
                 case 8:
@@ -1000,6 +1019,9 @@ function inserirLinhaTabelaFabrica() {
                     var txt_aux = texto.split();
                     divx.appendChild(document.createTextNode(txt_aux[0]));
                     if (i < numeroDePartes) {
+                        newCell.appendChild(divx);
+                    } else {
+                        divx.appendChild(document.createTextNode(""));
                         newCell.appendChild(divx);
                     }
                     //var div = ( document.all ) ? document.all['myDiv'] : document.getElementById('myDiv');
@@ -1017,6 +1039,9 @@ function inserirLinhaTabelaFabrica() {
 
                     if (i < numeroDePartes) {
                         newCell.appendChild(img3);
+                    } else {
+                        divx.appendChild(document.createTextNode(""));
+                        newCell.appendChild(divx);
                     }
                     break;
                 default:
