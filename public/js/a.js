@@ -237,6 +237,11 @@ function calcula() {
     var SubTotal = document.getElementById("SubTotal").value;
     var quantidade = document.getElementById("quantidade").value;
     var Total = document.getElementById("Total").value;
+
+
+    //xDiversos é quanto vai gastar com cantoneira
+    //xFator é quantas cantoneiras verticais vão
+
     //	precoVidro    = altura * largura(TRANSPASSE) * yCor;
     //	precoDiversos = altura * xFator * xDiversos;
     //	precoFerro 	  = xFerro;
@@ -354,9 +359,8 @@ function fParcela() {
 function xAtualiza(x) {
     document.getElementById("espessura").value = "8mm";
     switch (x) {
-        case "i01":
-            //  Valor do Basculante   Imagem i01.
-            document.getElementById("xFator").value = 5;
+        case "i01": //basculante simples
+            document.getElementById("xFator").value = 5; //
             document.getElementById("xDiversos").value = document.getElementById("pvMETRO_QUADRADO_DA_CANTONEIRA");
             // 35  + 80 %     --> alterei em 17 de julho de 2020 para :  45 + 40% nesse e nos outros
             document.getElementById("xFerro").value = 63.00; // Valor da Ferragem Basculante   + 80%
@@ -588,7 +592,7 @@ function xAtualiza(x) {
 }
 
 function trocaAba(abaClicada) {
-    document.getElementById("fundoBasculante").style.display = "none";
+    document.getElementById("fundoBasculantes").style.display = "none";
     document.getElementById("fundoJanelas").style.display = "none";
     document.getElementById("fundoPortas").style.display = "none";
     document.getElementById("fundoOutros").style.display = "none";
