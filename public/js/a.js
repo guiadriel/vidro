@@ -587,6 +587,32 @@ function xAtualiza(x) {
     calcula();
 }
 
+function trocaAba(abaClicada) {
+    document.getElementById("fundoBasculante").style.display = "none";
+    document.getElementById("fundoJanelas").style.display = "none";
+    document.getElementById("fundoPortas").style.display = "none";
+    document.getElementById("fundoOutros").style.display = "none";
+    document.getElementById("fundoEsquadrilhas").style.display = "none";
+    switch (abaClicada) {
+        case 1:
+            document.getElementById("fundoBasculante").style.display = "block";
+            break;
+        case 2:
+            document.getElementById("fundoJanelas").style.display = "block";
+            break;
+        case 3:
+            document.getElementById("fundoPortas").style.display = "block";
+            break;
+        case 4:
+            document.getElementById("fundoOutros").style.display = "block";
+            break;
+        case 5:
+            document.getElementById("fundoEsquadrilhas").style.display = "block";
+            break;
+    }
+}
+
+
 function yAtualiza(y) {
     switch (y) {
         case "v01": // Vidrof INCOLOR
