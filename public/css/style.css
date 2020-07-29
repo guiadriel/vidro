@@ -267,6 +267,15 @@ table td {
     padding: 10px;
 }
 
+.fundoAbasConteudo {
+    visibility: hidden;
+    position: absolute;
+    margin-left: 20%;
+    background-color: rgb(238, 247, 244);
+    padding: 20px;
+    border-radius: 25px;
+}
+
 .main_menu {
     /*	position:relative;*/
     /*	margin:400px auto;*/
