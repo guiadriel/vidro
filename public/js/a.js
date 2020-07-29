@@ -606,20 +606,20 @@ function trocaAba(abaClicada) {
     switch (abaClicada) {
         case 1:
             document.getElementById("fundoBasculantes").style.visibility = "visible";
-            document.getElementById("fundoBasculantes").style.backgroundColor = "#eef7f4";
+            document.getElementById("spanBasc").style.backgroundColor = "#eef7f4";
 
             break;
         case 2:
             document.getElementById("fundoJanelas").style.visibility = "visible";
-            document.getElementById("fundoJanelas").style.backgroundColor = "#eef7f4";
+            document.getElementById("spanJane").style.backgroundColor = "#eef7f4";
             break;
         case 3:
             document.getElementById("fundoPortas").style.visibility = "visible";
-            document.getElementById("fundoPortas").style.backgroundColor = "#eef7f4";
+            document.getElementById("spanPort").style.backgroundColor = "#eef7f4";
             break;
         case 4:
             document.getElementById("fundoOutros").style.visibility = "visible";
-            document.getElementById("fundoOutros").style.backgroundColor = "#eef7f4";
+            document.getElementById("spanOutr").style.backgroundColor = "#eef7f4";
             break;
         case 5:
             document.getElementById("fundoEsquadrilhas").style.visibility = "visible";
