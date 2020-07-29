@@ -592,26 +592,26 @@ function xAtualiza(x) {
 }
 
 function trocaAba(abaClicada) {
-    document.getElementById("fundoBasculantes").style.display = "none";
-    document.getElementById("fundoJanelas").style.display = "none";
-    document.getElementById("fundoPortas").style.display = "none";
-    document.getElementById("fundoOutros").style.display = "none";
-    document.getElementById("fundoEsquadrilhas").style.display = "none";
+    document.getElementById("fundoBasculantes").style.visibility = "hidden";
+    document.getElementById("fundoJanelas").style.visibility = "hidden";
+    document.getElementById("fundoPortas").style.visibility = "hidden";
+    document.getElementById("fundoOutros").style.visibility = "hidden";
+    document.getElementById("fundoEsquadrilhas").style.visibility = "hidden";
     switch (abaClicada) {
         case 1:
-            document.getElementById("fundoBasculante").style.display = "block";
+            document.getElementById("fundoBasculante").style.visibility = "visible";
             break;
         case 2:
-            document.getElementById("fundoJanelas").style.display = "block";
+            document.getElementById("fundoJanelas").style.visibility = "visible";
             break;
         case 3:
-            document.getElementById("fundoPortas").style.display = "block";
+            document.getElementById("fundoPortas").style.visibility = "visible";
             break;
         case 4:
-            document.getElementById("fundoOutros").style.display = "block";
+            document.getElementById("fundoOutros").style.visibility = "visible";
             break;
         case 5:
-            document.getElementById("fundoEsquadrilhas").style.display = "block";
+            document.getElementById("fundoEsquadrilhas").style.visibility = "visible";
             break;
     }
 }
