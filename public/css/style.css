@@ -261,6 +261,12 @@ table td {
     left: 0%;
 }
 
+.classeMenuzinhoDeAbas {
+    background-color: #3c4643;
+    border-radius: 10px;
+    padding: 10px;
+}
+
 .main_menu {
     /*	position:relative;*/
     /*	margin:400px auto;*/
