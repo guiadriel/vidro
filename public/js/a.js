@@ -599,7 +599,7 @@ function trocaAba(abaClicada) {
     document.getElementById("fundoEsquadrilhas").style.visibility = "hidden";
     switch (abaClicada) {
         case 1:
-            document.getElementById("fundoBasculante").style.visibility = "visible";
+            document.getElementById("fundoBasculantes").style.visibility = "visible";
             break;
         case 2:
             document.getElementById("fundoJanelas").style.visibility = "visible";
