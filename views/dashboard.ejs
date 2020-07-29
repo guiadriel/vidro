@@ -44,7 +44,7 @@
     width: 75px;
     background-repeat: no-repeat;
     font-size: 2rem;
-    border-radius: 97px;
+    border-radius: 10px;
     border-bottom-style: outset;
     " id="imgConfigVidracaria" onclick="alert('editarno banco de dados')">
 </div>
@@ -55,7 +55,7 @@
     bottom: 66%;
     right: 15px;
     z-index: 100;
-    background-image: url(./public/img/mais.png);
+    background-image: url(./public/img/config.png);
     background-size: contain;
     width: 75px;
     height: 75px;
@@ -228,31 +228,32 @@ padding-top: 20px;
         <%= user.name %>
     </p>
     <a href="/users/logout" class="btn btn-secondary" style="position:absolute; right: 0px; z-index: 100;">Sair</a>
-    <table width="1000px">
 
+
+    <table width="1000px">
         <tr width="1000px">
             <td colspan="3" width="800px" style="text-align:center">
-                <img src="./public/img/maisbox.png" height="150px" align="top" onclick="MudarVisibilidade('infoLoja')">
+                <img id="configVidracariaImagem" src="./public/img/maisbox.png" height="150px" align="top" onclick="MudarVisibilidade('infoLoja')">
             </td>
         </tr>
         <TR id="infoLoja" style="visibility: hidden;">
             <tr>
-                <td colspan="1">
+                <td id="configVidracariaTelefone1" colspan="1">
                     Tel: (12) 9 7403-3933
                 </td>
-                <td colspan="1" style="padding-left:30px">
+                <td id="configVidracariaTelefone2" colspan="1" style="padding-left:30px">
                     Tel2: (12) 97407-0510
                 </td>
-                <td colspan="1" style="padding-left:30px">
+                <td id="configVidracariaTwitter" colspan="1" style="padding-left:30px">
                     @oglassvidros
                 </td>
             </tr>
             <tr>
-                <td colspan="1">
+                <td id="configVidracariaEndereco" colspan="1">
                     Av. Charles Schnnelder, 850 - Estacionamento DICICO,Taubaté SP
                 </td>
 
-                <td colspan="1" style="padding-left:30px">
+                <td id="configVidracariaEmail" colspan="1" style="padding-left:30px">
                     meloprimax@gmail.com
                 </td>
 
