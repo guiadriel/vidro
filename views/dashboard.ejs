@@ -19,7 +19,7 @@
 <div id="divBtImprime">
     <input type="button" style="
     position: fixed;
-    bottom: 175px;
+    bottom: 113px;
     right: 15px;
     z-index: 100;
     background-image: url(./public/img/fim.png);
@@ -231,13 +231,10 @@ padding-top: 20px;
 
 
 <div id="cabecario">
-    <p class="lead mb-3" style="position: absolute; right: 90px; z-index: 100;">Bem-vindo
-        <%= user.name %>
-    </p>
     <a href="/users/logout" class="btn btn-secondary" style="position:absolute; right: 0px; z-index: 100;">Sair</a>
 
 
-    <table width="1000px">
+    <table style="visibility: hidden;" width="1000px">
         <tr width="1000px">
             <td colspan="3" width="800px" style="text-align:center">
                 <img id="configVidracariaImagem" src="./public/img/maisbox.png" height="150px" align="top" onclick="MudarVisibilidade('infoLoja')">
