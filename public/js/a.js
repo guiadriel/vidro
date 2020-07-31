@@ -363,7 +363,7 @@ function xAtualiza(x) {
             document.getElementById("quantidadeCantoneirasVertical").value = document.getElementById("quantidadeCANTONEIRABASCULANTESIMPLES");
             document.getElementById("pvMETROCANTONEIRA").value = document.getElementById("pvMETRO_QUADRADO_DA_CANTONEIRA");
             // 35  + 80 %     --> alterei em 17 de julho de 2020 para :  45 + 40% nesse e nos outros
-            document.getElementById("xFerro").value = 63.00; // Valor da Ferragem Basculante   + 80%
+            document.getElementById("xFerro").value = document.getElementById("pcFERRAGEMBASCULANTESIMPLES");
             document.getElementById("xKit").value = 0;
             document.getElementById("btt1").src = "./public/img/i01.png"
             descontoAltura = 10;
@@ -375,7 +375,7 @@ function xAtualiza(x) {
             document.getElementById("quantidadeCantoneirasVertical").value = document.getElementById("quantidadeCANTONEIRABASCULANTEBF");
             document.getElementById("pvMETROCANTONEIRA").value = document.getElementById("pvMETRO_QUADRADO_DA_CANTONEIRA");
             // 55 + 80%      = 99    --> alterei em 17 de julho de 2020 para :  45 + 40% nesse e nos outros
-            document.getElementById("xFerro").value = 63.00; // Valor da Ferragem + 80%
+            document.getElementById("xFerro").value = document.getElementById("pcFERRAGEMBASCULANTEBF");
             document.getElementById("xKit").value = 90.00;
             document.getElementById("btt1").src = "./public/img/i02.png";
             descontoAltura = 10;
@@ -386,7 +386,7 @@ function xAtualiza(x) {
             document.getElementById("quantidadeCantoneirasVertical").value = document.getElementById("quantidadeCANTONEIRABASCULANTEFBF");
             document.getElementById("pvMETROCANTONEIRA").value = document.getElementById("pvMETRO_QUADRADO_DA_CANTONEIRA");
             // 55 + 80%      = 99 
-            document.getElementById("xFerro").value = 98.00;
+            document.getElementById("xFerro").value = document.getElementById("pcFERRAGEMBASCULANTEFBF");
             document.getElementById("xKit").value = 90.00;
             document.getElementById("btt1").src = "./public/img/i03.png";
             descontoAltura = 10;
@@ -396,7 +396,7 @@ function xAtualiza(x) {
         case "i04":
             document.getElementById("quantidadeCantoneirasVertical").value = document.getElementById("quantidadeCANTONEIRABASCULANTEBFB");
             document.getElementById("pvMETROCANTONEIRA").value = document.getElementById("pvMETRO_QUADRADO_DA_CANTONEIRA");
-            document.getElementById("xFerro").value = 28.00;
+            document.getElementById("xFerro").value = document.getElementById("pcFERRAGEMBASCULANTEBFB");
             document.getElementById("xKit").value = 90.00;
             document.getElementById("btt1").src = "./public/img/i04.png";
             descontoAltura = 10;
@@ -406,7 +406,7 @@ function xAtualiza(x) {
         case "i05":
             document.getElementById("quantidadeCantoneirasVertical").value = document.getElementById("quantidadeCANTONEIRABASCULANTEBFBAIXO");
             document.getElementById("pvMETROCANTONEIRA").value = document.getElementById("pvMETRO_QUADRADO_DA_CANTONEIRA");
-            document.getElementById("xFerro").value = 56.00; //alterado
+            document.getElementById("xFerro").value = document.getElementById("pcFERRAGEMBASCULANTEBFBAIXO");
             document.getElementById("xKit").value = 90.00;
             document.getElementById("btt1").src = "./public/img/i05.png";
             descontoAltura = 10;
@@ -416,7 +416,7 @@ function xAtualiza(x) {
         case "i06":
             document.getElementById("quantidadeCantoneirasVertical").value = document.getElementById("quantidadeCANTONEIRABASCULANTEBFALTO");
             document.getElementById("pvMETROCANTONEIRA").value = document.getElementById("pvMETRO_QUADRADO_DA_CANTONEIRA");
-            document.getElementById("xFerro").value = 161.00; //alterado
+            document.getElementById("xFerro").value = document.getElementById("pcFERRAGEMBASCULANTEBFALTO");
             document.getElementById("xKit").value = 0;
             document.getElementById("btt1").src = "./public/img/i06.png";
             descontoAltura = 10;
@@ -426,7 +426,7 @@ function xAtualiza(x) {
         case "i07":
             document.getElementById("quantidadeCantoneirasVertical").value = document.getElementById("quantidadeCANTONEIRAJANELA2FOLHASFECHADURA");
             document.getElementById("pvMETROCANTONEIRA").value = document.getElementById("pvMETRO_QUADRADO_DA_CANTONEIRA");
-            document.getElementById("xFerro").value = 140.00; //alterado
+            document.getElementById("xFerro").value = document.getElementById("pcFERRAGEMJANELA2FOLHASFECHADURA");
             document.getElementById("xKit").value = 0;
             document.getElementById("btt1").src = "./public/img/i07.png";
             descontoAltura = 10;
@@ -436,7 +436,7 @@ function xAtualiza(x) {
         case "i08":
             document.getElementById("quantidadeCantoneirasVertical").value = document.getElementById("quantidadeCANTONEIRAJANELA2FOLHASBATEFECHA");
             document.getElementById("pvMETROCANTONEIRA").value = document.getElementById("pvMETRO_QUADRADO_DA_CANTONEIRA");
-            document.getElementById("xFerro").value = 0;
+            document.getElementById("xFerro").value = document.getElementById("pcFERRAGEMJANELA2FOLHASBATEFECHA");
             document.getElementById("xKit").value = 0;
             document.getElementById("btt1").src = "./public/img/i08.png";
             descontoAltura = 10;
@@ -446,7 +446,7 @@ function xAtualiza(x) {
         case "i09":
             document.getElementById("quantidadeCantoneirasVertical").value = document.getElementById("quantidadeCANTONEIRAJANELA2FOLHASTRINCO");
             document.getElementById("pvMETROCANTONEIRA").value = document.getElementById("pvMETRO_QUADRADO_DA_CANTONEIRA");
-            document.getElementById("xFerro").value = 238;
+            document.getElementById("xFerro").value = document.getElementById("pcFERRAGEMJANELA2FOLHASTRINCO");
             document.getElementById("xKit").value = 85.00;
             document.getElementById("btt1").src = "./public/img/i09.png";
             descontoAltura = 10;
@@ -457,7 +457,7 @@ function xAtualiza(x) {
 
             document.getElementById("quantidadeCantoneirasVertical").value = document.getElementById("quantidadeCANTONEIRAJANELA4FOLHASFECHADURA");
             document.getElementById("pvMETROCANTONEIRA").value = document.getElementById("pvMETRO_QUADRADO_DA_CANTONEIRA");
-            document.getElementById("xFerro").value = 0;
+            document.getElementById("xFerro").value = document.getElementById("pcFERRAGEMJANELA4FOLHASFECHADURA");
             document.getElementById("xKit").value = 0;
             document.getElementById("btt1").src = "./public/img/i10.png";
             t = 7;
@@ -470,7 +470,7 @@ function xAtualiza(x) {
         case "i11":
             document.getElementById("quantidadeCantoneirasVertical").value = document.getElementById("quantidadeCANTONEIRAJANELA4FOLHASBATEFECHA");
             document.getElementById("pvMETROCANTONEIRA").value = document.getElementById("pvMETRO_QUADRADO_DA_CANTONEIRA");
-            document.getElementById("xFerro").value = 0;
+            document.getElementById("xFerro").value = document.getElementById("pcFERRAGEMJANELA4FOLHASBATEFECHA");
             document.getElementById("xKit").value = 0;
             document.getElementById("espessura").value = "4mm";
             document.getElementById("btt1").src = "./public/img/i11.png";
@@ -483,7 +483,7 @@ function xAtualiza(x) {
         case "i12":
             document.getElementById("quantidadeCantoneirasVertical").value = document.getElementById("quantidadeCANTONEIRAJANELA4FOLHASTRINCO");
             document.getElementById("pvMETROCANTONEIRA").value = document.getElementById("pvMETRO_QUADRADO_DA_CANTONEIRA");
-            document.getElementById("xFerro").value = 0;
+            document.getElementById("xFerro").value = document.getElementById("pcFERRAGEMJANELA4FOLHASTRINCO");
             document.getElementById("xKit").value = 0;
             document.getElementById("btt1").src = "./public/img/i12.png";
             t = 8;
@@ -495,7 +495,7 @@ function xAtualiza(x) {
         case "i13":
             document.getElementById("quantidadeCantoneirasVertical").value = document.getElementById("quantidadeCANTONEIRAPORTAABRIRSIMPLES");
             document.getElementById("pvMETROCANTONEIRA").value = document.getElementById("pvMETRO_QUADRADO_DA_CANTONEIRA");
-            document.getElementById("xFerro").value = 0;
+            document.getElementById("xFerro").value = document.getElementById("pcFERRAGEMPORTAABRIRSIMPLES");
             document.getElementById("xKit").value = 0;
             document.getElementById("btt1").src = "./public/img/i13.png";
             t = 9;
@@ -507,7 +507,7 @@ function xAtualiza(x) {
         case "i14":
             document.getElementById("quantidadeCantoneirasVertical").value = document.getElementById("quantidadeCANTONEIRAPORTAABRIRPP");
             document.getElementById("pvMETROCANTONEIRA").value = document.getElementById("pvMETRO_QUADRADO_DA_CANTONEIRA");
-            document.getElementById("xFerro").value = 0;
+            document.getElementById("xFerro").value = document.getElementById("pcFERRAGEMPORTAABRIRPP");
             document.getElementById("xKit").value = 0;
             document.getElementById("btt1").src = "./public/img/i14.png";
             t = 8; // Envia para o mesmo valor do case 12  (600)
@@ -519,7 +519,7 @@ function xAtualiza(x) {
         case "i15":
             document.getElementById("quantidadeCantoneirasVertical").value = document.getElementById("quantidadeCANTONEIRAPORTAABRIRPPF");
             document.getElementById("pvMETROCANTONEIRA").value = document.getElementById("pvMETRO_QUADRADO_DA_CANTONEIRA");
-            document.getElementById("xFerro").value = 0;
+            document.getElementById("xFerro").value = document.getElementById("pcFERRAGEMPORTAABRIRPPF");
             document.getElementById("xKit").value = 0;
             document.getElementById("btt1").src = "./public/img/i15.png";
             t = 8; // Envia para o mesmo valor do case 12  (600)
@@ -531,7 +531,7 @@ function xAtualiza(x) {
         case "i16":
             document.getElementById("quantidadeCantoneirasVertical").value = document.getElementById("quantidadeCANTONEIRAPORTAABRIRPF");
             document.getElementById("pvMETROCANTONEIRA").value = document.getElementById("pvMETRO_QUADRADO_DA_CANTONEIRA");
-            document.getElementById("xFerro").value = 0;
+            document.getElementById("xFerro").value = document.getElementById("pcFERRAGEMPORTAABRIRPF");
             document.getElementById("xKit").value = 0;
             document.getElementById("btt1").src = "./public/img/i16.png";
             t = 9; // Envia para o mesmo valor do case 12  (700)
@@ -543,7 +543,7 @@ function xAtualiza(x) {
         case "i17":
             document.getElementById("quantidadeCantoneirasVertical").value = document.getElementById("quantidadeCANTONEIRAPORTAABRIRFPPF");
             document.getElementById("pvMETROCANTONEIRA").value = document.getElementById("pvMETRO_QUADRADO_DA_CANTONEIRA");
-            document.getElementById("xFerro").value = 0;
+            document.getElementById("xFerro").value = document.getElementById("pcFERRAGEMPORTAABRIRFPPF");
             document.getElementById("xKit").value = 0;
             document.getElementById("btt1").src = "./public/img/i17.png";
             t = 10;
@@ -555,7 +555,7 @@ function xAtualiza(x) {
         case "i18":
             document.getElementById("quantidadeCantoneirasVertical").value = document.getElementById("quantidadeCANTONEIRAPORTAABRIRFPPFTUBO");
             document.getElementById("pvMETROCANTONEIRA").value = document.getElementById("pvMETRO_QUADRADO_DA_CANTONEIRA");
-            document.getElementById("xFerro").value = 0;
+            document.getElementById("xFerro").value = document.getElementById("pcFERRAGEMPORTAABRIRFPPFTUBO");
             document.getElementById("xKit").value = 0;
             document.getElementById("btt1").src = "./public/img/i18.png";
             t = 8; // Envia para o mesmo valor do case 12  (600)
@@ -567,6 +567,7 @@ function xAtualiza(x) {
         case "i19": //box de canto
             document.getElementById("quantidadeCantoneirasVertical").value = document.getElementById("quantidadeCANTONEIRAPORTAABRIRFPPFTUBOBANDEIRA");
             document.getElementById("pvMETROCANTONEIRA").value = document.getElementById("pvMETRO_QUADRADO_DA_CANTONEIRA");
+            document.getElementById("xFerro").value = document.getElementById("pcFERRAGEMPORTAABRIRFPPFTUBOBANDEIRA");
             document.getElementById("xKit").value = 0.00;
             document.getElementById("btt1").src = "./public/img/i19.png";
             descontoAltura = 10;
@@ -576,6 +577,7 @@ function xAtualiza(x) {
         case "i20": //
             document.getElementById("quantidadeCantoneirasVertical").value = document.getElementById("quantidadeCANTONEIRAPORTACORRERFC");
             document.getElementById("pvMETROCANTONEIRA").value = document.getElementById("pvMETRO_QUADRADO_DA_CANTONEIRA");
+            document.getElementById("xFerro").value = document.getElementById("pcFERRAGEMPORTACORRERFC");
             document.getElementById("xKit").value = 0.00;
             document.getElementById("btt1").src = "./public/img/i20.png";
             descontoAltura = 10;
@@ -585,6 +587,7 @@ function xAtualiza(x) {
         case "i21": //
             document.getElementById("quantidadeCantoneirasVertical").value = document.getElementById("quantidadeCANTONEIRAPORTACORRERPC");
             document.getElementById("pvMETROCANTONEIRA").value = document.getElementById("pvMETRO_QUADRADO_DA_CANTONEIRA");
+            document.getElementById("xFerro").value = document.getElementById("pcFERRAGEMPORTACORRERPC");
             document.getElementById("xKit").value = 0.00;
             document.getElementById("btt1").src = "./public/img/i21.png";
             descontoAltura = 10;
@@ -594,6 +597,7 @@ function xAtualiza(x) {
         case "i22": //
             document.getElementById("quantidadeCantoneirasVertical").value = document.getElementById("quantidadeCANTONEIRAPORTACORRERPCCP");
             document.getElementById("pvMETROCANTONEIRA").value = document.getElementById("pvMETRO_QUADRADO_DA_CANTONEIRA");
+            document.getElementById("xFerro").value = document.getElementById("pcFERRAGEMPORTACORRERPCCP");
             document.getElementById("xKit").value = 0.00;
             document.getElementById("btt1").src = "./public/img/i22.png";
             descontoAltura = 10;
@@ -603,6 +607,7 @@ function xAtualiza(x) {
         case "i23": //
             document.getElementById("quantidadeCantoneirasVertical").value = document.getElementById("quantidadeCANTONEIRAPORTACORRERFCCF");
             document.getElementById("pvMETROCANTONEIRA").value = document.getElementById("pvMETRO_QUADRADO_DA_CANTONEIRA");
+            document.getElementById("xFerro").value = document.getElementById("pcFERRAGEMPORTACORRERFCCF");
             document.getElementById("xKit").value = 0.00;
             document.getElementById("btt1").src = "./public/img/i23.png";
             descontoAltura = 10;
@@ -612,6 +617,7 @@ function xAtualiza(x) {
         case "i24": //
             document.getElementById("quantidadeCantoneirasVertical").value = document.getElementById("quantidadeCANTONEIRAPANORAMICO");
             document.getElementById("pvMETROCANTONEIRA").value = document.getElementById("pvMETRO_QUADRADO_DA_CANTONEIRA");
+            document.getElementById("xFerro").value = document.getElementById("pcFERRAGEMPANORAMICO");
             document.getElementById("xKit").value = 0.00;
             document.getElementById("btt1").src = "./public/img/i24.png";
             descontoAltura = 10;
@@ -621,6 +627,7 @@ function xAtualiza(x) {
         case "i25": //
             document.getElementById("quantidadeCantoneirasVertical").value = document.getElementById("quantidadeCANTONEIRATUBULAR");
             document.getElementById("pvMETROCANTONEIRA").value = document.getElementById("pvMETRO_QUADRADO_DA_CANTONEIRA");
+            document.getElementById("xFerro").value = document.getElementById("pcFERRAGEMTUBULAR");
             document.getElementById("xKit").value = 0.00;
             document.getElementById("btt1").src = "./public/img/i25.png";
             descontoAltura = 10;
@@ -630,6 +637,7 @@ function xAtualiza(x) {
         case "i26": //
             document.getElementById("quantidadeCantoneirasVertical").value = document.getElementById("quantidadeCANTONEIRASACADAS");
             document.getElementById("pvMETROCANTONEIRA").value = document.getElementById("pvMETRO_QUADRADO_DA_CANTONEIRA");
+            document.getElementById("xFerro").value = document.getElementById("pcFERRAGEMSACADAS");
             document.getElementById("xKit").value = 0.00;
             document.getElementById("btt1").src = "./public/img/i26.png";
             descontoAltura = 10;
@@ -639,6 +647,7 @@ function xAtualiza(x) {
         case "i27": //
             document.getElementById("quantidadeCantoneirasVertical").value = document.getElementById("quantidadeCANTONEIRABOX");
             document.getElementById("pvMETROCANTONEIRA").value = document.getElementById("pvMETRO_QUADRADO_DA_CANTONEIRA");
+            document.getElementById("xFerro").value = document.getElementById("pcFERRAGEMBOX");
             document.getElementById("xKit").value = 0.00;
             document.getElementById("btt1").src = "./public/img/i27.png";
             descontoAltura = 10;
@@ -648,6 +657,7 @@ function xAtualiza(x) {
         case "i28": //
             document.getElementById("quantidadeCantoneirasVertical").value = document.getElementById("quantidadeCANTONEIRABOXL");
             document.getElementById("pvMETROCANTONEIRA").value = document.getElementById("pvMETRO_QUADRADO_DA_CANTONEIRA");
+            document.getElementById("xFerro").value = document.getElementById("pcFERRAGEMBOXL");
             document.getElementById("xKit").value = 0.00;
             document.getElementById("btt1").src = "./public/img/i28.png";
             descontoAltura = 10;
@@ -657,6 +667,7 @@ function xAtualiza(x) {
         case "i29": //
             document.getElementById("quantidadeCantoneirasVertical").value = document.getElementById("quantidadeCANTONEIRAESPELHOLAPIDADO");
             document.getElementById("pvMETROCANTONEIRA").value = document.getElementById("pvMETRO_QUADRADO_DA_CANTONEIRA");
+            document.getElementById("xFerro").value = document.getElementById("pcFERRAGEMESPELHOLAPIDADO");
             document.getElementById("xKit").value = 0.00;
             document.getElementById("btt1").src = "./public/img/i29.png";
             descontoAltura = 10;
@@ -666,6 +677,7 @@ function xAtualiza(x) {
         case "i30": //
             document.getElementById("quantidadeCantoneirasVertical").value = document.getElementById("quantidadeCANTONEIRAESPELHOBIZOTE");
             document.getElementById("pvMETROCANTONEIRA").value = document.getElementById("pvMETRO_QUADRADO_DA_CANTONEIRA");
+            document.getElementById("xFerro").value = document.getElementById("pcFERRAGEMESPELHOBIZOTE");
             document.getElementById("xKit").value = 0.00;
             document.getElementById("btt1").src = "./public/img/i30.png";
             descontoAltura = 10;
@@ -675,6 +687,7 @@ function xAtualiza(x) {
         case "i31": //
             document.getElementById("quantidadeCantoneirasVertical").value = document.getElementById("quantidadeCANTONEIRAESQUADRILHAPORTA");
             document.getElementById("pvMETROCANTONEIRA").value = document.getElementById("pvMETRO_QUADRADO_DA_CANTONEIRA");
+            document.getElementById("xFerro").value = document.getElementById("pcFERRAGEMESQUADRILHAPORTA");
             document.getElementById("xKit").value = 0.00;
             document.getElementById("btt1").src = "./public/img/i31.png";
             descontoAltura = 10;
@@ -684,6 +697,7 @@ function xAtualiza(x) {
         case "i32": //
             document.getElementById("quantidadeCantoneirasVertical").value = document.getElementById("quantidadeCANTONEIRAESQUADRILHAPORTAO");
             document.getElementById("pvMETROCANTONEIRA").value = document.getElementById("pvMETRO_QUADRADO_DA_CANTONEIRA");
+            document.getElementById("xFerro").value = document.getElementById("pcFERRAGEMESQUADRILHAPORTAO");
             document.getElementById("xKit").value = 0.00;
             document.getElementById("btt1").src = "./public/img/i32.png";
             descontoAltura = 10;
@@ -693,6 +707,7 @@ function xAtualiza(x) {
         case "i33": //
             document.getElementById("quantidadeCantoneirasVertical").value = document.getElementById("quantidadeCANTONEIRAESQUADRILHAJANELA4FOLHAS");
             document.getElementById("pvMETROCANTONEIRA").value = document.getElementById("pvMETRO_QUADRADO_DA_CANTONEIRA");
+            document.getElementById("xFerro").value = document.getElementById("pcFERRAGEMESQUADRILHAJANELA4FOLHAS");
             document.getElementById("xKit").value = 0.00;
             document.getElementById("btt1").src = "./public/img/i33.png";
             descontoAltura = 10;
@@ -702,6 +717,7 @@ function xAtualiza(x) {
         case "i34": //
             document.getElementById("quantidadeCantoneirasVertical").value = document.getElementById("quantidadeCANTONEIRAESQUADRILHAJANELA2FOLHAS");
             document.getElementById("pvMETROCANTONEIRA").value = document.getElementById("pvMETRO_QUADRADO_DA_CANTONEIRA");
+            document.getElementById("xFerro").value = document.getElementById("pcFERRAGEMESQUADRILHAJANELA2FOLHAS");
             document.getElementById("xKit").value = 0.00;
             document.getElementById("btt1").src = "./public/img/i34.png";
             descontoAltura = 10;
@@ -711,6 +727,7 @@ function xAtualiza(x) {
         case "i35": //
             document.getElementById("quantidadeCantoneirasVertical").value = document.getElementById("quantidadeCANTONEIRAESQUADRILHAVENEZIANACORTINA");
             document.getElementById("pvMETROCANTONEIRA").value = document.getElementById("pvMETRO_QUADRADO_DA_CANTONEIRA");
+            document.getElementById("xFerro").value = document.getElementById("pcFERRAGEMESQUADRILHAVENEZIANACORTINA");
             document.getElementById("xKit").value = 0.00;
             document.getElementById("btt1").src = "./public/img/i35.png";
             descontoAltura = 10;
@@ -720,6 +737,7 @@ function xAtualiza(x) {
         case "i36": //
             document.getElementById("quantidadeCantoneirasVertical").value = document.getElementById("quantidadeCANTONEIRAESQUADRILHAVENAZIANA3FOLHAS");
             document.getElementById("pvMETROCANTONEIRA").value = document.getElementById("pvMETRO_QUADRADO_DA_CANTONEIRA");
+            document.getElementById("xFerro").value = document.getElementById("pcTRANSPASSEESQUADRILHAVENAZIANA3FOLHAS");
             document.getElementById("xKit").value = 0.00;
             document.getElementById("btt1").src = "./public/img/i36.png";
             descontoAltura = 10;
