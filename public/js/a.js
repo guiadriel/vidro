@@ -1272,10 +1272,13 @@ function configMostraImagem() {
 }
 
 function configMostraPrecoBase() {
-    configEscondeTudo();
-    document.getElementById("tbPRECOBASE").style.visibility = "visible";
-    document.getElementById("obsPRECOVIDRO").style.visibility = "visible";
-
+    if (document.getElementById("tbPRECOBASE").style.visibility == "visible") {
+        configEscondeTudo();
+    } else {
+        configEscondeTudo();
+        document.getElementById("tbPRECOBASE").style.visibility = "visible";
+        document.getElementById("obsPRECOVIDRO").style.visibility = "visible";
+    }
 }
 
 function configMostraKit() {
