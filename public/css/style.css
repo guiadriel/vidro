@@ -435,6 +435,12 @@ button.css3button {
     .btn_print {
         display: none;
     }
+    #imgConfig,
+    #imgConfigVidracaria,
+    #fimfim {
+        visibility: hidden;
+        ;
+    }
     #cabecario {
         left: 0;
         margin-left: 150px;
