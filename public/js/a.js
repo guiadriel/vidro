@@ -361,12 +361,14 @@ function xAtualiza(x) {
     switch (x) {
         case "i01": //basculante simples
             var lucroAtual = document.getElementById("LUCRO").value;
-            document.getElementById("quantidadeCantoneirasVertical").value = document.getElementById("quantidadeCANTONEIRAVERTIVALBASCULANTESIMPLES").value * lucroAtual;
-            document.getElementById("quantidadeCantoneirasHorizontal").value = document.getElementById("quantidadeCANTONEIRAHORIZONTALBASCULANTESIMPLES").value * lucroAtual;
+            var quantidadeCantoneirasVertical = document.getElementById("quantidadeCANTONEIRAVERTIVALBASCULANTESIMPLES").value;
+            var quantidadeCantoneirasHorizontal = document.getElementById("quantidadeCANTONEIRAHORIZONTALBASCULANTESIMPLES").value;
+            var pvMetroCantoneira = document.getElementById("pcCANTONEIRABASCULANTESIMPLES").value * lucroAtual;
             console.log("lucro atual: " + lucroAtual);
-            console.log("vertical: " + document.getElementById("quantidadeCantoneirasVertical").value);
-            console.log("horizontal: " + document.getElementById("quantidadeCantoneirasHorizontal").value);
-            document.getElementById("pvMETROCANTONEIRA").value = document.getElementById("pvMETRO_QUADRADO_DA_CANTONEIRA").value;
+            console.log("vertical: " + quantidadeCantoneirasVertical);
+            console.log("horizontal: " + quantidadeCantoneirasHorizontal);
+            console.log("pvMetroCantoneira: " + pvMetroCantoneira);
+
             // 35  + 80 %     --> alterei em 17 de julho de 2020 para :  45 + 40% nesse e nos outros
             document.getElementById("xFerro").value = document.getElementById("pcFERRAGEMBASCULANTESIMPLES").value;
             document.getElementById("xKit").value = document.getElementById("pcKITBASCULANTESIMPLES").value;
