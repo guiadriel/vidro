@@ -197,8 +197,15 @@ function MudarVisibilidade(el) {
     if (visi == "visible") {
         document.getElementById(el).style.visibility = 'hidden';
     } else {
+        escondeTudoGeral();
         document.getElementById(el).style.visibility = 'visible';
     }
+}
+
+function escondeTudoGeral() {
+    document.getElementById("divConfiguracaoSistema").visibility = 'hidden';
+    document.getElementById("divFIMFIM").visibility = 'hidden';
+    document.getElementById("divUsuario").visibility = 'hidden';
 }
 
 function exibe_tab(el) {
