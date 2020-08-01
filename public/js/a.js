@@ -1254,6 +1254,8 @@ function delRow(i, j) {
 }
 
 function configEscondeTudo() {
+    document.getElementById("divLucro").style.visibility = "hidden";
+    document.getElementById("tbPRECOBASE").style.visibility = "hidden";
     document.getElementById("trKIT").style.visibility = "hidden";
     document.getElementById("trIMAGEM").style.visibility = "hidden";
     document.getElementById("trFERRAGEM").style.visibility = "hidden";
