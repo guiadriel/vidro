@@ -27,14 +27,14 @@ body {
 }
 
 #fundo {
-    background-color: #262928;
+    background-color: #488b85;
     top: 200px;
     height: 350px;
     z-index: 9999;
 }
 
 #fundo2 {
-    background-color: #262928;
+    background-color: #488b85;
     padding-top: 50px;
     z-index: 900;
     display: none;
@@ -388,7 +388,7 @@ table td {
 }
 
 .classeMenuzinhoDeAbas {
-    background-color: #3c4643;
+    background-color: rgb(80, 144, 138);
     border-radius: 30px;
     padding: 10px;
 }
