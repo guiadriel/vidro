@@ -99,16 +99,16 @@
             PREÇO DO ÍTEM = (  <span onclick="configMostraPrecoBase()">PREÇO BASE</span> + <span onclick="configMostraCantoneira()">CANTONEIRA</span> + <span onclick="configMostraFerragem()">FERRAGEM</span> + <span onclick="configMostraKit()">KIT</span>        ) + <span onclick="configMostraLucro()">LUCRO</span>
         </span>
         <div id="divLucro" style="visibility: hidden;">
-            <span style="width: 150px; height:150px; padding: 10px; font-size:20px;"> +</span>
+            <span style="width: 150px; height:150px; padding: 10px; font-size:20px;"> +
             <input style="width: 150px; height:150px; padding: 10px; font-size:20px;" type="text" id="LUCRO" class="form-control" value="40" aria-describedby="sizing-addon2" size="5">
-            <span style="width: 150px; height:150px; padding: 10px; font-size:20px;">%</span>
+            %</span>
         </div>
         <br> <br> <br>
-        <span style="background-color: rgb(163, 163, 163); margin-left: 365px; padding: 3px; font-size: 11px; border-radius: 20px">
+        <span id="obsCANTONEIRA" style="visibility: hidden; background-color: rgb(163, 163, 163); margin-left: 365px; padding: 3px; font-size: 11px; border-radius: 20px">
             CANTONEIRA = (altura) * (quantidade de cantoneiras na vertical) * (preço de venda Metro da Cantoneira);
         </span>
         <br> <br>
-        <span style="background-color: rgb(163, 163, 163); margin-left: 365px; padding: 3px; font-size: 11px; border-radius: 20px">
+        <span id="obsPRECOVIDRO" style="visibility: hidden; background-color: rgb(163, 163, 163); margin-left: 365px; padding: 3px; font-size: 11px; border-radius: 20px">
             PREÇO DO VIDRO = (altura) * (largura + transpasses) * (tabela de Cores&Espesseura);
         </span>
     </div>

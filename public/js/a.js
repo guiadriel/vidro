@@ -1263,6 +1263,8 @@ function configEscondeTudo() {
     document.getElementById("trCANTONEIRAPRECO").style.visibility = "hidden";
     document.getElementById("trCANTONEIRAQUANTIDADEVERTICAL").style.visibility = "hidden";
     document.getElementById("trCANTONEIRAQUANTIDADEHORIZONTAL").style.visibility = "hidden";
+    document.getElementById("obsPRECOVIDRO").style.visibility = "hidden";
+    document.getElementById("obsCANTONEIRA").style.visibility = "hidden";
 }
 
 function configMostraImagem() {
@@ -1272,6 +1274,8 @@ function configMostraImagem() {
 function configMostraPrecoBase() {
     configEscondeTudo();
     document.getElementById("tbPRECOBASE").style.visibility = "visible";
+    document.getElementById("obsPRECOVIDRO").style.visibility = "visible";
+
 }
 
 function configMostraKit() {
@@ -1303,5 +1307,5 @@ function configMostraCantoneira() {
     document.getElementById("trCANTONEIRAPRECO").style.visibility = "visible";
     document.getElementById("trCANTONEIRAQUANTIDADEVERTICAL").style.visibility = "visible";
     document.getElementById("trCANTONEIRAQUANTIDADEHORIZONTAL").style.visibility = "visible";
-
+    document.getElementById("obsCANTONEIRA").style.visibility = "visible";
 }
