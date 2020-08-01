@@ -337,6 +337,24 @@ table td {
     padding-top: 20px;
 }
 
+#divUsuario {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    border-radius: 10px;
+    margin-top: 8px;
+    border: 0px solid rgb(108, 134, 161);
+    background-color: rgb(40, 21, 51);
+    position: fixed;
+    bottom: 10%;
+    right: 78px;
+    z-index: 100;
+    width: 50%;
+    visibility: hidden;
+    height: 50%;
+    padding-left: 20px;
+    padding-top: 20px;
+}
+
 #divFIMFIM {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 19px;
