@@ -99,9 +99,21 @@
             PREÇO DO ÍTEM = (  <span onclick="configMostraPrecoBase()">PREÇO BASE</span> + <span onclick="configMostraCantoneira()">CANTONEIRA</span> + <span onclick="configMostraFerragem()">FERRAGEM</span> + <span onclick="configMostraKit()">KIT</span>        ) + <span onclick="configMostraLucro()">LUCRO</span>
         </span>
         <div id="divLucro" style="visibility: hidden;">
-            <span style="width: 150px; height:150px; padding: 10px; font-size:20px;"> +<input style="width: 150px; height:150px; padding: 10px; font-size:20px;" type="text" id="LUCRO" class="form-control" value="40" aria-describedby="sizing-addon2" size="5">%</span>
+            <table style="width: 150px; height:150px; padding: 10px; font-size:20px;">
+                <tr>
+                    <td>
+                        +
+                    </td>
+                    <td>
+                        <input style="width: 150px; height:150px; padding: 10px; font-size:20px;" type="text" id="LUCRO" class="form-control" value="40" aria-describedby="sizing-addon2" size="5">
+                    </td>
+                    <td>
+                        %
+                    </td>
+                </tr>
+            </table>
         </div>
-        <br> <br> <br>
+        <br> <br>
         <span id="obsCANTONEIRA" style="visibility: hidden; background-color: rgb(163, 163, 163); margin-left: 365px; padding: 3px; font-size: 11px; border-radius: 20px">
             CANTONEIRA = (altura) * (quantidade de cantoneiras na vertical) * (preço de venda Metro da Cantoneira);
         </span>
@@ -427,7 +439,7 @@
             <td> <input style="width: 50px; height:20px; padding: 2px; font-size:9px;" type="text" id="pcVIDROPONT10" class="form-control" value="362" aria-describedby="sizing-addon2" size="5"></td>
         </tr>
     </table>
-    <table style="float: right; visibility: visible;">
+    <table style="float: right; visibility: hidden;">
         <tr>
             <td> <input style="width: 200px;" type="text" class="form-control" value="PREÇO DE VENDA DOS VIDROS" aria-describedby="sizing-addon2" disabled="disabled"> </td>
         </tr>
