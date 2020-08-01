@@ -199,9 +199,9 @@ function MudarVisibilidade(el) {
 }
 
 function escondeTudoGeral() {
-    document.getElementById("divConfiguracaoSistema").visibility = 'hidden';
-    document.getElementById("divFIMFIM").visibility = 'hidden';
-    document.getElementById("divUsuario").visibility = 'hidden';
+    document.getElementById("divConfiguracaoSistema").style.visibility = 'hidden';
+    document.getElementById("divFIMFIM").style.visibility = 'hidden';
+    document.getElementById("divUsuario").style.visibility = 'hidden';
     console.log("ERA PRA TER ESCONDIDO TUDO")
 }
 
