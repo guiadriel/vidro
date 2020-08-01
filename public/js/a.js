@@ -1264,34 +1264,35 @@ function configEscondeTudo() {
 }
 
 function configMostraImagem() {
-    document.getElementById("trKIT").style.visibility = "visible";
+    document.getElementById("trIMAGEM").style.visibility = "visible";
 }
 
 function configMostraPrecoBase() {
     configEscondeTudo();
-    configMostraImagem()
     document.getElementById("tbPRECOBASE").style.visibility = "visible";
 }
 
 function configMostraKit() {
     configEscondeTudo();
-    configMostraImagem()
+    configMostraImagem();
     document.getElementById("trKIT").style.visibility = "visible";
 }
 
 function configMostraFerragem() {
     configEscondeTudo();
-    configMostraImagem()
+    configMostraImagem();
     document.getElementById("trFERRAGEM").style.visibility = "visible";
 }
+
 function configMostraFerragem() {
     configEscondeTudo();
-    configMostraImagem()
+    configMostraImagem();
     document.getElementById("trFERRAGEM").style.visibility = "visible";
 }
+
 function configMostraCantoneira() {
     configEscondeTudo();
-    configMostraImagem()
+    configMostraImagem();
     document.getElementById("trCANTONEIRAPRECO").style.visibility = "visible";
     document.getElementById("trCANTONEIRAQUANTIDADEVERTICAL").style.visibility = "visible";
     document.getElementById("trCANTONEIRAQUANTIDADEHORIZONTAL").style.visibility = "visible";
