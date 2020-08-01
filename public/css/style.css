@@ -24,6 +24,7 @@ body {
     left: 50%;
     margin-left: -37%;
     z-index: 0;
+    padding: 10px;
 }
 
 #fundo {
