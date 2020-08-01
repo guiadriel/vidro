@@ -777,35 +777,35 @@ function trocaAba(abaClicada) {
     document.getElementById("fundoOutros").style.visibility = "hidden";
     document.getElementById("fundoEsquadrilhas").style.visibility = "hidden";
 
-    document.getElementById("spanBasc").style.backgroundColor = "#3c4643";
-    document.getElementById("spanJane").style.backgroundColor = "#3c4643";
-    document.getElementById("spanPort").style.backgroundColor = "#3c4643";
-    document.getElementById("spanOutr").style.backgroundColor = "#3c4643";
-    document.getElementById("spanEsqu").style.backgroundColor = "#3c4643";
+    document.getElementById("spanBasc").style.backgroundColor = "#38817bf5";
+    document.getElementById("spanJane").style.backgroundColor = "#38817bf5";
+    document.getElementById("spanPort").style.backgroundColor = "#38817bf5";
+    document.getElementById("spanOutr").style.backgroundColor = "#38817bf5";
+    document.getElementById("spanEsqu").style.backgroundColor = "#38817bf5";
     switch (abaClicada) {
         case 1:
             document.getElementById("fundoBasculantes").style.visibility = "visible";
-            document.getElementById("spanBasc").style.backgroundColor = "#eef7f4";
+            document.getElementById("spanBasc").style.backgroundColor = "#388172f5";
             document.getElementById("spanBasc").style.color = "black";
             break;
         case 2:
             document.getElementById("fundoJanelas").style.visibility = "visible";
-            document.getElementById("spanJane").style.backgroundColor = "#eef7f4";
+            document.getElementById("spanJane").style.backgroundColor = "#388172f5";
             document.getElementById("spanJane").style.color = "black";
             break;
         case 3:
             document.getElementById("fundoPortas").style.visibility = "visible";
-            document.getElementById("spanPort").style.backgroundColor = "#eef7f4";
+            document.getElementById("spanPort").style.backgroundColor = "#388172f5";
             document.getElementById("spanPort").style.color = "black";
             break;
         case 4:
             document.getElementById("fundoOutros").style.visibility = "visible";
-            document.getElementById("spanOutr").style.backgroundColor = "#eef7f4";
+            document.getElementById("spanOutr").style.backgroundColor = "#388172f5";
             document.getElementById("spanOutr").style.color = "black";
             break;
         case 5:
             document.getElementById("fundoEsquadrilhas").style.visibility = "visible";
-            document.getElementById("spanEsqu").style.backgroundColor = "#eef7f4";
+            document.getElementById("spanEsqu").style.backgroundColor = "#388172f5";
             document.getElementById("spanEsqu").style.color = "black";
             break;
     }
