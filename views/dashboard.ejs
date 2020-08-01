@@ -93,10 +93,15 @@
 ">
 
 
-    <div style="font-size:15px; position: absolute; color: white; margin-top: 350px;">
+    <div style="font-size:15px; position: absolute; color: white; margin-top: 10px;">
         <br> <br>
         <span style="background-color: #eeeeee; color: darkgray; padding: 21px; font-size: 18px; border-radius: 20px">
             PREÇO DO ÍTEM = (  <span onclick="configMostraPrecoBase()">PREÇO BASE</span> + <span onclick="configMostraCantoneira()">CANTONEIRA</span> + <span onclick="configMostraFerragem()">FERRAGEM</span> + <span onclick="configMostraKit()">KIT</span>        ) + <span onclick="configMostraLucro()">LUCRO</span>
+        <div id="divLucro" style="visibility: hidden;">
+            <span style="width: 150px; height:150px; padding: 10px; font-size:20px;"> +</span>
+            <input style="width: 150px; height:150px; padding: 10px; font-size:20px;" type="text" id="LUCRO" class="form-control" value="40" aria-describedby="sizing-addon2" size="5">
+            <span style="width: 150px; height:150px; padding: 10px; font-size:20px;">%</span>
+        </div>
         </span>
         <br> <br> <br>
         <span style="background-color: rgb(163, 163, 163); margin-left: 365px; padding: 3px; font-size: 11px; border-radius: 20px">
@@ -387,7 +392,7 @@
         </table>
 
     </div>
-    <table id="tbPRECOBASE" style="width: 40%; position:absolute; visibility: hidden;">
+    <table id="tbPRECOBASE" style="width: 40%; position:absolute; visibility: hidden; margin-top: 350px;">
         <tr>
             <td> <input style="width: 200px;" type="text" class="form-control" value="PREÇO DE COMPRA DO VIDRO" aria-describedby="sizing-addon2" disabled="disabled"> </td>
         </tr>
@@ -461,11 +466,7 @@
             <td> <input style="width: 50px; height:20px; padding: 2px; font-size:9px;" type="text" id="pvVIDROPONT10" class="form-control" value="362" aria-describedby="sizing-addon2" size="5"></td>
         </tr>
     </table>
-    <div id="divLucro" style="visibility: hidden;">
-        <span style="width: 150px; height:150px; padding: 10px; font-size:20px;"> +</span>
-        <input style="width: 150px; height:150px; padding: 10px; font-size:20px;" type="text" id="LUCRO" class="form-control" value="40" aria-describedby="sizing-addon2" size="5">
-        <span style="width: 150px; height:150px; padding: 10px; font-size:20px;">%</span>
-    </div>
+
 </div>
 
 
