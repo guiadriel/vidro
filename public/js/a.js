@@ -17,7 +17,7 @@ onload = function() {
     Mudarestado('fundo2');
     Mudarestado('fundo2');
     calcula();
-    console.log("passei");
+    console.log("Depois que faz tudo do OnLoad");
 }
 
 $("btfabrica").click(function() {
@@ -360,11 +360,16 @@ function xAtualiza(x) {
     document.getElementById("espessura").value = "8mm";
     switch (x) {
         case "i01": //basculante simples
-            document.getElementById("quantidadeCantoneirasVertical").value = document.getElementById("quantidadeCANTONEIRABASCULANTESIMPLES");
-            document.getElementById("pvMETROCANTONEIRA").value = document.getElementById("pvMETRO_QUADRADO_DA_CANTONEIRA");
+            var lucroAtual = document.getElementById("LUCRO").value;
+            document.getElementById("quantidadeCantoneirasVertical").value = document.getElementById("quantidadeCANTONEIRAVERTIVALBASCULANTESIMPLES").value * lucroAtual;
+            document.getElementById("quantidadeCantoneirasHorizontal").value = document.getElementById("quantidadeCANTONEIRAHORIZONTALBASCULANTESIMPLES").value * lucroAtual;
+            console.log("lucro atual: " + lucroAtual);
+            console.log("vertical: " + document.getElementById("quantidadeCantoneirasVertical").value);
+            console.log("horizontal: " + document.getElementById("quantidadeCantoneirasHorizontal").value);
+            document.getElementById("pvMETROCANTONEIRA").value = document.getElementById("pvMETRO_QUADRADO_DA_CANTONEIRA").value;
             // 35  + 80 %     --> alterei em 17 de julho de 2020 para :  45 + 40% nesse e nos outros
-            document.getElementById("xFerro").value = document.getElementById("pcFERRAGEMBASCULANTESIMPLES");
-            document.getElementById("xKit").value = 0;
+            document.getElementById("xFerro").value = document.getElementById("pcFERRAGEMBASCULANTESIMPLES").value;
+            document.getElementById("xKit").value = document.getElementById("pcKITBASCULANTESIMPLES").value;
             document.getElementById("btt1").src = "./public/img/i01.png"
             descontoAltura = 10;
             descontoLargura = 10;
