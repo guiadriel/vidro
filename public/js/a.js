@@ -1282,33 +1282,44 @@ function configMostraPrecoBase() {
 }
 
 function configMostraKit() {
-    configEscondeTudo();
-    configMostraImagem();
-    document.getElementById("trKIT").style.visibility = "visible";
+    if (document.getElementById("trKIT").style.visibility == "visible") {
+        configEscondeTudo();
+    } else {
+        configEscondeTudo();
+        configMostraImagem();
+        document.getElementById("trKIT").style.visibility = "visible";
+    }
 }
 
 function configMostraFerragem() {
-    configEscondeTudo();
-    configMostraImagem();
-    document.getElementById("trFERRAGEM").style.visibility = "visible";
-}
-
-function configMostraFerragem() {
-    configEscondeTudo();
-    configMostraImagem();
-    document.getElementById("trFERRAGEM").style.visibility = "visible";
+    if (document.getElementById("trFERRAGEM").style.visibility == "visible") {
+        configEscondeTudo();
+    } else {
+        configEscondeTudo();
+        configMostraImagem();
+        document.getElementById("trFERRAGEM").style.visibility = "visible";
+    }
 }
 
 function configMostraLucro() {
-    configEscondeTudo();
-    document.getElementById("divLucro").style.visibility = "visible";
+    if (document.getElementById("divLucro").style.visibility == "visible") {
+        configEscondeTudo();
+    } else {
+        configEscondeTudo();
+        configMostraImagem();
+        document.getElementById("divLucro").style.visibility = "visible";
+    }
 }
 
 function configMostraCantoneira() {
-    configEscondeTudo();
-    configMostraImagem();
-    document.getElementById("trCANTONEIRAPRECO").style.visibility = "visible";
-    document.getElementById("trCANTONEIRAQUANTIDADEVERTICAL").style.visibility = "visible";
-    document.getElementById("trCANTONEIRAQUANTIDADEHORIZONTAL").style.visibility = "visible";
-    document.getElementById("obsCANTONEIRA").style.visibility = "visible";
+    if (document.getElementById("trCANTONEIRAPRECO").style.visibility == "visible") {
+        configEscondeTudo();
+    } else {
+        configEscondeTudo();
+        configMostraImagem();
+        document.getElementById("trCANTONEIRAPRECO").style.visibility = "visible";
+        document.getElementById("trCANTONEIRAQUANTIDADEVERTICAL").style.visibility = "visible";
+        document.getElementById("trCANTONEIRAQUANTIDADEHORIZONTAL").style.visibility = "visible";
+        document.getElementById("obsCANTONEIRA").style.visibility = "visible";
+    }
 }
