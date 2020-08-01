@@ -41,7 +41,6 @@ function escondedisplay() {
     for (var i = 0; i < elems.length; i += 1) {
         elems[i].style.display = 'none';
     }
-    console.log("passei-fiz1");
     document.getElementById("itens").style.visibility = 'visible';
     document.getElementById("itensFabrica").style.visibility = 'hidden';
 }
@@ -51,8 +50,6 @@ function escondedisplayFabrica() {
     for (var i = 0; i < elems.length; i += 1) {
         elems[i].style.display = 'none';
     }
-    console.log("passei-fiz2");
-
     document.getElementById("itens").style.visibility = 'hidden';
     document.getElementById("itensFabrica").style.visibility = 'visible';
 }
@@ -192,7 +189,6 @@ function Mudarestado(el) {
 }
 
 function MudarVisibilidade(el) {
-    console.log("mudei");
     var visi = document.getElementById(el).style.visibility;
     if (visi == "visible") {
         document.getElementById(el).style.visibility = 'hidden';
@@ -206,6 +202,7 @@ function escondeTudoGeral() {
     document.getElementById("divConfiguracaoSistema").visibility = 'hidden';
     document.getElementById("divFIMFIM").visibility = 'hidden';
     document.getElementById("divUsuario").visibility = 'hidden';
+    console.log("ERA PRA TER ESCONDIDO TUDO")
 }
 
 function exibe_tab(el) {
@@ -257,7 +254,6 @@ function calcula() {
     //	Total 		  = parseFloat(quantidade) * SubTotal ;
     document.getElementById("SubTotal").value = SubTotal;
     document.getElementById("precoVidro").value = parseFloat((altura * (largura + TRANSPASSE(document.getElementById("btt1").src)) * parseFloat(document.getElementById("yCor").value)));
-    console.log(document.getElementById("precoVidro").value);
     document.getElementById("precoDiversos").value = altura * document.getElementById("quantidadeCantoneirasVertical").value * document.getElementById("pvMETROCANTONEIRA").value;
     document.getElementById("precoFerro").value = document.getElementById("xFerro").value;
     document.getElementById("precoKit").value = largura * document.getElementById("xKit").value;
@@ -267,8 +263,6 @@ function calcula() {
 
 
 function TRANSPASSE(x) { //COMO CALCULAR O TRANSPASSE
-    console.log("valor:");
-    console.log(x);
     switch (x) {
         case "https://calculesuaobra.herokuapp.com/public/img/i01.png": //JANELA DUAS FOLHAS --> TRANSPASSE É DE 70 MM
             return 0;
@@ -343,8 +337,6 @@ function inserir() {
     soma123Fabrica += parseFloat(document.getElementById("Total").value);
     document.getElementById("soma1234").innerHTML = number_format(soma123COMMAODEOBRA, 2, ",", ".");
     var vista = (parseFloat(soma123) - ((5 * parseFloat(soma123)) / 100));
-    console.log("Mao de obra adicionada: " + document.getElementById("maoDeObra").value);
-    console.log(vista);
     document.getElementById("vista").innerHTML = number_format(vista, 2, ",", ".");
     fParcela();
 }
@@ -1076,7 +1068,6 @@ function inserirLinhaTabelaFabrica() {
 
     var j = -1;
     for (var i = 0; i < (5); i++) {
-        console.log("EXTERNO=" + i);
         var newRow = table.insertRow(numOfRows); // Insere uma linha no fim da tabela.
         var newRowEsquerda = tableEsquerda.insertRow(numOfRowsEsquerda); // Insere uma linha no fim da tabela.
         var j = -1;
@@ -1084,13 +1075,9 @@ function inserirLinhaTabelaFabrica() {
             j = j + 1;
             newCell = newRow.insertCell(j); // Insere uma coluna na nova linha 
             newCellEsquerda = newRowEsquerda.insertCell(j); // Insere uma coluna na nova linha 
-
-            console.log("j=" + j);
             switch (j) {
                 case 0:
                     if (i < 1) {
-
-                        console.log('j=1');
                         var divx = document.createElement('p');
                         divx.setAttribute("style", "padding-top:0px; width: 1px; color: white;");
                         var texto = document.getElementById('altura').value;
@@ -1098,9 +1085,6 @@ function inserirLinhaTabelaFabrica() {
                         var diferenca1 = "-----";
                         divx.appendChild(document.createTextNode(diferenca1));
                         newCell.appendChild(divx);
-
-
-                        console.log("PRIMEIRA VEZ i=0 : IMAGEM");
                         var img = document.createElement("IMG");
                         img.src = document.getElementById('btt1').src;
                         img.setAttribute('width', '93px');
@@ -1120,7 +1104,6 @@ function inserirLinhaTabelaFabrica() {
                         //newCell.innerHTML = img.value;
                         //document.getElementById('image').appendChild(img);
                     } else {
-                        console.log('j=1');
                         var divx = document.createElement('p');
                         divx.setAttribute("style", "padding-top:0px; width: 1px; color: white;");
                         var texto = document.getElementById('altura').value;
@@ -1137,8 +1120,6 @@ function inserirLinhaTabelaFabrica() {
 
                     break;
                 case 1:
-
-                    console.log('j=1');
                     var divx = document.createElement('p');
                     divx.setAttribute("style", "padding-left:30px; padding-top:0px;");
                     var texto = document.getElementById('altura').value;
@@ -1150,7 +1131,6 @@ function inserirLinhaTabelaFabrica() {
                     }
                     break;
                 case 2:
-                    console.log('j=2');
                     var divx = document.createElement('p');
                     divx.setAttribute("style", "padding-left:30px; padding-top:0px");
                     var texto = document.getElementById('largura').value;
@@ -1239,8 +1219,6 @@ function inserirLinhaTabelaFabrica() {
                     break;
                 default:
             }
-            console.log("Sai do swtch");
-
         }
     }
 }
@@ -1313,7 +1291,6 @@ function configMostraLucro() {
         configEscondeTudo();
     } else {
         configEscondeTudo();
-        configMostraImagem();
         document.getElementById("divLucro").style.visibility = "visible";
     }
 }
