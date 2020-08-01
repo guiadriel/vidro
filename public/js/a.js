@@ -28,13 +28,15 @@ $("btfabrica").click(function() {
 
 function imprimir() {
     escondedisplay();
-    //window.print();
+    escondeTudoGeral();
+    window.print();
 }
 
 
 function imprimirFabrica() {
     escondedisplayFabrica();
-    //window.print();
+    escondeTudoGeral();
+    window.print();
 }
 
 function escondedisplay() {
@@ -341,6 +343,13 @@ function inserir() {
     var vista = (parseFloat(soma123) - ((5 * parseFloat(soma123)) / 100));
     document.getElementById("vista").innerHTML = number_format(vista, 2, ",", ".");
     fParcela();
+
+}
+
+function irParaFinalDaPagina() {
+    $('html, body').animate({
+        scrollTop: $(document).height()
+    }, 700);
 }
 
 function fParcela() {
