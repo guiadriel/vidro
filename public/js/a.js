@@ -777,11 +777,11 @@ function trocaAba(abaClicada) {
     document.getElementById("fundoOutros").style.visibility = "hidden";
     document.getElementById("fundoEsquadrilhas").style.visibility = "hidden";
 
-    document.getElementById("spanBasc").style.backgroundColor = "#38817bf5";
-    document.getElementById("spanJane").style.backgroundColor = "#38817bf5";
-    document.getElementById("spanPort").style.backgroundColor = "#38817bf5";
-    document.getElementById("spanOutr").style.backgroundColor = "#38817bf5";
-    document.getElementById("spanEsqu").style.backgroundColor = "#38817bf5";
+    document.getElementById("spanBasc").style.backgroundColor = "#488b85";
+    document.getElementById("spanJane").style.backgroundColor = "#488b85";
+    document.getElementById("spanPort").style.backgroundColor = "#488b85";
+    document.getElementById("spanOutr").style.backgroundColor = "#488b85";
+    document.getElementById("spanEsqu").style.backgroundColor = "#488b85";
     switch (abaClicada) {
         case 1:
             document.getElementById("fundoBasculantes").style.visibility = "visible";
