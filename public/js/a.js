@@ -1252,3 +1252,48 @@ function delRow(i, j) {
         document.getElementById("parcelado" + a).innerHTML = number_format(parcelado, 2, ",", ".");
     }
 }
+
+function configEscondeTudo() {
+    document.getElementById("trKIT").style.visibility = "hidden";
+    document.getElementById("trIMAGEM").style.visibility = "hidden";
+    document.getElementById("trFERRAGEM").style.visibility = "hidden";
+    document.getElementById("trTRANSPASSE").style.visibility = "hidden";
+    document.getElementById("trCANTONEIRAPRECO").style.visibility = "hidden";
+    document.getElementById("trCANTONEIRAQUANTIDADEVERTICAL").style.visibility = "hidden";
+    document.getElementById("trCANTONEIRAQUANTIDADEHORIZONTAL").style.visibility = "hidden";
+}
+
+function configMostraImagem() {
+    document.getElementById("trKIT").style.visibility = "visible";
+}
+
+function configMostraPrecoBase() {
+    configEscondeTudo();
+    configMostraImagem()
+    document.getElementById("tbPRECOBASE").style.visibility = "visible";
+}
+
+function configMostraKit() {
+    configEscondeTudo();
+    configMostraImagem()
+    document.getElementById("trKIT").style.visibility = "visible";
+}
+
+function configMostraFerragem() {
+    configEscondeTudo();
+    configMostraImagem()
+    document.getElementById("trFERRAGEM").style.visibility = "visible";
+}
+function configMostraFerragem() {
+    configEscondeTudo();
+    configMostraImagem()
+    document.getElementById("trFERRAGEM").style.visibility = "visible";
+}
+function configMostraCantoneira() {
+    configEscondeTudo();
+    configMostraImagem()
+    document.getElementById("trCANTONEIRAPRECO").style.visibility = "visible";
+    document.getElementById("trCANTONEIRAQUANTIDADEVERTICAL").style.visibility = "visible";
+    document.getElementById("trCANTONEIRAQUANTIDADEHORIZONTAL").style.visibility = "visible";
+
+}
