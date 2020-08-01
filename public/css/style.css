@@ -270,19 +270,19 @@ table td {
 
 #fimfim {
     position: fixed;
-    bottom: 340px;
+    bottom: 66%;
     right: 15px;
     z-index: 100;
-    background-image: url(../img/fim.png);
+    background-image: url(../img/maisbox.png);
     background-size: contain;
-    width: 50px;
-    height: 50px;
+    background-color: #924545ab;
+    background-position-x: center;
+    border: none;
+    width: 51px;
     background-repeat: no-repeat;
     font-size: 2rem;
-    border-radius: 97px;
-    border-top-style: hidden;
-    border-style: inset;
-    border-width: thin;
+    border-radius: 83px;
+    border-bottom-style: outset;
 }
 
 #imgConfigVidracaria {
