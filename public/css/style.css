@@ -328,7 +328,7 @@ table td {
     border-radius: 10px;
     margin-top: 8px;
     border: 0px solid rgb(108, 134, 161);
-    background-color: rgb(27, 64, 66);
+    background-color: rgb(179, 174, 35, 88%);
     position: fixed;
     bottom: 4%;
     right: 78px;
@@ -346,7 +346,7 @@ table td {
     border-radius: 10px;
     margin-top: 8px;
     border: 0px solid rgb(108, 134, 161);
-    background-color: rgb(163, 96, 96);
+    background-color: rgb(80, 90, 90, 88%);
     position: fixed;
     bottom: 49%;
     right: 78px;
@@ -365,7 +365,7 @@ table td {
     border-radius: 10px;
     margin-top: 8px;
     border: 0px solid rgb(108, 134, 161);
-    background-color: rgb(55, 104, 59);
+    background-color: rgba(84, 148, 89, 0.93);
     position: fixed;
     bottom: 154px;
     right: 78px;
