@@ -17,6 +17,7 @@ onload = function() {
     Mudarestado('fundo2');
     Mudarestado('fundo2');
     calcula();
+    console.log("passei");
 }
 
 $("btfabrica").click(function() {
@@ -202,7 +203,7 @@ function escondeTudoGeral() {
     document.getElementById("divConfiguracaoSistema").style.visibility = 'hidden';
     document.getElementById("divFIMFIM").style.visibility = 'hidden';
     document.getElementById("divUsuario").style.visibility = 'hidden';
-    console.log("ERA PRA TER ESCONDIDO TUDO")
+    console.log("ERA PRA TER ESCONDIDO TUDO");
 }
 
 function exibe_tab(el) {
