@@ -1290,6 +1290,11 @@ function configMostraFerragem() {
     document.getElementById("trFERRAGEM").style.visibility = "visible";
 }
 
+function configMostraLucro() {
+    configEscondeTudo();
+    document.getElementById("divLucro").style.visibility = "visible";
+}
+
 function configMostraCantoneira() {
     configEscondeTudo();
     configMostraImagem();
