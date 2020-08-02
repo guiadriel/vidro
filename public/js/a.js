@@ -369,77 +369,80 @@ function fParcela() {
 
 function xAtualiza(x) {
     document.getElementById("espessura").value = "8mm";
+
+    var lucroAtual = (document.getElementById("LUCRO").value + 100) / 100; //transformando em porcentagem de multiplicar e acrescentar ex: 40% vira 1,4
+    var quantidadeCantoneirasVertical = document.getElementById("quantidadeCANTONEIRAVERTIVALBASCULANTESIMPLES").value;
+    var quantidadeCantoneirasHorizontal = document.getElementById("quantidadeCANTONEIRAHORIZONTALBASCULANTESIMPLES").value;
+    var pvMetroCantoneira = document.getElementById("pcCANTONEIRABASCULANTESIMPLES").value * lucroAtual;
+    var pvFerragem = document.getElementById("pcFERRAGEMBASCULANTESIMPLES").value * lucroAtual;
+    var pvKit = document.getElementById("pcKITBASCULANTESIMPLES").value * lucroAtual;
+    var transpasse = document.getElementById("TRANSPASSE").value;
     switch (x) {
         case "i01": //basculante simples
-            var lucroAtual = document.getElementById("LUCRO").value;
-            var quantidadeCantoneirasVertical = document.getElementById("quantidadeCANTONEIRAVERTIVALBASCULANTESIMPLES").value;
-            var quantidadeCantoneirasHorizontal = document.getElementById("quantidadeCANTONEIRAHORIZONTALBASCULANTESIMPLES").value;
-            var pvMetroCantoneira = document.getElementById("pcCANTONEIRABASCULANTESIMPLES").value * lucroAtual;
-            console.log("lucro atual: " + lucroAtual);
-            console.log("vertical: " + quantidadeCantoneirasVertical);
-            console.log("horizontal: " + quantidadeCantoneirasHorizontal);
-            console.log("pvMetroCantoneira: " + pvMetroCantoneira);
-
-            // 35  + 80 %     --> alterei em 17 de julho de 2020 para :  45 + 40% nesse e nos outros
-            document.getElementById("xFerro").value = document.getElementById("pcFERRAGEMBASCULANTESIMPLES").value;
-            document.getElementById("xKit").value = document.getElementById("pcKITBASCULANTESIMPLES").value;
-            document.getElementById("btt1").src = "./public/img/i01.png"
+            quantidadeCantoneirasVertical = document.getElementById("quantidadeCANTONEIRAVERTIVALBASCULANTESIMPLES").value;
+            quantidadeCantoneirasHorizontal = document.getElementById("quantidadeCANTONEIRAHORIZONTALBASCULANTESIMPLES").value;
+            pvMetroCantoneira = document.getElementById("pcCANTONEIRABASCULANTESIMPLES").value * lucroAtual;
+            pvFerragem = document.getElementById("pcFERRAGEMBASCULANTESIMPLES").value * lucroAtual;
+            pvKit = document.getElementById("pcKITBASCULANTESIMPLES").value * lucroAtual;
+            transpasse = document.getElementById("pcTRANSPASSEBASCULANTESIMPLES").value
             descontoAltura = 10;
             descontoLargura = 10;
             numeroDePartes = 1;
             break;
         case "i02":
-            // Fechadura
-            document.getElementById("quantidadeCantoneirasVertical").value = document.getElementById("quantidadeCANTONEIRABASCULANTEBF");
-            document.getElementById("pvMETROCANTONEIRA").value = document.getElementById("pvMETRO_QUADRADO_DA_CANTONEIRA");
-            // 55 + 80%      = 99    --> alterei em 17 de julho de 2020 para :  45 + 40% nesse e nos outros
-            document.getElementById("xFerro").value = document.getElementById("pcFERRAGEMBASCULANTEBF");
-            document.getElementById("xKit").value = 90.00;
-            document.getElementById("btt1").src = "./public/img/i02.png";
+            quantidadeCantoneirasVertical = document.getElementById("quantidadeCANTONEIRAVERTIVALBASCULANTEBF").value;
+            quantidadeCantoneirasHorizontal = document.getElementById("quantidadeCANTONEIRAHORIZONTALBASCULANTEBF").value;
+            pvMetroCantoneira = document.getElementById("pcCANTONEIRABASCULANTEBF").value * lucroAtual;
+            pvFerragem = document.getElementById("pcFERRAGEMBASCULANTEBF").value * lucroAtual;
+            pvKit = document.getElementById("pcKITBASCULANTEBF").value * lucroAtual;
+            transpasse = document.getElementById("pcTRANSPASSEBASCULANTEBF").value
             descontoAltura = 10;
             descontoLargura = 10;
             numeroDePartes = 2;
             break;
         case "i03":
-            document.getElementById("quantidadeCantoneirasVertical").value = document.getElementById("quantidadeCANTONEIRABASCULANTEFBF");
-            document.getElementById("pvMETROCANTONEIRA").value = document.getElementById("pvMETRO_QUADRADO_DA_CANTONEIRA");
-            // 55 + 80%      = 99 
-            document.getElementById("xFerro").value = document.getElementById("pcFERRAGEMBASCULANTEFBF");
-            document.getElementById("xKit").value = 90.00;
-            document.getElementById("btt1").src = "./public/img/i03.png";
+            quantidadeCantoneirasVertical = document.getElementById("quantidadeCANTONEIRAVERTIVALBASCULANTEFBF").value;
+            quantidadeCantoneirasHorizontal = document.getElementById("quantidadeCANTONEIRAHORIZONTALBASCULANTEFBF").value;
+            pvMetroCantoneira = document.getElementById("pcCANTONEIRABASCULANTEFBF").value * lucroAtual;
+            pvFerragem = document.getElementById("pcFERRAGEMBASCULANTEFBF").value * lucroAtual;
+            pvKit = document.getElementById("pcKITBASCULANTEFBF").value * lucroAtual;
+            transpasse = document.getElementById("pcTRANSPASSEBASCULANTEFBF").value
             descontoAltura = 10;
             descontoLargura = 10;
-            numeroDePartes = 4;
+            numeroDePartes = 3;
             break;
         case "i04":
-            document.getElementById("quantidadeCantoneirasVertical").value = document.getElementById("quantidadeCANTONEIRABASCULANTEBFB");
-            document.getElementById("pvMETROCANTONEIRA").value = document.getElementById("pvMETRO_QUADRADO_DA_CANTONEIRA");
-            document.getElementById("xFerro").value = document.getElementById("pcFERRAGEMBASCULANTEBFB");
-            document.getElementById("xKit").value = 90.00;
-            document.getElementById("btt1").src = "./public/img/i04.png";
+            quantidadeCantoneirasVertical = document.getElementById("quantidadeCANTONEIRAVERTIVALBASCULANTEBFB").value;
+            quantidadeCantoneirasHorizontal = document.getElementById("quantidadeCANTONEIRAHORIZONTALBASCULANTEBFB").value;
+            pvMetroCantoneira = document.getElementById("pcCANTONEIRABASCULANTEBFB").value * lucroAtual;
+            pvFerragem = document.getElementById("pcFERRAGEMBASCULANTEBFB").value * lucroAtual;
+            pvKit = document.getElementById("pcKITBASCULANTEBFB").value * lucroAtual;
+            transpasse = document.getElementById("pcTRANSPASSEBASCULANTEBFB").value
             descontoAltura = 10;
             descontoLargura = 10;
-            numeroDePartes = 2;
+            numeroDePartes = 3;
             break;
         case "i05":
-            document.getElementById("quantidadeCantoneirasVertical").value = document.getElementById("quantidadeCANTONEIRABASCULANTEBFBAIXO");
-            document.getElementById("pvMETROCANTONEIRA").value = document.getElementById("pvMETRO_QUADRADO_DA_CANTONEIRA");
-            document.getElementById("xFerro").value = document.getElementById("pcFERRAGEMBASCULANTEBFBAIXO");
-            document.getElementById("xKit").value = 90.00;
-            document.getElementById("btt1").src = "./public/img/i05.png";
-            descontoAltura = 10;
-            descontoLargura = 10;
-            numeroDePartes = 4;
-            break;
-        case "i06":
-            document.getElementById("quantidadeCantoneirasVertical").value = document.getElementById("quantidadeCANTONEIRABASCULANTEBFALTO");
-            document.getElementById("pvMETROCANTONEIRA").value = document.getElementById("pvMETRO_QUADRADO_DA_CANTONEIRA");
-            document.getElementById("xFerro").value = document.getElementById("pcFERRAGEMBASCULANTEBFALTO");
-            document.getElementById("xKit").value = 0;
-            document.getElementById("btt1").src = "./public/img/i06.png";
+            quantidadeCantoneirasVertical = document.getElementById("quantidadeCANTONEIRAVERTIVALBASCULANTEBFBAIXO").value;
+            quantidadeCantoneirasHorizontal = document.getElementById("quantidadeCANTONEIRAHORIZONTALBASCULANTEBFBAIXO").value;
+            pvMetroCantoneira = document.getElementById("pcCANTONEIRABASCULANTEBFBAIXO").value * lucroAtual;
+            pvFerragem = document.getElementById("pcFERRAGEMBASCULANTEBFBAIXO").value * lucroAtual;
+            pvKit = document.getElementById("pcKITBASCULANTEBFBAIXO").value * lucroAtual;
+            transpasse = document.getElementById("pcTRANSPASSEBASCULANTEBFBAIXO").value
             descontoAltura = 10;
             descontoLargura = 10;
             numeroDePartes = 2;
+            break;
+        case "i06":
+            quantidadeCantoneirasVertical = document.getElementById("quantidadeCANTONEIRAVERTIVALBASCULANTEBFALTO").value;
+            quantidadeCantoneirasHorizontal = document.getElementById("quantidadeCANTONEIRAHORIZONTALBASCULANTEBFALTO").value;
+            pvMetroCantoneira = document.getElementById("pcCANTONEIRABASCULANTEBFALTO").value * lucroAtual;
+            pvFerragem = document.getElementById("pcFERRAGEMBASCULANTEBFALTO").value * lucroAtual;
+            pvKit = document.getElementById("pcKITBASCULANTEBFALTO").value * lucroAtual;
+            transpasse = document.getElementById("pcTRANSPASSEBASCULANTEBFALTO").value
+            descontoAltura = 10;
+            descontoLargura = 10;
+            numeroDePartes = 3;
             break;
         case "i07":
             document.getElementById("quantidadeCantoneirasVertical").value = document.getElementById("quantidadeCANTONEIRAJANELA2FOLHASFECHADURA");
@@ -765,6 +768,23 @@ function xAtualiza(x) {
         default:
             alert("clicou numa imagem inexistente");
     }
+
+    console.log("lucro atual: " + lucroAtual);
+    console.log("quantidadeCantoneirasVertical: " + quantidadeCantoneirasVertical);
+    console.log("quantidadeCantoneirasHorizontal: " + quantidadeCantoneirasHorizontal);
+    console.log("pvMetroCantoneira: " + pvMetroCantoneira);
+    console.log("pvFerragem: " + pvFerragem);
+    console.log("pvMETROCANTONEIRA: " + pvMETROCANTONEIRA);
+    console.log("xKit: " + xKit);
+
+    document.getElementById("xFerro").value = pvFerragem;
+    document.getElementById("pvMETROCANTONEIRA").value = pvMetroCantoneira;
+    document.getElementById("xKit").value = pvKit;
+    document.getElementById("btt1").src = "./public/img/i01.png";
+    document.getElementById("quantidadeCantoneirasVertical").value = quantidadeCantoneirasVertical;
+    document.getElementById("quantidadeCantoneirasHorizontal").value = quantidadeCantoneirasHorizontal;
+
+
     document.getElementById("btt1").value = document.getElementById("hidden_" + x).value;
     document.getElementById("cor").src = "./public/img/v03.png";
     Mudarestado("fundo");
