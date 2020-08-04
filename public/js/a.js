@@ -386,7 +386,7 @@ function xAtualiza(x) {
             pvFerragem = document.getElementById("pcFERRAGEMBASCULANTESIMPLES").value * lucroAtual;
             pvKit = document.getElementById("pcKITBASCULANTESIMPLES").value * lucroAtual;
             transpasse = document.getElementById("pcTRANSPASSEBASCULANTESIMPLES").value;
-            imagem = "./public/img/01.png";
+            imagem = "./public/img/i01.png";
             descontoAltura = 10;
             descontoLargura = 10;
             numeroDePartes = 1;
@@ -849,7 +849,7 @@ function xAtualiza(x) {
     document.getElementById("quantidadeCantoneirasHorizontal").value = quantidadeCantoneirasHorizontal;
     document.getElementById("btt1").src = imagem;
 
-    //document.getElementById("btt1").value = document.getElementById("hidden_i" + x).value;
+    document.getElementById("btt1").value = document.getElementById("hidden_i" + x).value;
     document.getElementById("cor").src = "./public/img/v03.png";
     Mudarestado("fundo");
     calcula();
