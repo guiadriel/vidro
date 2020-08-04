@@ -195,8 +195,8 @@ function MudarVisibilidade(el) {
     var visi = document.getElementById(el).style.visibility;
     if (visi == "visible") {
         document.getElementById(el).style.visibility = 'hidden';
+        escondeTudoGeral();
     } else {
-        configEscondeTudo();
         escondeTudoGeral();
         document.getElementById(el).style.visibility = 'visible';
     }
