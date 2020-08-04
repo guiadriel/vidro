@@ -847,7 +847,7 @@ function xAtualiza(x) {
     document.getElementById("btt1").src = "./public/img/i01.png";
     document.getElementById("quantidadeCantoneirasVertical").value = quantidadeCantoneirasVertical;
     document.getElementById("quantidadeCantoneirasHorizontal").value = quantidadeCantoneirasHorizontal;
-    document.getElementById("bt").src = imagem;
+    document.getElementById("btt1").src = imagem;
 
     document.getElementById("btt1").value = document.getElementById("hidden_" + x).value;
     document.getElementById("cor").src = "./public/img/v03.png";
