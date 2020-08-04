@@ -839,7 +839,6 @@ function xAtualiza(x) {
     console.log("pvMetroCantoneira: " + pvMetroCantoneira);
     console.log("pvFerragem: " + pvFerragem);
     console.log("pvMETROCANTONEIRA: " + pvMETROCANTONEIRA);
-    console.log("xKit: " + xKit);
 
     document.getElementById("xFerro").value = pvFerragem;
     document.getElementById("pvMETROCANTONEIRA").value = pvMetroCantoneira;
