@@ -726,6 +726,9 @@ function xAtualiza(x) {
             descontoAltura = 10;
             descontoLargura = 10;
             numeroDePartes = 4;
+            t = 6;
+            document.getElementById("espessura").value = "4mm";
+            yAtualiza2();
             break;
         case "i30": //
             quantidadeCantoneirasVertical = document.getElementById("quantidadeCANTONEIRAVERTIVALESPELHOBIZOTE").value;
@@ -738,6 +741,9 @@ function xAtualiza(x) {
             descontoAltura = 10;
             descontoLargura = 10;
             numeroDePartes = 4;
+            t = 7;
+            document.getElementById("espessura").value = "4mm";
+            yAtualiza2();
             break;
         case "i31": //
             quantidadeCantoneirasVertical = document.getElementById("quantidadeCANTONEIRAVERTIVALESQUADRILHAPORTA").value;
@@ -750,6 +756,8 @@ function xAtualiza(x) {
             descontoAltura = 10;
             descontoLargura = 10;
             numeroDePartes = 4;
+            t = 9;
+            yAtualiza2();
             break;
         case "i32": //
             quantidadeCantoneirasVertical = document.getElementById("quantidadeCANTONEIRAVERTIVALESQUADRILHAPORTAO").value;
@@ -762,6 +770,8 @@ function xAtualiza(x) {
             descontoAltura = 10;
             descontoLargura = 10;
             numeroDePartes = 4;
+            t = 8;
+            yAtualiza2();
             break;
         case "i33": //
             quantidadeCantoneirasVertical = document.getElementById("quantidadeCANTONEIRAVERTIVALESQUADRILHAJANELA4FOLHAS").value;
@@ -774,6 +784,8 @@ function xAtualiza(x) {
             descontoAltura = 10;
             descontoLargura = 10;
             numeroDePartes = 4;
+            t = 8; // Envia para o mesmo valor do case 12  (600)
+            yAtualiza2();
             break;
         case "i34": //
             quantidadeCantoneirasVertical = document.getElementById("quantidadeCANTONEIRAVERTIVALESQUADRILHAJANELA2FOLHAS").value;
@@ -786,6 +798,8 @@ function xAtualiza(x) {
             descontoAltura = 10;
             descontoLargura = 10;
             numeroDePartes = 4;
+            t = 8; // Envia para o mesmo valor do case 12  (600)
+            yAtualiza2();
             break;
         case "i35": //
             quantidadeCantoneirasVertical = document.getElementById("quantidadeCANTONEIRAVERTIVALESQUADRILHAVENEZIANACORTINA").value;
@@ -798,6 +812,8 @@ function xAtualiza(x) {
             descontoAltura = 10;
             descontoLargura = 10;
             numeroDePartes = 4;
+            t = 10;
+            yAtualiza2();
             break;
         case "i36": //
             quantidadeCantoneirasVertical = document.getElementById("quantidadeCANTONEIRAVERTIVALESQUADRILHAVENAZIANA3FOLHAS").value;
@@ -806,10 +822,12 @@ function xAtualiza(x) {
             pvFerragem = document.getElementById("pcFERRAGEMESQUADRILHAVENAZIANA3FOLHAS").value * lucroAtual;
             pvKit = document.getElementById("pcKITESQUADRILHAVENAZIANA3FOLHAS").value * lucroAtual;
             transpasse = document.getElementById("pcTRANSPASSEESQUADRILHAVENAZIANA3FOLHAS").value;
-            imagem = "./public/img/i35.png";
+            imagem = "./public/img/i36.png";
             descontoAltura = 10;
             descontoLargura = 10;
             numeroDePartes = 4;
+            t = 9; // Envia para o mesmo valor do case 12  (700)
+            yAtualiza2();
             break;
         default:
             alert("clicou numa imagem inexistente");
@@ -829,7 +847,7 @@ function xAtualiza(x) {
     document.getElementById("btt1").src = "./public/img/i01.png";
     document.getElementById("quantidadeCantoneirasVertical").value = quantidadeCantoneirasVertical;
     document.getElementById("quantidadeCantoneirasHorizontal").value = quantidadeCantoneirasHorizontal;
-
+    document.getElementById("bt").src = imagem;
 
     document.getElementById("btt1").value = document.getElementById("hidden_" + x).value;
     document.getElementById("cor").src = "./public/img/v03.png";
