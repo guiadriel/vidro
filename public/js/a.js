@@ -370,7 +370,7 @@ function fParcela() {
 function xAtualiza(x) {
     document.getElementById("espessura").value = "8mm";
 
-    var lucroAtual = (document.getElementById("LUCRO").value + 100) / 100; //transformando em porcentagem de multiplicar e acrescentar ex: 40% vira 1,4
+    var lucroAtual = (parseFloat(document.getElementById("LUCRO").value) + 100) / 100; //transformando em porcentagem de multiplicar e acrescentar ex: 40% vira 1,4
     var quantidadeCantoneirasVertical = document.getElementById("quantidadeCANTONEIRAVERTIVALBASCULANTESIMPLES").value;
     var quantidadeCantoneirasHorizontal = document.getElementById("quantidadeCANTONEIRAHORIZONTALBASCULANTESIMPLES").value;
     var pvMetroCantoneira = document.getElementById("pcCANTONEIRABASCULANTESIMPLES").value * lucroAtual;
