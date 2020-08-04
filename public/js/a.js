@@ -849,7 +849,7 @@ function xAtualiza(x) {
     document.getElementById("quantidadeCantoneirasHorizontal").value = quantidadeCantoneirasHorizontal;
     document.getElementById("btt1").src = imagem;
 
-    document.getElementById("btt1").value = document.getElementById("hidden_" + x).value;
+    document.getElementById("btt1").value = document.getElementById("hidden_i" + x).value;
     document.getElementById("cor").src = "./public/img/v03.png";
     Mudarestado("fundo");
     calcula();
