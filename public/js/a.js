@@ -37,7 +37,7 @@ function whatsApp() {
     if (document.getElementById("idTelefone").value != "") {
         console.log(document.getElementById("idTelefone").value);
         var telCliente = document.getElementById("idTelefone").value;
-        telCliente = "+055" + telCliente[1] + telCliente[2] + telCliente[4] + telCliente[5] + telCliente[6] + telCliente[7] + telCliente[8] + telCliente[9] + telCliente[10] + telCliente[11] + telCliente[12];
+        telCliente = "+055" + telCliente[1] + telCliente[2] + telCliente[5] + telCliente[6] + telCliente[7] + telCliente[8] + telCliente[9] + telCliente[11] + telCliente[12] + telCliente[13] + telCliente[14];
         console.log(telCliente);
         //window.open("https://wa.me/+05519997208913?text=Oi%20*FULANO*!%20Estou%20te%20enviando%20o%20PDF%20do%20orçamento%20conforme%20combinamos,%20continuo%20a%20disposição.%20https://www.calculesuaobra.com.br/teste.pdf", "minhaJanela", "height=800px,width=800px");
 
