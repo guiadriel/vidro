@@ -27,7 +27,7 @@ $("btfabrica").click(function() {
 });
 
 function whatsApp() {
-    window.open("https://wa.me/+05519997208913?text=preorder%20custom%20shoes", "minhaJanela", "height=800px,width=800px");
+    window.open("https://wa.me/+05519997208913?text=https://www.calculesuaobra.com.br/teste.pdf", "minhaJanela", "height=800px,width=800px");
 }
 
 function imprimir() {
