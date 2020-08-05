@@ -26,6 +26,10 @@ $("btfabrica").click(function() {
     });
 });
 
+function whatsApp() {
+    window.open("https://wa.me/+05519997208113", "minhaJanela", "height=200,width=200");
+}
+
 function imprimir() {
     escondedisplay();
     escondeTudoGeral();
