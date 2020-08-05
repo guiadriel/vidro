@@ -18,7 +18,14 @@ onload = function() {
     Mudarestado('fundo2');
     calcula();
     console.log("Depois que faz tudo do OnLoad");
+
+
 }
+
+$('body').click(function() {
+    console.log('clicou no boy');
+    escondeTudoGeral();
+});
 
 $("btfabrica").click(function() {
     $.get("demo_test.asp", function(data, status) {
@@ -29,7 +36,8 @@ $("btfabrica").click(function() {
 function whatsApp() {
     if (document.getElementById("idTelefone").value != "") {
         console.log(document.getElementById("idTelefone").value);
-
+        var telCliente = document.getElementById("idTelefone").value;
+        console.log(telCliente[2]);
         window.open("https://wa.me/+05519997208913?text=Oi%20*FULANO*!%20Estou%20te%20enviando%20o%20PDF%20do%20orçamento%20conforme%20combinamos,%20continuo%20a%20disposição.%20https://www.calculesuaobra.com.br/teste.pdf", "minhaJanela", "height=800px,width=800px");
 
     } else {
