@@ -34,12 +34,19 @@ $("btfabrica").click(function() {
 });
 
 function whatsApp() {
-    if (document.getElementById("idTelefone").value != "") {
-        console.log(document.getElementById("idTelefone").value);
-        var telCliente = document.getElementById("idTelefone").value;
-        telCliente = "+055" + telCliente[1] + telCliente[2] + telCliente[5] + telCliente[6] + telCliente[7] + telCliente[8] + telCliente[9] + telCliente[11] + telCliente[12] + telCliente[13] + telCliente[14];
+    var telCliente = document.getElementById("idTelefone").value;
+    if (telCliente != "") {
         console.log(telCliente);
-        //window.open("https://wa.me/+05519997208913?text=Oi%20*FULANO*!%20Estou%20te%20enviando%20o%20PDF%20do%20orçamento%20conforme%20combinamos,%20continuo%20a%20disposição.%20https://www.calculesuaobra.com.br/teste.pdf", "minhaJanela", "height=800px,width=800px");
+
+        telCliente = "+055" + telCliente[1] + telCliente[2] + telCliente[5] + telCliente[6] + telCliente[7] + telCliente[8] + telCliente[9] + telCliente[11] + telCliente[12] + telCliente[13] + telCliente[14];
+        var apiTel = "https://wa.me/" + telCliente;
+        var NomeCliente = document.getElementById("idCliente").value;
+        var link = "https://www.calculesuaobra.com.br/teste.pdf";
+        var apiTexto1 = "?text=Oi%20*" + NomeCliente + "*!%20Estou%20te%20enviando%20o%20PDF%20do%20orçamento%20conforme%20combinamos:%20%20" + link;
+        var apiTexto2 = "Continuo%20a%20disposição";
+        var API = apiTel + apiTexto1 + link + apiTexto2;
+        window.open(API, "minhaJanela", "height=800px,width=800px")
+            //window.open("https://wa.me/+05519997208913?text=Oi%20*FULANO*!%20Estou%20te%20enviando%20o%20PDF%20do%20orçamento%20conforme%20combinamos,%20continuo%20a%20disposição.%20");
 
     } else {
         console.log("telefone é vazio");
