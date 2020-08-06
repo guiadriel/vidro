@@ -43,7 +43,7 @@ function whatsApp() {
         var NomeCliente = document.getElementById("idCliente").value;
         var link = "https://www.calculesuaobra.com.br/teste.pdf";
         var apiTexto1 = "?text=Oi%20*" + NomeCliente + "*!%20Estou%20te%20enviando%20o%20PDF%20do%20orçamento%20conforme%20combinamos:%20%20";
-        var apiTexto2 = "Continuo%20a%20disposição";
+        var apiTexto2 = "%20%20Continuo%20a%20disposição";
         var API = apiTel + apiTexto1 + link + apiTexto2;
         window.open(API, "minhaJanela", "height=800px,width=800px")
 
