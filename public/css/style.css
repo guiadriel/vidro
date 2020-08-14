@@ -24,7 +24,7 @@ body {
     left: 50%;
     margin-left: -37%;
     z-index: 0;
-    padding: 10px;
+    padding: 50px;
 }
 
 #fundo {
@@ -232,7 +232,7 @@ body {
     height: 100px;
     left: 50%;
     margin-left: -42%;
-    top: 200px;
+    top: 185x;
 }
 
 #itensFabrica {
@@ -241,7 +241,7 @@ body {
     height: 100px;
     left: 50%;
     margin-left: -42%;
-    top: 400px;
+    top: 40px;
 }
 
 .datas {
