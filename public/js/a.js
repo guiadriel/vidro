@@ -56,6 +56,7 @@ function imprimir() {
     escondedisplay();
     escondeTudoGeral();
     window.print();
+    console.log("teste");
 }
 
 
