@@ -1348,16 +1348,16 @@ function inserirLinhaTabelaFabrica() {
 
 
 function delRow(i, j) {
-    console.log("i: " + i);
-    console.log("j: " + j);
-    console.log("soma123: " + soma123);
-    console.log("parseFloat(j[8].firstChild.innerHTML): " + parseFloat(j[8].firstChild.innerHTML));
+    console.log("i: " + i); //44 linha
+    console.log("j: " + j); // html collection
+    console.log("soma123: " + soma123); //760
+    console.log("parseFloat(j[8].firstChild.innerHTML): " + parseFloat(j[8].firstChild.innerHTML)); //760
     console.log("###elementoSoma1234 recebe valor antigo - parseFloat(j[8].firstChild.innerHTML)");
-    console.log("parseFloat(document.getElementById('soma1234').innerHTML" + parseFloat(document.getElementById("soma1234").innerHTML));
-    console.log("parseFloat(document.getElementById('soma1234').value" + parseFloat(document.getElementById("soma1234").value));
-
-    document.getElementById("soma1234").innerHTML = 1000 * (parseFloat(document.getElementById("soma1234").innerHTML) - parseFloat(j[8].firstChild.innerHTML));
-    console.log("document.getElementById('soma1234').innerHTML: " + document.getElementById("soma1234").innerHTML);
+    console.log("parseFloat(document.getElementById('soma1234').innerHTML" + parseFloat(document.getElementById("soma1234").innerHTML)); //860
+    
+    //1000 * (860 - 760)
+    document.getElementById("soma1234").innerHTML = (parseFloat(document.getElementById("soma1234").innerHTML) - parseFloat(j[8].firstChild.innerHTML));
+    console.log("document.getElementById('soma1234').innerHTML: " + document.getElementById("soma1234").innerHTML); //100000
     soma123 = soma123 - (parseFloat(j[8].firstChild.innerHTML) * 1000);
     console.log("soma123: " + soma123);
     document.getElementById('minhaTabela').deleteRow(i);
