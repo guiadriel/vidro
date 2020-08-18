@@ -17,9 +17,6 @@ onload = function() {
     Mudarestado('fundo2');
     Mudarestado('fundo2');
     calcula();
-    console.log("Depois que faz tudo do OnLoad");
-
-
 }
 
 $('body').click(function() {
@@ -860,12 +857,7 @@ function xAtualiza(x) {
             alert("clicou numa imagem inexistente");
     }
 
-    console.log("lucro atual: " + lucroAtual);
-    console.log("quantidadeCantoneirasVertical: " + quantidadeCantoneirasVertical);
-    console.log("quantidadeCantoneirasHorizontal: " + quantidadeCantoneirasHorizontal);
-    console.log("pvMetroCantoneira: " + pvMetroCantoneira);
-    console.log("pvFerragem: " + pvFerragem);
-    console.log("pvMETROCANTONEIRA: " + pvMETROCANTONEIRA);
+    
 
     document.getElementById("xFerro").value = pvFerragem;
     document.getElementById("pvMETROCANTONEIRA").value = pvMetroCantoneira;
@@ -1356,12 +1348,19 @@ function inserirLinhaTabelaFabrica() {
 
 
 function delRow(i, j) {
+    console.log("i: " + i);
+    console.log("j: " + j);
+    console.log("soma123: " + soma123);
     document.getElementById("soma1234").innerHTML = number_format(1000 * (parseFloat(document.getElementById("soma1234").innerHTML) - parseFloat(j[8].firstChild.innerHTML)), 2, ",", ".");
+    console.log("document.getElementById('soma1234').innerHTML: " + document.getElementById("soma1234").innerHTML);
     soma123 = soma123 - (parseFloat(j[8].firstChild.innerHTML) * 1000);
+    console.log("soma123: " + soma123);
     document.getElementById('minhaTabela').deleteRow(i);
     var vista = parseFloat(soma123) - ((5 * parseFloat(soma123)) / 100);
+    console.log("vista: " + vista);
     document.getElementById("vista").innerHTML = number_format(vista, 2, ",", ".");
     var parcelado = (parseFloat(soma123)) / 10;
+    console.log("parcelado: " + parcelado);
     for (a = 1; a < 11; a++) {
         document.getElementById("parcelado" + a).innerHTML = number_format(parcelado, 2, ",", ".");
     }
