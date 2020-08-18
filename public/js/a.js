@@ -1352,7 +1352,10 @@ function delRow(i, j) {
     console.log("j: " + j);
     console.log("soma123: " + soma123);
     console.log("parseFloat(j[8].firstChild.innerHTML): " + parseFloat(j[8].firstChild.innerHTML));
-    console.log("###elementoSoma1234 recebe valor antigo - parseFloat(j[8].firstChild.innerHTML)")
+    console.log("###elementoSoma1234 recebe valor antigo - parseFloat(j[8].firstChild.innerHTML)");
+    console.log("parseFloat(document.getElementById('soma1234').innerHTML" + parseFloat(document.getElementById("soma1234").innerHTML));
+    console.log("parseFloat(document.getElementById('soma1234').value" + parseFloat(document.getElementById("soma1234").value));
+
     document.getElementById("soma1234").innerHTML = 1000 * (parseFloat(document.getElementById("soma1234").innerHTML) - parseFloat(j[8].firstChild.innerHTML));
     console.log("document.getElementById('soma1234').innerHTML: " + document.getElementById("soma1234").innerHTML);
     soma123 = soma123 - (parseFloat(j[8].firstChild.innerHTML) * 1000);
