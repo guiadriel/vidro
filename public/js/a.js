@@ -1350,19 +1350,19 @@ function inserirLinhaTabelaFabrica() {
 function delRow(i, j) {
     console.log("i: " + i); //44 linha
     console.log("j: " + j); // html collection
-    console.log("soma123: " + soma123); //760
+    console.log("soma123: " + soma123); //760,80
     console.log("parseFloat(j[8].firstChild.innerHTML): " + parseFloat(j[8].firstChild.innerHTML)); //760
     console.log("###elementoSoma1234 recebe valor antigo - parseFloat(j[8].firstChild.innerHTML)");
     console.log("parseFloat(document.getElementById('soma1234').innerHTML" + parseFloat(document.getElementById("soma1234").innerHTML)); //860
     
     //1000 * (860 - 760)
     document.getElementById("soma1234").innerHTML = (parseFloat(document.getElementById("soma1234").innerHTML) - parseFloat(j[8].firstChild.innerHTML));
-    console.log("document.getElementById('soma1234').innerHTML: " + document.getElementById("soma1234").innerHTML); //100000
-    soma123 = soma123 - (parseFloat(j[8].firstChild.innerHTML));
-    console.log("soma123: " + soma123);
+    console.log("document.getElementById('soma1234').innerHTML: " + document.getElementById("soma1234").innerHTML); //100 mao de obra
+    soma123 = (soma123.toFixed(2) - (parseFloat(j[8].firstChild.innerHTML).toFixed(2))).toFixed(2);
+    console.log("soma123: " + soma123); //  0.8000000000000682
     document.getElementById('minhaTabela').deleteRow(i);
     var vista = parseFloat(soma123) - ((5 * parseFloat(soma123)) / 100);
-    console.log("vista: " + vista);
+    console.log("vista: " + vista);  // 0.7600000000000648
     document.getElementById("vista").innerHTML = number_format(vista, 2, ",", ".");
     var parcelado = (parseFloat(soma123)) / 10;
     console.log("parcelado: " + parcelado);
