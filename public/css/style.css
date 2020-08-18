@@ -28,7 +28,7 @@ body {
 }
 
 #fundo {
-    background-color: #488b85;
+    background-color: #3da7cceb;
     top: 200px;
     height: 350px;
     z-index: 9999;
@@ -379,7 +379,7 @@ table td {
 
 .btn_print {
     border: 1px solid #dddddd;
-    background: #38817bf5;
+    background: #3da7cceb;
     margin-left: -0%;
     height: 250px;
     text-align: center;
@@ -392,7 +392,7 @@ table td {
 }
 
 .classeMenuzinhoDeAbas {
-    background-color: rgb(80, 144, 138);
+    background-color: #3d93b1eb;
     border-radius: 30px;
     padding: 10px;
 }
