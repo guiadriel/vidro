@@ -1356,7 +1356,7 @@ function delRow(i, j) {
     console.log("parseFloat(document.getElementById('soma1234').innerHTML" + parseFloat(document.getElementById("soma1234").innerHTML)); //860
     
     //1000 * (860 - 760)
-    document.getElementById("soma1234").innerHTML = (parseFloat(document.getElementById("soma1234").innerHTML) - parseFloat(j[8].firstChild.innerHTML));
+    document.getElementById("soma1234").innerHTML = parseInt((parseFloat(document.getElementById("soma1234").innerHTML) - parseFloat(j[8].firstChild.innerHTML)));
     console.log("document.getElementById('soma1234').innerHTML: " + document.getElementById("soma1234").innerHTML); //100 mao de obra
     soma123 = (soma123.toFixed(2) - (parseFloat(j[8].firstChild.innerHTML).toFixed(2))).toFixed(2);
     console.log("soma123: " + soma123); //  0.8000000000000682
