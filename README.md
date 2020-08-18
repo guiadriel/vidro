@@ -1,45 +1,33 @@
-# Node.js & Passport Login
+# Calcule sua Obra
 
-This is a user login and registration app using Node.js, Express, Passport, Mongoose, EJS and some other packages.
+Vidraceiro faz um login (usando node)  e preenche os dados do cliente e começa fazer um orçamento adicionando janelas de vidro através do botão "+".
+Ao finalizar seu orçamento, tem a opção de enviar orçamento para cliente e de enviar "Romaneio" para fábrica fabricar os vidros.
 
-### Version: 2.0.0
+### Version: 1.0.0
 
-### Usage
-
-```sh
-$ npm install
-```
+### Banco de dados
 
 ```sh
-$ npm start
-# Or run with Nodemon
-$ npm run dev
-
-# Visit http://localhost:5000
-```
-
-### MongoDB
-
+MongoDB
 Open "config/keys.js" and add your MongoDB URI, local or Atlas
+```
+
+
+
+### Site funcionando na prática:
+```sh
+https://calculesuaobra.herokuapp.com/
+
+# Visite-nos
+```
 
 
 
 
+### Pendências
 
-
-
-
-
-CRIAR TABELA DE PREÇO EDITÁVEL 
-
-SALVAR NA PASTA
-
-WHATSAPP
-
-
-
-
-
+salvar PDF  (on server side)
+acrecentar no banco dados campos de valores opcionais de preços
 
 
 
