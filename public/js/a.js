@@ -1353,7 +1353,7 @@ function delRow(i, j) {
     console.log("soma123: " + soma123);
     console.log("parseFloat(j[8].firstChild.innerHTML): " + parseFloat(j[8].firstChild.innerHTML));
     console.log("###elementoSoma1234 recebe valor antigo - parseFloat(j[8].firstChild.innerHTML)")
-    document.getElementById("soma1234").innerHTML = number_format(1000 * (parseFloat(document.getElementById("soma1234").innerHTML) - parseFloat(j[8].firstChild.innerHTML)), 2, ",", ".");
+    document.getElementById("soma1234").innerHTML = 1000 * (parseFloat(document.getElementById("soma1234").innerHTML) - parseFloat(j[8].firstChild.innerHTML));
     console.log("document.getElementById('soma1234').innerHTML: " + document.getElementById("soma1234").innerHTML);
     soma123 = soma123 - (parseFloat(j[8].firstChild.innerHTML) * 1000);
     console.log("soma123: " + soma123);
