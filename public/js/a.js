@@ -1358,7 +1358,7 @@ function delRow(i, j) {
     //1000 * (860 - 760)
     document.getElementById("soma1234").innerHTML = (parseFloat(document.getElementById("soma1234").innerHTML) - parseFloat(j[8].firstChild.innerHTML));
     console.log("document.getElementById('soma1234').innerHTML: " + document.getElementById("soma1234").innerHTML); //100000
-    soma123 = soma123 - (parseFloat(j[8].firstChild.innerHTML) * 1000);
+    soma123 = soma123 - (parseFloat(j[8].firstChild.innerHTML));
     console.log("soma123: " + soma123);
     document.getElementById('minhaTabela').deleteRow(i);
     var vista = parseFloat(soma123) - ((5 * parseFloat(soma123)) / 100);
