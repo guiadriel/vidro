@@ -888,27 +888,27 @@ function trocaAba(abaClicada) {
     switch (abaClicada) {
         case 1:
             document.getElementById("fundoBasculantes").style.visibility = "visible";
-            document.getElementById("spanBasc").style.backgroundColor = "#388172f5";
+            document.getElementById("spanBasc").style.backgroundColor = "rgb(1, 111, 150)";
             document.getElementById("spanBasc").style.color = "white";
             break;
         case 2:
             document.getElementById("fundoJanelas").style.visibility = "visible";
-            document.getElementById("spanJane").style.backgroundColor = "#388172f5";
+            document.getElementById("spanJane").style.backgroundColor = "rgb(1, 111, 150)";
             document.getElementById("spanJane").style.color = "white";
             break;
         case 3:
             document.getElementById("fundoPortas").style.visibility = "visible";
-            document.getElementById("spanPort").style.backgroundColor = "#388172f5";
+            document.getElementById("spanPort").style.backgroundColor = "rgb(1, 111, 150)";
             document.getElementById("spanPort").style.color = "white";
             break;
         case 4:
             document.getElementById("fundoOutros").style.visibility = "visible";
-            document.getElementById("spanOutr").style.backgroundColor = "#388172f5";
+            document.getElementById("spanOutr").style.backgroundColor = "rgb(1, 111, 150)";
             document.getElementById("spanOutr").style.color = "white";
             break;
         case 5:
             document.getElementById("fundoEsquadrilhas").style.visibility = "visible";
-            document.getElementById("spanEsqu").style.backgroundColor = "#388172f5";
+            document.getElementById("spanEsqu").style.backgroundColor = "rgb(1, 111, 150)";
             document.getElementById("spanEsqu").style.color = "white";
             break;
     }
