@@ -231,7 +231,6 @@ function escondeTudoGeral() {
     document.getElementById("divConfiguracaoSistema").style.visibility = 'hidden';
     document.getElementById("divFIMFIM").style.visibility = 'hidden';
     document.getElementById("divUsuario").style.visibility = 'hidden';
-    console.log("ERA PRA TER ESCONDIDO TUDO");
 }
 
 function exibe_tab(el) {
@@ -862,7 +861,6 @@ function xAtualiza(x) {
     document.getElementById("xFerro").value = pvFerragem;
     document.getElementById("pvMETROCANTONEIRA").value = pvMetroCantoneira;
     document.getElementById("xKit").value = pvKit;
-    document.getElementById("btt1").src = "./public/img/i01.png";
     document.getElementById("quantidadeCantoneirasVertical").value = quantidadeCantoneirasVertical;
     document.getElementById("quantidadeCantoneirasHorizontal").value = quantidadeCantoneirasHorizontal;
     document.getElementById("btt1").src = imagem;
