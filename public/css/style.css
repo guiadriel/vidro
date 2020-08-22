@@ -69,18 +69,28 @@ body {
 }
 
 #spanPrecoBase:hover{
+    padding-top: 21px;
+    padding-bottom: 21px;
     background-color: rgb(165, 154, 56);
 }
 #spanCantoneira:hover{
+    padding-top: 21px;
+    padding-bottom: 21px;
     background-color: rgb(165, 154, 56);
 }
 #spanFerragem:hover{
+    padding-top: 21px;
+    padding-bottom: 21px;
     background-color: rgb(165, 154, 56);
 }
 #spankit:hover{
+    padding-top: 21px;
+    padding-bottom: 21px;
     background-color: rgb(165, 154, 56);
 }
 #spanLucro:hover{
+    padding-top: 21px;
+    padding-bottom: 21px;
     background-color: rgb(165, 154, 56);
 }
 
