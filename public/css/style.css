@@ -68,6 +68,22 @@ body {
     border: none;
 }
 
+spanPrecoBase:hover{
+    background-color: #3a7938;
+}
+spanCantoneira:hover{
+    background-color: #3a7938;
+}
+spanFerragem:hover{
+    background-color: #3a7938;
+}
+spankit:hover{
+    background-color: #3a7938;
+}
+spanLucro:hover{
+    background-color: #3a7938;
+}
+
 #altura {
     float: inherit;
     left: 548px;
