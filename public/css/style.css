@@ -69,19 +69,19 @@ body {
 }
 
 #spanPrecoBase:hover{
-    background-color: #3a7938;
+    background-color: rgb(165, 154, 56);
 }
 #spanCantoneira:hover{
-    background-color: #3a7938;
+    background-color: rgb(165, 154, 56);
 }
 #spanFerragem:hover{
-    background-color: #3a7938;
+    background-color: rgb(165, 154, 56);
 }
 #spankit:hover{
-    background-color: #3a7938;
+    background-color: rgb(165, 154, 56);
 }
 #spanLucro:hover{
-    background-color: #3a7938;
+    background-color: rgb(165, 154, 56);
 }
 
 #altura {
