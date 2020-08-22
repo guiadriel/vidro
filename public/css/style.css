@@ -68,19 +68,19 @@ body {
     border: none;
 }
 
-spanPrecoBase:hover{
+#spanPrecoBase:hover{
     background-color: #3a7938;
 }
-spanCantoneira:hover{
+#spanCantoneira:hover{
     background-color: #3a7938;
 }
-spanFerragem:hover{
+#spanFerragem:hover{
     background-color: #3a7938;
 }
-spankit:hover{
+#spankit:hover{
     background-color: #3a7938;
 }
-spanLucro:hover{
+#spanLucro:hover{
     background-color: #3a7938;
 }
 
