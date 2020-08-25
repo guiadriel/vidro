@@ -346,10 +346,61 @@ function TRANSPASSE(x) { //COMO CALCULAR O TRANSPASSE
         case "https://calculesuaobra.herokuapp.com/public/img/i18.png": //JANELA quatro folhas --> TRANSPASSE É DE 140 MM
             return 0;
             break;
-        case "https://calculesuaobra.herokuapp.com/public/img/i019.png": //JANELA quatro folhas --> TRANSPASSE É DE 140 MM
+        case "https://calculesuaobra.herokuapp.com/public/img/i19.png": //JANELA quatro folhas --> TRANSPASSE É DE 140 MM
             return 0.1;
             break;
         case "https://calculesuaobra.herokuapp.com/public/img/i20.png": //JANELA quatro folhas --> TRANSPASSE É DE 140 MM
+            return 0.05;
+            break;
+        case "https://calculesuaobra.herokuapp.com/public/img/i21.png": //JANELA quatro folhas --> TRANSPASSE É DE 140 MM
+            return 0.05;
+            break;
+        case "https://calculesuaobra.herokuapp.com/public/img/i22.png": //JANELA quatro folhas --> TRANSPASSE É DE 140 MM
+            return 0.05;
+            break;
+        case "https://calculesuaobra.herokuapp.com/public/img/i23.png": //JANELA quatro folhas --> TRANSPASSE É DE 140 MM
+            return 0.05;
+            break;
+        case "https://calculesuaobra.herokuapp.com/public/img/i24.png": //JANELA quatro folhas --> TRANSPASSE É DE 140 MM
+            return 0.05;
+            break;
+        case "https://calculesuaobra.herokuapp.com/public/img/i25.png": //JANELA quatro folhas --> TRANSPASSE É DE 140 MM
+            return 0.05;
+            break;
+        case "https://calculesuaobra.herokuapp.com/public/img/i26.png": //JANELA quatro folhas --> TRANSPASSE É DE 140 MM
+            return 0.05;
+            break;
+        case "https://calculesuaobra.herokuapp.com/public/img/i27.png": //JANELA quatro folhas --> TRANSPASSE É DE 140 MM
+            return 0.05;
+            break;
+        case "https://calculesuaobra.herokuapp.com/public/img/i28.png": //JANELA quatro folhas --> TRANSPASSE É DE 140 MM
+            return 0.05;
+            break;
+        case "https://calculesuaobra.herokuapp.com/public/img/i29.png": //JANELA quatro folhas --> TRANSPASSE É DE 140 MM
+            return 0.05;
+            break;
+        case "https://calculesuaobra.herokuapp.com/public/img/i30.png": //JANELA quatro folhas --> TRANSPASSE É DE 140 MM
+            return 0.05;
+            break;
+        case "https://calculesuaobra.herokuapp.com/public/img/i31.png": //JANELA quatro folhas --> TRANSPASSE É DE 140 MM
+            return 0.05;
+            break;
+        case "https://calculesuaobra.herokuapp.com/public/img/i32.png": //JANELA quatro folhas --> TRANSPASSE É DE 140 MM
+            return 0.05;
+            break;
+        case "https://calculesuaobra.herokuapp.com/public/img/i33.png": //JANELA quatro folhas --> TRANSPASSE É DE 140 MM
+            return 0.05;
+            break;
+        case "https://calculesuaobra.herokuapp.com/public/img/i34.png": //JANELA quatro folhas --> TRANSPASSE É DE 140 MM
+            return 0.05;
+            break;
+        case "https://calculesuaobra.herokuapp.com/public/img/i35.png": //JANELA quatro folhas --> TRANSPASSE É DE 140 MM
+            return 0.05;
+            break;
+        case "https://calculesuaobra.herokuapp.com/public/img/i36.png": //JANELA quatro folhas --> TRANSPASSE É DE 140 MM
+            return 0.05;
+            break;
+        case "https://calculesuaobra.herokuapp.com/public/img/i37.png": //JANELA quatro folhas --> TRANSPASSE É DE 140 MM
             return 0.05;
             break;
 
