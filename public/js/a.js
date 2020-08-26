@@ -409,6 +409,7 @@ function TRANSPASSE(x) { //COMO CALCULAR O TRANSPASSE
 
 function inserir() {
     document.getElementById("SOMA").style.display = 'inline';
+    document.getElementById("itens").style.display = 'inline';
     inserirLinhaTabela();
     inserirLinhaTabelaFabrica();
     soma123 += parseFloat(document.getElementById("Total").value);

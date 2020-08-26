@@ -259,6 +259,7 @@ body {
     left: 50%;
     margin-left: -42%;
     top: 235px;
+    display: block;
 }
 
 #itensFabrica {
