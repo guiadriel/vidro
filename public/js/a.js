@@ -429,7 +429,7 @@ function irParaFinalDaPagina() {
 }
 
 function fParcela() {
-    var parcelado = (parseFloat(soma123)) / document.getElementById("nparcelas").value;
+    var parcelado = (parseFloat(soma123) + document.getElementById("maoDeObra").value) / document.getElementById("nparcelas").value;
     for (i = 1; i <= 12; i++) {
         document.getElementById("parcelado" + i).style.display = 'inline';
         document.getElementById("parcela_dt" + i).style.display = 'inline';
