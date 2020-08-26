@@ -256,8 +256,8 @@ body {
     position: relative;
     width: 500px;
     height: 100px;
-    left: 50%;
-    margin-left: -42%;
+    left: 5%;
+    
     top: 235px;
     display: none;
 }
