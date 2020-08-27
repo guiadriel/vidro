@@ -417,6 +417,9 @@ function inserir() {
     document.getElementById("itens").style.display = 'inline';
     inserirLinhaTabela();
     inserirLinhaTabelaFabrica();
+}
+
+function atualizaSomaEParcela(){
     soma123 += parseFloat(document.getElementById("Total").value);
     var soma123COMMAODEOBRA = soma123 + parseFloat(document.getElementById("maoDeObra").value)
     soma123Fabrica += parseFloat(document.getElementById("Total").value);
@@ -425,7 +428,6 @@ function inserir() {
     var vista = st - ((5 * st) / 100);
     document.getElementById("vista").innerHTML = number_format(vista, 2, ",", ".");
     fParcela();
-
 }
 
 function irParaFinalDaPagina() {
