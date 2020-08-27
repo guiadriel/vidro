@@ -416,7 +416,8 @@ function inserir() {
     var soma123COMMAODEOBRA = soma123 + parseFloat(document.getElementById("maoDeObra").value)
     soma123Fabrica += parseFloat(document.getElementById("Total").value);
     document.getElementById("soma1234").innerHTML = number_format(soma123COMMAODEOBRA, 2, ",", ".");
-    var vista = (parseFloat(soma123) - ((5 * parseFloat(soma123)) / 100));
+    var st = parseFloat(soma123) + parseFloat(document.getElementById("maoDeObra").value);
+    var vista = st - ((5 * st) / 100);
     document.getElementById("vista").innerHTML = number_format(vista, 2, ",", ".");
     fParcela();
 
