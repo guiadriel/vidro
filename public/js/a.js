@@ -1413,7 +1413,8 @@ function delRow(i, j) {
     soma123 = parseInt((soma123.toFixed(2) - (parseInt(j[8].firstChild.innerHTML).toFixed(2))).toFixed(2));
     console.log("soma123: " + soma123); //  0.8000000000000682
     document.getElementById('minhaTabela').deleteRow(i);
-    var vista = parseFloat(soma123) - ((5 * parseFloat(soma123)) / 100);
+    var st = parseFloat(soma123) + parseFloat(document.getElementById("maoDeObra").value);
+    var vista = st - ((5 * st) / 100);
     console.log("vista: " + vista);  // 0.7600000000000648
     document.getElementById("vista").innerHTML = number_format(vista, 2, ",", ".");
     var parcelado = (parseFloat(soma123)) / 10;
