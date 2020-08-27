@@ -291,6 +291,7 @@ function calcula() {
     var st = parseFloat(soma123) + parseFloat(document.getElementById("maoDeObra").value);
     var vista = st - ((5 * st) / 100);
     document.getElementById("vista").innerHTML = number_format(vista, 2, ",", ".");
+    document.getElementById("soma1234").innerHTML = number_format(st, 2, ",", ".");
 }
 
 
