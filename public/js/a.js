@@ -292,6 +292,7 @@ function calcula() {
     var vista = st - ((5 * st) / 100);
     document.getElementById("vista").innerHTML = number_format(vista, 2, ",", ".");
     document.getElementById("soma1234").innerHTML = number_format(st, 2, ",", ".");
+    atualizaSomaEParcela();
 }
 
 
@@ -417,6 +418,7 @@ function inserir() {
     document.getElementById("itens").style.display = 'inline';
     inserirLinhaTabela();
     inserirLinhaTabelaFabrica();
+    atualizaSomaEParcela();
 }
 
 function atualizaSomaEParcela(){
