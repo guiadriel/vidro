@@ -28,14 +28,14 @@ body {
 }
 
 #fundo {
-    background-color: #3da7cceb;
+    background-color: #444444e8;
     top: 200px;
     height: 350px;
     z-index: 9999;
 }
 
 #fundo2 {
-    background-color: #53b1d2;
+    background-color: #444444e8;
     padding-top: 50px;
     z-index: 900;
     display: none;
@@ -63,7 +63,7 @@ body {
 #espessura {
     width: 80px;
     height: 80px;
-    background-color: rgb(49 154 189);
+    background-color: rgb(134, 134, 134);
     border-radius: 12px;
     border: none;
 }
@@ -406,7 +406,7 @@ table td {
 
 .btn_print {
     border: 1px solid #dddddd;
-    background: #3da7cceb;
+    background: #444444e8;
     margin-left: -0%;
     height: 250px;
     text-align: center;
@@ -419,7 +419,7 @@ table td {
 }
 
 .classeMenuzinhoDeAbas {
-    background-color: #3d93b1eb;
+    background-color: rgb(134, 134, 134);
     border-radius: 30px;
     padding: 10px;
 }
