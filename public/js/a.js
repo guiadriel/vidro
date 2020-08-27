@@ -287,6 +287,10 @@ function calcula() {
     document.getElementById("precoKit").value = largura * document.getElementById("xKit").value;
     document.getElementById("SubTotal").value = parseFloat(document.getElementById("precoVidro").value) + parseFloat(document.getElementById("precoDiversos").value) + parseFloat(document.getElementById("precoFerro").value) + parseFloat(document.getElementById("precoKit").value);
     document.getElementById("Total").value = parseFloat(document.getElementById("quantidade").value) * document.getElementById("SubTotal").value;
+    
+    var st = parseFloat(soma123) + parseFloat(document.getElementById("maoDeObra").value);
+    var vista = st - ((5 * st) / 100);
+    document.getElementById("vista").innerHTML = number_format(vista, 2, ",", ".");
 }
 
 
