@@ -386,9 +386,7 @@ table td {
     width: 70%;
     visibility: hidden;
     height: 35%;
-    padding-left: 20px;
-    padding-top: 20px;
-    padding-right: 20px;
+    padding: 40px;
 }
 
 #divFIMFIM {
@@ -406,7 +404,7 @@ table td {
     width: 55%;
     visibility: hidden;
     height: 325px;
-    padding-left: 35px;
+    padding: 60px;
 }
 
 .btn_print {
