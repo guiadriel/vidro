@@ -464,7 +464,7 @@ button.css3button {
     border: 0px solid #6c86a1;
 }
 
-@media (max-width:750px) {
+@media (max-width:735px) {
     .input-group-addon , .form-control, .btn-secondary{
         font-size: 250%;
     }
@@ -477,6 +477,13 @@ button.css3button {
     #idCliente, #idEndereco, #idBairro, #idCidade, #idData, #idEmail, #idTelefone{
         font-size: 250%;
     } 
+
+    #divFIMFIM{
+        width: 75%;
+        bottom: 35%;
+        height: 500px;
+        
+    }
     
 }
 
