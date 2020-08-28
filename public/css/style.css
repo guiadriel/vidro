@@ -72,26 +72,31 @@ body {
     padding-top: 21px;
     padding-bottom: 21px;
     background-color: rgb(66, 0, 130, 88%);
+    cursor:pointer;
 }
 #spanCantoneira:hover{
     padding-top: 21px;
     padding-bottom: 21px;
     background-color: rgb(66, 0, 130, 88%);
+    cursor:pointer;
 }
 #spanFerragem:hover{
     padding-top: 21px;
     padding-bottom: 21px;
     background-color: rgb(66, 0, 130, 88%);
+    cursor:pointer;
 }
 #spankit:hover{
     padding-top: 21px;
     padding-bottom: 21px;
     background-color: rgb(66, 0, 130, 88%);
+    cursor:pointer;
 }
 #spanLucro:hover{
     padding-top: 21px;
     padding-bottom: 21px;
     background-color: rgb(66, 0, 130, 88%);
+    cursor:pointer;
 }
 
 #altura {
