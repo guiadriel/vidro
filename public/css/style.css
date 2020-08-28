@@ -473,6 +473,10 @@ button.css3button {
         width: 100px;
         height: 100px;
     }
+
+    #idCliente, #idEndereco, #idBairro, #idCidade, #idData, #idEmail, #idTelefone{
+        font-size: 250%;
+    } 
     
 }
 
