@@ -184,11 +184,11 @@ body {
 
 #ok {
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 35px;
+    font-size: 75px;
     color: #ffffff;
     cursor: pointer;
     padding: 10px 20px;
-    background-color: #3a7938;
+    background-color: #7bad79;
     -moz-border-radius: 5px;
     -webkit-border-radius: 5px;
     border-radius: 92px;
@@ -196,10 +196,10 @@ body {
     border: 0px solid #6c86a1;
     position: fixed;
     bottom: 15px;
-    right: 152px;
+    right: 10px;
     z-index: 100;
-    width: 75px;
-    height: 75px;
+    width: 120px;
+    height: 120px;
 }
 
 #precoVidro,
