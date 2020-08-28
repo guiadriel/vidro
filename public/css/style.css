@@ -71,27 +71,27 @@ body {
 #spanPrecoBase:hover{
     padding-top: 21px;
     padding-bottom: 21px;
-    background-color: rgb(165, 154, 56);
+    background-color: rgb(66, 0, 130, 88%);
 }
 #spanCantoneira:hover{
     padding-top: 21px;
     padding-bottom: 21px;
-    background-color: rgb(165, 154, 56);
+    background-color: rgb(66, 0, 130, 88%);
 }
 #spanFerragem:hover{
     padding-top: 21px;
     padding-bottom: 21px;
-    background-color: rgb(165, 154, 56);
+    background-color: rgb(66, 0, 130, 88%);
 }
 #spankit:hover{
     padding-top: 21px;
     padding-bottom: 21px;
-    background-color: rgb(165, 154, 56);
+    background-color: rgb(66, 0, 130, 88%);
 }
 #spanLucro:hover{
     padding-top: 21px;
     padding-bottom: 21px;
-    background-color: rgb(165, 154, 56);
+    background-color: rgb(66, 0, 130, 88%);
 }
 
 #altura {
@@ -355,7 +355,7 @@ table td {
     border-radius: 10px;
     margin-top: 8px;
     border: 0px solid rgb(108, 134, 161);
-    background-color: rgb(179, 174, 35, 88%);
+    background-color: rgb(49, 27, 70, 0.88);
     position: fixed;
     bottom: 13%;
     right: 78px;
@@ -380,7 +380,7 @@ table td {
     z-index: 100;
     width: 70%;
     visibility: hidden;
-    height: 42%;
+    height: 35%;
     padding-left: 20px;
     padding-top: 20px;
     padding-right: 20px;
@@ -395,7 +395,7 @@ table td {
     border: 0px solid rgb(108, 134, 161);
     background-color: rgba(84, 148, 89, 0.93);
     position: fixed;
-    bottom: 154px;
+    bottom: 50%;
     right: 78px;
     z-index: 100;
     width: 55%;
