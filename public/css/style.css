@@ -357,12 +357,12 @@ table td {
     border: 0px solid rgb(108, 134, 161);
     background-color: rgb(49, 27, 70, 0.88);
     position: fixed;
-    bottom: 13%;
+    bottom: 40%;
     right: 78px;
     z-index: 100;
     width: 93%;
     visibility: hidden;
-    height: 82%;
+    height: 50%;
     padding-left: 20px;
     padding-top: 20px;
 }
