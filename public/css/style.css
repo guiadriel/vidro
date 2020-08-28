@@ -465,9 +465,10 @@ button.css3button {
 }
 
 @media (max-width:750px) {
-    .input-group-addon {
-        font-size: 20px;
+    .input-group-addon , .form-control{
+        font-size: 200%;
     }
+    
 }
 
 @media print {
