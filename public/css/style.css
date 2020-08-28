@@ -474,7 +474,7 @@ button.css3button {
         height: 100px;
     }
 
-    #idCliente, #idEndereco, #idBairro, #idCidade, #idData, #idEmail, #idTelefone{
+    #idCliente, #idEndereco, #idBairro, #idCidade, #idData, #idEmail, #idTelefone, #pFinalizandoPedido{
         font-size: 250%;
     } 
 
@@ -482,7 +482,16 @@ button.css3button {
         width: 75%;
         bottom: 35%;
         height: 500px;
-        
+        right: 117px;
+
+    }
+
+    #divConfiguracaoSistema{
+        right: 117px;
+    }
+
+    #divUsuario{
+        right: 117px;
     }
     
 }
