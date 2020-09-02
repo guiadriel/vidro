@@ -1510,6 +1510,6 @@ function pdfcanvas(){
         document.body.appendChild(canvas);
         document.body.attr('href', canvas.toDataURL("img/png"));
         document.body.attr('dowload', 'Teste file.png');
-        document.body[0].click();
+        //document.body[0].click();
     });
 }
