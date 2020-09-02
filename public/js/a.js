@@ -1,4 +1,3 @@
-import html2canvas from 'html2canvas';
 
 var soma123 = 0;
 var soma123Fabrica = 0;
