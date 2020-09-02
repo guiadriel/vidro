@@ -1,3 +1,4 @@
+import html2canvas from 'html2canvas';
 
 var soma123 = 0;
 var soma123Fabrica = 0;
@@ -1506,6 +1507,9 @@ function configMostraCantoneira() {
 
 function pdfcanvas(){
     html2canvas(document.querySelector("body")).then(canvas => {
-        document.body.appendChild(canvas)
+        document.body.appendChild(canvas);
+        document.body.attr('href', canvas.toDataURL("img/png"));
+        document.body.attr('dowload', 'Teste file.png');
+        document.body[0].click();
     });
 }
