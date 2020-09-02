@@ -1504,17 +1504,11 @@ function configMostraCantoneira() {
     }
 }
 
-function attrEquiv(selector, attr, setterFunction) {
-    document.querySelectorAll(selector).forEach((el, i) => {
-      el.setAttribute(attr, setterFunction.call(el, i, attr)) // bind `el` to `this`
-    })
-  }
-
 function pdfcanvas(){
     html2canvas(document.querySelector("body")).then(canvas => {
-        document.body.appendChild(canvas);
-        document.body.attrEquiv('href', canvas.toDataURL("img/png"));
-        document.body.attrEquiv('dowload', 'Teste file.png');
-        document.body[0].click();
+        document.getElementById("box1").appendChild(canvas);
+        document.getElementById("box1").attr('href', canvas.toDataURL("img/png"));
+        document.getElementById("box1").attr('donwload', 'Teste file.png');
+        document.getElementById("box1")[0].click();
     });
 }
