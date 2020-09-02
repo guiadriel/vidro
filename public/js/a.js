@@ -1502,3 +1502,9 @@ function configMostraCantoneira() {
         document.getElementById("obsCANTONEIRA").style.visibility = "visible";
     }
 }
+
+function pdfcanvas(){
+    html2canvas(document.querySelector("body")).then(canvas => {
+        document.body.appendChild(canvas)
+    });
+}
