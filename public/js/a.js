@@ -1506,9 +1506,9 @@ function configMostraCantoneira() {
 
 function pdfcanvas(){
     html2canvas(document.querySelector("body")).then(canvas => {
-        document.getElementById("box1").appendChild(canvas);
-        document.getElementById("box1").attr('href', canvas.toDataURL("img/png"));
-        document.getElementById("box1").attr('donwload', 'Teste file.png');
-        document.getElementById("box1")[0].click();
+        $('box1').appendChild(canvas);
+        $('box1').attr('href', canvas.toDataURL("img/png"));
+        $('box1').attr('donwload', 'Teste file.png');
+        $('box1')[0].click();
     });
 }
