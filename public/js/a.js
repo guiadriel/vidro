@@ -1509,6 +1509,6 @@ function pdfcanvas(){
         document.body.appendChild(canvas);
         $("box1").attr('href', canvas.toDataURL("img/png"));
         $("box1").attr('donwload', 'Teste file.png');
-        $("box1")[0].click();
+        $("box1").click();
     });
 }
