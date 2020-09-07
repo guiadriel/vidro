@@ -420,6 +420,7 @@ function inserir() {
     inserirLinhaTabela();
     inserirLinhaTabelaFabrica();
     atualizaSomaEParcela();
+    document.getElementsByName("img")[0].value = "img1";
 }
 
 function atualizaSomaEParcela(){
