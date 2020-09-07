@@ -29,6 +29,11 @@ mongoose
 app.use(expressLayouts);
 app.set('view engine', 'ejs');
 
+app.post('/', (req, res) =>{
+    console.log(req.body, req.files)
+    res.send('ok')
+})
+
 
 // Express body parser
 app.use(express.urlencoded({ extended: true }));
