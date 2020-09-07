@@ -4,6 +4,8 @@ const mongoose = require('mongoose');
 const passport = require('passport');
 const flash = require('connect-flash');
 const session = require('express-session');
+const multer = require('multer');
+const upload = multer({ desd: 'uploads/'});
 
 
 
@@ -29,7 +31,7 @@ mongoose
 app.use(expressLayouts);
 app.set('view engine', 'ejs');
 
-app.post('/', (req, res) =>{
+app.post('/', upload.single('img'), (req, res) =>{
     console.log(req.body, req.files)
     res.send('ok')
 })
