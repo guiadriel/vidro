@@ -32,8 +32,8 @@ app.use(expressLayouts);
 app.set('view engine', 'ejs');
 
 app.post('/', upload.single('img'), (req, res) =>{
-    console.log(req.body, req.file)
-    res.send('ok')
+    console.log(req.body, req.file);
+    res.send('ok');
 })
 
 
