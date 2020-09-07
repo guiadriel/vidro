@@ -33,6 +33,7 @@ app.set('view engine', 'ejs');
 
 app.post('/dashboard', upload.single('img'), (req, res) =>{
     console.log(req.body, req.file);
+    console.log("teste");
     res.send('ok');
 })
 
