@@ -5,7 +5,7 @@ const passport = require('passport');
 const flash = require('connect-flash');
 const session = require('express-session');
 const multer = require('multer');
-const upload = multer({ desd: 'uploads/'});
+const upload = multer({ dest: 'uploads/'});
 
 
 
@@ -32,7 +32,7 @@ app.use(expressLayouts);
 app.set('view engine', 'ejs');
 
 app.post('/dashboard', upload.single('img'), (req, res) =>{
-    console.log(req.file);
+    console.log(req.body.toString(), req.file);
     console.log("teste");
     res.send('ok');
 })
