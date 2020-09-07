@@ -32,7 +32,7 @@ app.use(expressLayouts);
 app.set('view engine', 'ejs');
 
 app.post('/dashboard', upload.single('img'), (req, res) =>{
-    console.log(req.body.toString(), req.file);
+    console.log(req.body, req.file);
     console.log("teste");
     res.send('ok');
 })
