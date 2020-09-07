@@ -5,7 +5,15 @@ const passport = require('passport');
 const flash = require('connect-flash');
 const session = require('express-session');
 const multer = require('multer');
-const upload = multer({ dest: 'uploads/'});
+const storage = multer.diskStorage({
+    destination: (req, file, cb) => {
+        cb(null, 'uploads/')
+    },
+    filename: (req, file, cb) => {
+        cb(null, Date.now()+'-'+file.originalname)
+    }
+})
+const upload = multer({ storage });
 
 
 
@@ -31,11 +39,12 @@ mongoose
 app.use(expressLayouts);
 app.set('view engine', 'ejs');
 
+app.get('/dashboard', (req, res) => res.render('dashboard'));
 app.post('/dashboard', upload.single('img'), (req, res) =>{
     console.log(req.body, req.file);
     console.log("teste");
     res.send('ok');
-})
+});
 
 
 // Express body parser
